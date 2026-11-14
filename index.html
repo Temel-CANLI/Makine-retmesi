@@ -151,6 +151,133 @@ textarea { width: 100%; font-family: ui-monospace, Consolas, monospace; }
 tr.open td { background: var(--ok-soft); }
 .theory svg text { font-family: inherit; }
 
+/* haftanın özü */
+.essence { background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: 14px; padding: 10px 22px 14px; margin-top: 12px; }
+.essence h2 { font-size: 1.05rem; margin: .4em 0 .5em; display: flex; align-items: center; gap: 8px; }
+.essence ul { margin: 0; padding-left: 1.2em; }
+.essence li { margin: .35em 0; }
+.essence .exam { margin-top: 10px; background: var(--warn-soft); border-radius: 8px; padding: 8px 12px; font-size: .95rem; }
+
+/* şemalar */
+.fig { margin: 18px 0; text-align: center; }
+.figsc { overflow-x: auto; padding: 2px 0; }
+.fig svg { width: 100%; height: auto; display: block; margin: 0 auto; overflow: visible; }
+.fig figcaption { font-size: .86rem; color: var(--muted); margin: 8px auto 0; max-width: 62ch; line-height: 1.45; }
+.fig text { fill: var(--fg); font-size: 14px; font-family: inherit; }
+.fig .t-sm { font-size: 12px; } .fig .t-b { font-weight: 700; } .fig .t-mu { fill: var(--muted); }
+.fig .t-acc { fill: var(--accent); } .fig .t-ok { fill: var(--ok); } .fig .t-bad { fill: var(--bad); } .fig .t-warn { fill: var(--warn); }
+.fig .nt { font-weight: 700; font-size: 15px; }
+.fig .ax { stroke: var(--muted); stroke-width: 1.2; fill: none; }
+.fig .gr { stroke: var(--border); stroke-width: 1; fill: none; }
+.fig .frame { stroke: var(--border); fill: none; }
+.fig .ln { stroke: var(--accent); stroke-width: 2.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.fig .ln2 { stroke: var(--warn); stroke-width: 2.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.fig .lnok { stroke: var(--ok); stroke-width: 2.2; fill: none; }
+.fig .dash { stroke-dasharray: 5 4; }
+.fig .ar { stroke: var(--muted); stroke-width: 1.8; } .fig .arh { fill: var(--muted); }
+.fig .nd { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.8; }
+.fig .nd-b { fill: var(--warn-soft); stroke: var(--warn); stroke-width: 2.2; }
+.fig .pt { fill: var(--fg); } .fig .pt-a { fill: var(--accent); } .fig .pt-b { fill: var(--warn); } .fig .pt-ok { fill: var(--ok); } .fig .pt-bad { fill: var(--bad); }
+.fig .hollow { fill: var(--surface); stroke: var(--accent); stroke-width: 2.4; }
+.fig .ring { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-dasharray: 6 4; }
+.fig .ring2 { fill: none; stroke: var(--muted); stroke-width: 1.6; stroke-dasharray: 6 4; }
+.fig .area { fill: var(--accent-soft); }
+.fig .bx-mu { fill: var(--bg); stroke: var(--border); stroke-width: 1.5; }
+.fig .bx-acc { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }
+.fig .bx-ok { fill: var(--ok-soft); stroke: var(--ok); stroke-width: 1.5; }
+.fig .bx-bad { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 1.5; }
+.fig .bx-warn { fill: var(--warn-soft); stroke: var(--warn); stroke-width: 1.5; }
+.fig .hl-acc { fill: none; stroke: var(--accent); stroke-width: 2.6; stroke-dasharray: 8 4; }
+.fig .hl-warn { fill: none; stroke: var(--warn); stroke-width: 2.6; }
+.flow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.flow span { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 999px; padding: 5px 13px; font-size: .92rem; }
+.flow i { color: var(--muted); font-style: normal; font-weight: 700; }
+
+/* bölüm içi araç ve "kendini yokla" */
+.theory .tool.embed { background: var(--bg); margin: 20px 0; border-left: 4px solid var(--accent); }
+.theory .tool.embed h4 { margin: .9em 0 .2em; }
+.check { border: 1px dashed var(--accent); border-radius: 12px; padding: 4px 14px 6px; margin: 20px 0 8px; background: var(--bg); }
+.checkh { font-weight: 700; margin: 8px 0 0; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.check .q { margin: 10px 0; }
+
+/* sezgi, sınavda sık sorulur, klasik sorular */
+.intuit { background: var(--warn-soft); border-radius: 10px; padding: 10px 14px; margin: 12px 0; }
+.teach { border: 1px solid var(--accent); background: var(--surface); border-radius: 12px; padding: 4px 16px 10px; margin: 18px 0; }
+.teachh { font-weight: 700; color: var(--accent); margin: 10px 0 4px; }
+.classicbox { background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--warn); border-radius: 14px; padding: 2px 18px 10px; margin-top: 22px; }
+.classicbox > h2 { margin-top: .8em; }
+.ctag { background: var(--warn-soft); color: var(--warn); }
+.where { margin: -4px 0 8px; color: var(--muted); }
+.reread { margin-top: 6px; font-size: .9rem; }
+.model { background: var(--accent-soft); border-radius: 8px; padding: 10px 12px; margin-top: 10px; line-height: 1.6; }
+.q textarea { min-height: 70px; font-family: inherit; }
+.selfq { margin-right: 4px; align-self: center; }
+
+/* hafta başı: görünüm seçeneği, bağlantı çipleri */
+.viewopts { margin-top: 10px; font-size: .9rem; color: var(--muted); }
+.viewopts { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.viewopts label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+
+/* özet kart: tanım → sezgi → formül → örnek */
+.concept { border: 1px solid var(--border); border-radius: 12px; background: var(--bg); padding: 4px 14px 8px; margin: 10px 0 14px; }
+.conh { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 6px 0 2px; }
+.crow { display: grid; grid-template-columns: 74px 1fr; gap: 10px; padding: 6px 0; border-top: 1px dashed var(--border); align-items: baseline; }
+.conh + .crow { border-top: 0; }
+.ck { font-size: .74rem; font-weight: 700; border-radius: 6px; padding: 2px 0; text-align: center; }
+.ck-t { background: var(--accent-soft); color: var(--accent); } .ck-s { background: var(--warn-soft); color: var(--warn); }
+.ck-f { background: var(--bg); color: var(--fg); border: 1px solid var(--border); } .ck-o { background: var(--ok-soft); color: var(--ok); }
+.crow .cf { font-weight: 600; overflow-x: auto; }
+@media (max-width: 560px) { .crow { grid-template-columns: 1fr; gap: 3px; } .ck { justify-self: start; padding: 2px 8px; } }
+.lrow { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .9rem; }
+.lchip { border: 1px solid var(--border); background: var(--bg); border-radius: 999px; padding: 3px 10px; text-decoration: none; }
+.lchip:hover { border-color: var(--accent); }
+
+/* adım adım örnek */
+.example.stepped .step { padding: 2px 0; }
+.example.stepped .step:not(:first-child) { border-top: 1px dashed var(--border); margin-top: 4px; padding-top: 6px; }
+.stepbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; }
+.stepbar button { padding: 5px 12px; font-size: .9rem; }
+
+/* sembol ipuçları */
+.sym { font-weight: 700; border-bottom: 1.5px dotted currentColor; cursor: help; outline: none; }
+.sym-ok { color: var(--ok); } .sym-bad { color: var(--bad); } .sym-acc { color: var(--accent); } .sym-warn { color: var(--warn); }
+.symtip { position: fixed; z-index: 50; max-width: 280px; background: var(--fg); color: var(--bg); font-size: .82rem; line-height: 1.35; padding: 6px 9px; border-radius: 7px; pointer-events: none; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+
+/* içindekiler + okuma çubuğu */
+.readbar { position: fixed; top: 56px; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 11; transition: width .1s; }
+.tocbtn { position: fixed; right: 16px; bottom: 16px; z-index: 12; background: var(--accent); color: var(--accent-fg); border: 0; border-radius: 999px; padding: 10px 16px; font-weight: 600; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+.tocpanel { position: fixed; right: 16px; bottom: 66px; z-index: 12; width: min(320px, calc(100vw - 32px)); max-height: 65vh; overflow-y: auto; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.tocpanel a { display: block; padding: 5px 8px; border-radius: 6px; text-decoration: none; color: var(--fg); font-size: .88rem; line-height: 1.35; }
+.tocpanel a:hover { background: var(--accent-soft); }
+.tocpanel a.cur { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.toch { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding: 4px 8px; }
+.st.ok { color: var(--ok); font-weight: 700; } .st.part { color: var(--warn); font-weight: 700; }
+@media (min-width: 1440px) {
+  .tocbtn { display: none; }
+  .tocpanel { left: calc(50% - 440px - 270px); right: auto; top: 76px; bottom: auto; width: 250px; max-height: calc(100vh - 96px); box-shadow: none; }
+}
+@media print { .tocbtn, .tocpanel, .readbar { display: none !important; } }
+.flash { animation: flash 1.8s ease; }
+@keyframes flash { 0%, 40% { background: var(--warn-soft); } 100% { background: transparent; } }
+
+/* kartlar */
+.cardarea { margin: 16px 0; }
+.fcard { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 20px 8px; min-height: 220px; display: flex; flex-direction: column; }
+.ffront { font-size: 1.25rem; font-weight: 600; margin: 16px 0; flex: 1; }
+.fback { font-size: 1.05rem; background: var(--ok-soft); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; }
+.fback .where { margin: 8px 0 0; }
+
+/* karşılaştırma ve karar ağaçları */
+.tree h3, .cmp h3 { border: 0; margin: .8em 0 .4em; }
+.tq { font-weight: 600; margin: 8px 0 4px; }
+.tpath { font-size: .88rem; margin: 2px 0; }
+.tans { background: var(--ok-soft); border-left: 4px solid var(--ok); border-radius: 6px; padding: 10px 14px; margin: 10px 0; }
+.cmp table th:first-child { white-space: nowrap; }
+
+/* yanlışlarım */
+nav a .nb { display: inline-block; min-width: 18px; padding: 0 5px; margin-left: 4px; border-radius: 9px; background: var(--bad-soft); color: var(--bad); font-size: .75rem; font-weight: 700; text-align: center; }
+.empty { background: var(--ok-soft); border-radius: 12px; padding: 14px 18px; margin: 16px 0; }
+
 </style>
 </head>
 <body>
@@ -332,7 +459,6 @@ z = (x − μ) / σ
 scaler = StandardScaler()
 X_train_s = scaler.fit_transform(X_train)   # eğitimde fit + transform
 X_test_s  = scaler.transform(X_test)        # testte sadece transform</code></pre>
-<div class="tip"><b>Araçlar sayfasında</b> kendi sayılarını girip min-max, z-skor ve IQR aykırı değer analizini deneyebilirsin.</div>
 `,
   qs: [
     { t: "mcp", q: "'Eğitim düzeyi (ilkokul, lise, lisans, yüksek lisans)' hangi veri tipidir?", o: ["Nominal", "Ordinal", "Sürekli sayısal", "Oran"], a: 1, e: "Kategorik ve aralarında doğal bir sıralama var: ordinal." },
@@ -503,7 +629,6 @@ R² = 1 − 6/14,75 ≈ <b>0,5932</b></div>
   <li><b>kNN regresyonu:</b> Tahmin = en yakın k komşunun hedef değerlerinin <u>ortalaması</u> (6. hafta).</li>
   <li>Eğitimde R² çok yüksek, testte düşükse model aşırı öğrenmiştir. Değerlendirme her zaman test verisinde yapılmalıdır.</li>
 </ul>
-<div class="tip"><b>Araçlar sayfasında</b> tuvale nokta ekleyip doğrunun ve MAE/RMSE/R² değerlerinin nasıl değiştiğini (özellikle aykırı değer eklediğinde) görebilirsin.</div>
 `,
   qs: [
     { t: "mcp", q: "Aşağıdakilerden hangisi regresyon problemidir?", o: ["Tümörün iyi/kötü huylu olması", "Bir dairenin kira bedelinin tahmini", "Müşterinin ürünü alıp almayacağı", "Resimdeki hayvanın kedi/köpek olması"], a: 1, e: "Kira bedeli sürekli bir sayıdır. Diğerleri kategori tahminidir (sınıflandırma)." },
@@ -589,7 +714,6 @@ model.predict_proba(X_test_s)    # olasılıklar [P(0), P(1)]</code></pre>
 <tr><td>Basit, hızlı, yorumlanabilir; olasılık verir</td><td>Karar sınırı doğrusal; karmaşık ilişkilerde zayıf</td></tr>
 <tr><td>Az veriyle de çalışır</td><td>Özellik ölçeklemeye ve çoklu doğrusal bağlantıya duyarlı</td></tr>
 </table>
-<div class="tip"><b>Araçlar sayfasında</b> sigmoid simülatörüyle b0, b1 ve x'i oynatıp olasılığı canlı görebilirsin.</div>
 `,
   qs: [
     { t: "mcp", q: "Lojistik regresyon hangi tür problem için kullanılır?", o: ["Sınıflandırma", "Sürekli değer tahmini (regresyon)", "Kümeleme", "Boyut indirgeme"], a: 0, e: "Adında 'regresyon' geçse de sınıflandırma algoritmasıdır." },
@@ -682,7 +806,6 @@ sc = StandardScaler().fit(X_train)
 knn = KNeighborsClassifier(n_neighbors=5, metric="euclidean")
 knn.fit(sc.transform(X_train), y_train)
 knn.predict(sc.transform(X_test))</code></pre>
-<div class="tip"><b>Araçlar sayfasında</b> kNN oyun alanıyla tuvale tıklayıp k'yı ve mesafe türünü değiştirerek tahmini canlı görebilirsin.</div>
 <div class="tip"><b>Daha fazla kNN örneği için:</b> <a href="#/hafta/9">PDF: İşbirlikçi Filtreleme</a> sayfasında Manhattan, Öklid, Minkowski, Pearson ve kosinüsle öneri örnekleri; <a href="#/hafta/10">Excel: kNN + Naive Bayes</a> sayfasında derste Excel'de yaptığınız 300 kayıtlı regresyon ve sınıflandırma örneği var.</div>
 `,
   qs: [
@@ -767,7 +890,6 @@ print(roc_auc_score(y_test, proba))</code></pre>
 
 <h3>5. Çok sınıflı durumda</h3>
 <p>Metrikler her sınıf için "o sınıf pozitif, diğerleri negatif" mantığıyla hesaplanır, sonra <b>macro</b> (sınıfların basit ortalaması), <b>micro</b> (toplam TP/FP/FN üzerinden) veya <b>weighted</b> (sınıf büyüklüğüne göre ağırlıklı) ortalama alınır.</p>
-<div class="tip"><b>Araçlar sayfasında</b> TP/FP/FN/TN değerlerini girip tüm metrikleri anında hesaplayabilirsin.</div>
 `,
   qs: [
     { t: "mcp", q: "Gerçekte hasta olan bir kişiye model 'sağlıklı' derse bu hangi sonuçtur?", o: ["TP", "FP", "FN", "TN"], a: 2, e: "Gerçek pozitif (hasta) ama negatif tahmin edildi: yanlış negatif (FN)." },
@@ -848,7 +970,7 @@ Yeni değerler: b<sub>0</sub> = 0 − 0,1·(−8) = <b>0,8</b>; b<sub>1</sub> = 
   <li><b>Kategorik değişken:</b> One-hot (k−1 sütun) ile ekle; katsayı, referans kategoriye göre farkı verir.</li>
   <li><b>Polinom regresyon:</b> ŷ = b0 + b1x + b2x². Parametrelerde hâlâ doğrusaldır; ilişki eğri ise kullanılır. Derece çok yükselirse aşırı öğrenme.</li>
   <li><b>Artık analizi:</b> Artıklar rastgele dağılmalı. Artıklarda desen (eğri, huni şekli) varsa doğrusallık veya sabit varyans varsayımı bozuktur.</li>
-  <li><b>Aykırı değer:</b> Tek bir uç nokta doğruyu ciddi kaydırabilir (Araçlar sayfasında dene). MAE daha dirençli, MSE/RMSE çok duyarlı.</li>
+  <li><b>Aykırı değer:</b> Tek bir uç nokta doğruyu ciddi kaydırabilir (4. bölümdeki regresyon tuvalinde "Aykırı değer ekle" ile dene). MAE daha dirençli, MSE/RMSE çok duyarlı.</li>
   <li><b>Korelasyon ≠ nedensellik.</b></li>
 </ul>
 <div class="warn"><b>Vizede sık hata:</b> (1) b<sub>0</sub>'ı ȳ − b<sub>1</sub>x̄ yerine ters yazmak, (2) RMSE'de karekökü unutmak, (3) R² formülünde SSE/SST yerine SST/SSE yazmak, (4) tahminde x yerine x̄ kullanmak.</div>
@@ -1134,8 +1256,6 @@ Burada P(H|W, I) = P(H|I) kullanıldı: <b>I bilindiğinde H ve W d-ayrışmış
 spam: 0,4·0,5·0,1 = 0,02 &nbsp; normal: 0,6·0,05·0,4 = 0,012<br>
 P(spam|x) = 0,02/(0,02 + 0,012) = <b>0,625</b> → spam</div>
 
-<h3>9. Etkileşimli araçlar</h3>
-<div class="tip"><b>Araçlar sayfasında</b> "d-ayrışma denetleyicisi" ile A-M ağında istediğin iki düğümü ve bilinen düğümleri seçip sonucu ve açık yolu görebilirsin. "Bayes teoremi hesaplayıcı" ile de önsel/olabilirlik değerlerinden sonsal olasılığı hesaplayabilirsin.</div>
 `,
   qs: [
     { t: "num", q: "P(A) = 0,3 ve P(B) = 0,5, olaylar bağımsız. P(A, B) kaçtır?", a: 0.15, tol: 0.001, e: "Bağımsızlıkta P(A,B) = P(A)·P(B) = 0,15." },
@@ -1264,7 +1384,7 @@ WEEKS.push({
   title: "İşbirlikçi Filtreleme, Mesafe ve Benzerlik Ölçüleri",
   sub: "DataMining-ch2-Turkce.pdf (Zacharski, Bölüm 2): Manhattan, Öklid, Minkowski, Pearson, kosinüs, seyrek veri, k-NN ile öneri",
   theory: `
-<div class="tip">Bu sayfa, klasördeki <b>DataMining-ch2-Turkce.pdf</b> dosyasının <b>tüm başlıklarını</b> sırayla kapsar. Sayıların hepsi PDF'ten ve <b>Bolum2_Tum_Hesaplamalar.xlsx</b> dosyasından alındı ve tekrar hesaplanıp doğrulandı. <b>Araçlar</b> sayfasındaki "Kullanıcı benzerliği ve öneri" aracı bu tablodaki 8 kullanıcıyla çalışır.</div>
+<div class="tip">Bu sayfa, klasördeki <b>DataMining-ch2-Turkce.pdf</b> dosyasının <b>tüm başlıklarını</b> sırayla kapsar. Sayıların hepsi PDF'ten ve <b>Bolum2_Tum_Hesaplamalar.xlsx</b> dosyasından alındı ve tekrar hesaplanıp doğrulandı. 10. bölümün sonundaki "Kullanıcı benzerliği ve öneri" aracı bu tablodaki 8 kullanıcıyla çalışır.</div>
 
 <h3>1. İşbirlikçi filtreleme (collaborative filtering) nedir?</h3>
 <p>Öneri sistemleri her yerdedir (Amazon, last.fm). <b>İşbirlikçi filtreleme</b>, öneriyi <u>başka insanlara dayanarak</u> yapar; kullanıcılar öneri üretmek için "işbirliği yapar".</p>
@@ -1542,7 +1662,7 @@ WEEKS.push({
   title: "Excel Uygulaması: kNN Regresyon, kNN Sınıflandırma ve Naive Bayes",
   sub: "KNN_reg.xlsx ve datasınıflandırmaknn.xlsx: 300 eğitim kaydı, 5 özellik (A–E), test satırı (11, 19, 21, 51, 67)",
   theory: `
-<div class="tip">Bu sayfa, Excel'de derste yaptığınız çalışmanın (<b>KNN_reg.xlsx</b>: sayfalar <i>Basari</i>, <i>Durum</i>, <i>Kategorik</i>) aynısıdır; tüm sayılar o dosyadan alınıp yeniden hesaplanarak doğrulandı. <b>Araçlar</b> sayfasındaki "Excel veri seti ile kNN" ve "Naive Bayes (Kategorik)" araçları bu veriyi kullanır, k'yı ve ölçeklemeyi değiştirerek sonucu canlı görebilirsin.</div>
+<div class="tip">Bu sayfa, Excel'de derste yaptığınız çalışmanın (<b>KNN_reg.xlsx</b>: sayfalar <i>Basari</i>, <i>Durum</i>, <i>Kategorik</i>) aynısıdır; tüm sayılar o dosyadan alınıp yeniden hesaplanarak doğrulandı. 4. bölümdeki "Excel veri seti ile kNN" ve 9. bölümdeki "Naive Bayes (Kategorik)" araçları bu veriyi kullanır; k'yı ve ölçeklemeyi değiştirerek sonucu canlı görebilirsin.</div>
 
 <h3>1. Veri seti ve problem</h3>
 <table>
@@ -2143,6 +2263,709 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
   );
 })();
 
+/* ===== extras.js ===== */
+/* Okumayı kolaylaştıran ekler: haftanın özü, şemalar, bölüm içi araçlar, "Kendini yokla" soruları.
+   figs / tools / checks anahtarları bölüm numarasıdır (h3 başlığındaki "N."). checks değerleri o haftanın qs dizisindeki sıra numaralarıdır (0'dan). */
+(function () {
+  const f1 = v => (+v).toFixed(1);
+  const T = (x, y, s, cls = "", a = "middle") => `<text x="${f1(x)}" y="${f1(y)}" text-anchor="${a}"${cls ? ` class="${cls}"` : ""}>${s}</text>`;
+  const L = (x1, y1, x2, y2, cls) => `<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" class="${cls}"/>`;
+  const C = (x, y, r, cls) => `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(r)}" class="${cls}"/>`;
+  const R = (x, y, w, hh, cls, rx = 6) => `<rect x="${f1(x)}" y="${f1(y)}" width="${f1(w)}" height="${f1(hh)}" rx="${rx}" class="${cls}"/>`;
+  const pts = a => a.map(p => f1(p[0]) + "," + f1(p[1])).join(" ");
+  const PL = (a, cls) => `<polyline points="${pts(a)}" class="${cls}"/>`;
+  const PG = (a, cls) => `<polygon points="${pts(a)}" class="${cls}"/>`;
+  const VT = (x, y, s, cls = "t-sm t-mu") => `<text x="${f1(x)}" y="${f1(y)}" text-anchor="middle" transform="rotate(-90 ${f1(x)} ${f1(y)})" class="${cls}">${s}</text>`;
+  // ok: başlangıçtan r1, bitişten r2 kadar kısaltılmış çizgi + uç
+  function AR(x1, y1, x2, y2, r1 = 0, r2 = 0) {
+    const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy), ux = dx / len, uy = dy / len;
+    const sx = x1 + ux * r1, sy = y1 + uy * r1, ex = x2 - ux * r2, ey = y2 - uy * r2, bx = ex - ux * 10, by = ey - uy * 10;
+    return L(sx, sy, bx, by, "ar") + PG([[ex, ey], [bx - uy * 5, by + ux * 5], [bx + uy * 5, by - ux * 5]], "arh");
+  }
+  const N = (x, y, s, cls = "nd", r = 17) => C(x, y, r, cls) + T(x, y + 5, s, "nt");
+  const strip = s => s.replace(/<[^>]+>/g, "");
+  // geniş şemalar telefonda okunaksız küçülmesin: en az %72 ölçekte kalır, gerekirse yatay kaydırılır
+  const FIG = (w, hh, body, cap) => `<figure class="fig"><div class="figsc"><svg viewBox="0 0 ${w} ${hh}" style="max-width:${w}px${w > 440 ? `;min-width:${Math.round(w * .72)}px` : ""}" role="img" aria-label="${strip(cap)}">${body}</svg></div><figcaption>${cap}</figcaption></figure>`;
+  const FLOW = (steps, cap) => `<figure class="fig"><div class="flow">${steps.map(s => `<span>${s}</span>`).join("<i>→</i>")}</div>${cap ? `<figcaption>${cap}</figcaption>` : ""}</figure>`;
+
+  /* ---------- Hafta 1 ---------- */
+  function figAI() {
+    const b = C(220, 145, 135, "bx-mu") + C(220, 178, 100, "bx-acc") + C(220, 215, 60, "bx-ok") +
+      T(220, 36, "Yapay zekâ (YZ)", "t-b") + T(220, 54, "kural, arama, planlama...", "t-sm t-mu") +
+      T(220, 105, "Makine öğrenmesi", "t-b t-acc") + T(220, 123, "kuralı veriden öğrenir", "t-sm t-mu") +
+      T(220, 212, "Derin öğrenme", "t-b t-ok") + T(220, 230, "sinir ağları", "t-sm t-mu");
+    return FIG(440, 286, b, "İç içe kümeler: her derin öğrenme modeli bir ML modelidir, her ML modeli de bir YZ yöntemidir. Tersi doğru değil.");
+  }
+  function figFit() {
+    const xs = [.06, .18, .3, .42, .54, .66, .78, .9], nz = [.07, -.08, .06, -.05, .07, -.07, .06, -.06];
+    const f = t => .15 + .7 * Math.sin(Math.PI * t), ys = xs.map((t, i) => f(t) + nz[i]);
+    const W = 170, H = 120, top = 34;
+    const P = [["Yetersiz öğrenme", "t-warn", "eğitim ✗ · test ✗"], ["İyi uyum", "t-ok", "eğitim ✓ · test ✓"], ["Aşırı öğrenme (ezber)", "t-bad", "eğitim ✓✓ · test ✗"]];
+    let b = "";
+    P.forEach((p, k) => {
+      const ox = 15 + k * 195, X = t => ox + t * W, Y = v => top + H - v * H;
+      b += R(ox, top, W, H, "bx-mu", 8) + T(ox + W / 2, 22, p[0], "t-b " + p[1]) + T(ox + W / 2, top + H + 20, p[2], "t-sm t-mu");
+      if (k === 0) { const m = ys.reduce((a, c) => a + c, 0) / ys.length; b += PL([[X(.02), Y(m)], [X(.98), Y(m)]], "ln"); }
+      else if (k === 1) { const a = []; for (let i = 0; i <= 40; i++) a.push([X(.02 + i / 40 * .96), Y(f(.02 + i / 40 * .96))]); b += PL(a, "ln"); }
+      else b += PL(xs.map((t, i) => [X(t), Y(ys[i])]), "ln");
+      b += xs.map((t, i) => C(X(t), Y(ys[i]), 4, "pt")).join("");
+    });
+    return FIG(600, 184, b, "Aynı veri, üç model. Soldaki eğilimi yakalayamıyor; sağdaki her noktadan geçip gürültüyü de ezberliyor. Yeni veride ikisi de kötü.");
+  }
+
+  /* ---------- Hafta 2 ---------- */
+  function figBox() {
+    const X = v => 30 + v * 9.25, q1 = 13.5, q3 = 20.5, md = 16.5, lo = 3, hi = 31, data = [10, 12, 14, 15, 18, 20, 22];
+    let b = L(X(0), 95, X(40), 95, "ax");
+    for (let v = 0; v <= 40; v += 10) b += L(X(v), 91, X(v), 99, "ax") + T(X(v), 114, v, "t-sm t-mu");
+    b += T(X(40) + 18, 100, "≈", "t-mu") + L(X(40) + 32, 95, 500, 95, "ax") + L(478, 91, 478, 99, "ax") + T(478, 114, "95", "t-sm t-mu");
+    b += L(X(lo), 30, X(lo), 88, "ln2 dash") + L(X(hi), 30, X(hi), 88, "ln2 dash");
+    b += T(X(lo), 22, "alt sınır = 3", "t-sm t-warn") + T(X(hi), 22, "üst sınır = 31", "t-sm t-warn");
+    b += L(X(10), 62, X(q1), 62, "ax") + L(X(q3), 62, X(22), 62, "ax") + L(X(10), 55, X(10), 69, "ax") + L(X(22), 55, X(22), 69, "ax");
+    b += R(X(q1), 48, X(q3) - X(q1), 28, "bx-acc", 3) + L(X(md), 48, X(md), 76, "ln");
+    b += T(X(q1), 42, "Q1", "t-sm t-b") + T(X(q3), 42, "Q3", "t-sm t-b");
+    b += data.map(v => C(X(v), 84, 3.5, "pt")).join("") + C(478, 84, 5.5, "pt-bad") + T(478, 70, "aykırı", "t-sm t-bad t-b");
+    b += T(260, 142, "IQR = Q3 − Q1 = 20,5 − 13,5 = 7 · sınırlar: Q1 − 1,5·IQR ve Q3 + 1,5·IQR", "t-sm");
+    return FIG(520, 152, b, "Veri: 10, 12, 14, 15, 18, 20, 22, 95. Kutu, verinin ortadaki yarısıdır (Q1–Q3). Turuncu sınırların dışında kalan 95 aykırı değerdir.");
+  }
+
+  /* ---------- Hafta 3 ---------- */
+  function figSplit() {
+    const parts = [[.7, "bx-acc", "Eğitim", "model parametreleri burada öğrenir"], [.15, "bx-warn", "Doğrulama", "hiperparametre ve model seçimi"], [.15, "bx-ok", "Test", "en sonda, bir kez: gerçek başarı"]];
+    let b = "", x = 10;
+    parts.forEach((p, k) => {
+      const w = p[0] * 500;
+      b += R(x, 12, w, 34, p[1], 4) + T(x + w / 2, 34, "%" + Math.round(p[0] * 100), "t-b");
+      b += R(10, 62 + k * 22, 14, 14, p[1], 3) + T(32, 74 + k * 22, `<tspan class="t-b">${p[2]}:</tspan> ${p[3]}`, "", "start");
+      x += w;
+    });
+    return FIG(520, 130, b, "Tipik bölme. Test kümesi, model seçimi bitene kadar kilitli kalır; yalnızca son ölçüm için açılır.");
+  }
+  function figKfold() {
+    let b = ""; const cw = 64, x0 = 70, y0 = 10, rh = 26;
+    for (let r = 0; r < 5; r++) {
+      const y = y0 + r * (rh + 6);
+      b += T(x0 - 12, y + 18, "Tur " + (r + 1), "t-sm", "end");
+      for (let c = 0; c < 5; c++) b += R(x0 + c * (cw + 4), y, cw, rh, c === r ? "bx-warn" : "bx-acc", 4) + T(x0 + c * (cw + 4) + cw / 2, y + 17, c === r ? "test" : "eğitim", "t-sm" + (c === r ? " t-b" : ""));
+      b += T(x0 + 5 * (cw + 4) + 8, y + 18, "→ skor " + (r + 1), "t-sm t-mu", "start");
+    }
+    b += T(x0 + 2.5 * (cw + 4), y0 + 5 * (rh + 6) + 18, "Sonuç = 5 skorun ortalaması", "t-b");
+    return FIG(490, 196, b, "5-katlı çapraz doğrulama: her parça tam bir kez test olur. 100 örnekte her turda 80 eğitim, 20 test.");
+  }
+
+  /* ---------- Hafta 4 ---------- */
+  function figResid() {
+    const X = x => 40 + x * 60, Y = y => 250 - y * 38, xs = [1, 2, 3, 4, 5], ys = [2, 4, 5, 4, 5], yh = x => 2.2 + .6 * x;
+    let b = L(X(0), Y(0), X(6.2), Y(0), "ax") + L(X(0), Y(0), X(0), Y(6.3), "ax");
+    for (let i = 1; i <= 6; i++) b += T(X(i), Y(0) + 17, i, "t-sm t-mu") + T(X(0) - 9, Y(i) + 4, i, "t-sm t-mu", "end");
+    b += T(X(6.2), Y(0) - 8, "x", "t-mu", "end") + T(X(0) + 10, Y(6.3) + 4, "y", "t-mu", "start");
+    b += L(X(0), Y(yh(0)), X(6), Y(yh(6)), "ln");
+    xs.forEach((x, i) => { b += L(X(x), Y(ys[i]), X(x), Y(yh(x)), "ln2 dash"); });
+    b += xs.map((x, i) => C(X(x), Y(ys[i]), 5, "pt")).join("");
+    b += C(X(3), Y(4), 6, "hollow") + T(X(3) + 12, Y(4) + 20, "(x̄, ȳ) = (3, 4)", "t-sm", "start");
+    b += T(X(6), Y(yh(6)) - 12, "ŷ = 2,2 + 0,6x", "t-b t-acc", "end");
+    b += T(X(2) - 8, Y(3.7) + 4, "artık = y − ŷ", "t-sm t-warn", "end");
+    return FIG(430, 280, b, "Örnek veri: x = 1…5, y = 2, 4, 5, 4, 5. Turuncu kesikli çizgiler artıklardır. En küçük kareler bu çizgilerin karelerinin toplamını en aza indirir; doğru her zaman (x̄, ȳ) noktasından geçer.");
+  }
+
+  /* ---------- Hafta 5 ---------- */
+  const flowLogit = FLOW(["x (özellikler)", "z = b₀ + b₁x", "P = σ(z) = 1 / (1 + e⁻ᶻ)", "P ≥ eşik ise sınıf 1"], "Lojistik regresyonun dört adımı: önce doğrusal skor, sonra sigmoidle olasılık, en sonda eşikle sınıf.");
+
+  /* ---------- Hafta 6 ---------- */
+  function figDist() {
+    const X = v => 30 + v * 36, Y = v => 262 - v * 36; let b = "";
+    for (let i = 0; i <= 6; i++) b += L(X(i), Y(0), X(i), Y(6.5), "gr") + L(X(0), Y(i), X(6.5), Y(i), "gr") + T(X(i), Y(0) + 16, i, "t-sm t-mu") + T(X(0) - 8, Y(i) + 4, i, "t-sm t-mu", "end");
+    b += PL([[X(1), Y(2)], [X(4), Y(2)], [X(4), Y(6)]], "ln2") + L(X(1), Y(2), X(4), Y(6), "ln");
+    b += C(X(1), Y(2), 6, "pt") + C(X(4), Y(6), 6, "pt");
+    b += T(X(1), Y(2) + 24, "x = (1, 2)", "t-sm t-b") + T(X(4) - 10, Y(6) - 4, "y = (4, 6)", "t-sm t-b", "end");
+    b += T(X(2.5), Y(2) + 18, "3", "t-b t-warn") + T(X(4) + 10, Y(4) + 5, "4", "t-b t-warn", "start") + T(X(2.2), Y(4.4), "5", "t-b t-acc");
+    b += L(292, 70, 322, 70, "ln2") + T(330, 75, "Manhattan: 3 + 4 = 7", "", "start");
+    b += L(292, 104, 322, 104, "ln") + T(330, 109, "Öklid: √(3² + 4²) = 5", "", "start");
+    b += T(292, 146, "Manhattan = ızgarada yürümek", "t-sm t-mu", "start") + T(292, 164, "Öklid = kuş uçuşu (en kısa yol)", "t-sm t-mu", "start") + T(292, 182, "Öklid ≤ Manhattan, her zaman", "t-sm t-mu", "start");
+    return FIG(500, 285, b, "Aynı iki nokta, iki farklı mesafe. Formüldeki sayıları şekildeki kenarlarla eşleştir.");
+  }
+  function figKnn() {
+    const X = v => 30 + v * 40, Y = v => 270 - v * 40;
+    const P = [["A", 1, 1, "K"], ["B", 2, 3, "K"], ["C", 5, 4, "M"], ["D", 6, 6, "M"], ["E", 3, 1, "K"]];
+    let b = "";
+    for (let i = 0; i <= 7; i++) b += L(X(i), Y(0), X(i), Y(6.5), "gr");
+    for (let i = 0; i <= 6; i++) b += L(X(0), Y(i), X(7), Y(i), "gr");
+    b += C(X(4), Y(3), 1.414 * 40, "ring") + C(X(4), Y(3), 2.236 * 40, "ring2");
+    b += T(X(4), Y(3) - 1.414 * 40 - 5, "k = 1", "t-sm t-acc t-b") + T(X(4), Y(3) - 2.236 * 40 - 5, "k = 3", "t-sm t-mu t-b");
+    P.forEach(p => { b += C(X(p[1]), Y(p[2]), 7, p[3] === "K" ? "pt-a" : "pt-b") + T(X(p[1]) + 11, Y(p[2]) - 7, p[0], "t-sm t-b", "start"); });
+    b += PG([[X(4), Y(3) - 10], [X(4) + 9, Y(3) + 7], [X(4) - 9, Y(3) + 7]], "pt") + T(X(4) - 12, Y(3) + 5, "q", "t-b", "end");
+    b += C(340, 40, 7, "pt-a") + T(354, 45, "K sınıfı", "", "start") + C(340, 66, 7, "pt-b") + T(354, 71, "M sınıfı", "", "start");
+    b += T(332, 112, "k = 1 → en yakın C → M", "t-sm", "start") + T(332, 134, "k = 3 → C, B, E → 2 K, 1 M → K", "t-sm", "start") + T(332, 156, "k = 5 → 3 K, 2 M → K", "t-sm", "start");
+    b += T(332, 194, "Halka büyüdükçe karar", "t-sm t-mu", "start") + T(332, 212, "değişebilir: k bir ayar düğmesi.", "t-sm t-mu", "start");
+    return FIG(560, 290, b, "5. bölümdeki çözümlü örnek: sorgu q = (4, 3). k = 1 ve k = 3 için komşuluk halkaları.");
+  }
+  const flowKnn = FLOW(["k ve mesafe ölçüsünü seç", "tüm eğitim noktalarına uzaklık", "sırala, en yakın k'yı al", "oy (sınıf) / ortalama (regresyon)"]);
+
+  /* ---------- Hafta 7 ---------- */
+  function figCm() {
+    const cx = [130, 270], cy = [60, 140], w = 140, hh = 80;
+    const cells = [[["TP", 40, "bx-ok", "doğru pozitif"], ["FN", 10, "bx-bad", "kaçırdık"]], [["FP", 5, "bx-bad", "yanlış alarm"], ["TN", 45, "bx-ok", "doğru negatif"]]];
+    let b = T(200, 42, "Tahmin: +", "t-b") + T(340, 42, "Tahmin: −", "t-b") + T(118, 105, "Gerçek: +", "t-b", "end") + T(118, 185, "Gerçek: −", "t-b", "end");
+    cells.forEach((row, r) => row.forEach((c, k) => { b += R(cx[k], cy[r], w, hh, c[2], 0) + T(cx[k] + w / 2, cy[r] + 36, `${c[0]} = ${c[1]}`, "t-b") + T(cx[k] + w / 2, cy[r] + 56, c[3], "t-sm t-mu"); }));
+    b += R(123, 53, 294, 94, "hl-acc", 10) + T(428, 94, "Recall", "t-b t-acc", "start") + T(428, 113, "40 / (40 + 10) = 0,80", "t-sm", "start");
+    b += R(136, 66, 128, 148, "hl-warn", 6) + T(200, 240, "Precision", "t-b t-warn") + T(200, 259, "40 / (40 + 5) = 0,89", "t-sm");
+    return FIG(570, 270, b, "<b>Recall</b> satıra bakar: gerçek pozitiflerin kaçını yakaladık? <b>Precision</b> sütuna bakar: pozitif dediklerimizin kaçı gerçekten pozitif? (Sayılar aşağıdaki çözümlü örnekten.)");
+  }
+  function figRoc() {
+    const X = v => 50 + v * 220, Y = v => 250 - v * 220;
+    const c = [[0, 0], [.03, .35], [.08, .58], [.15, .72], [.25, .83], [.4, .91], [.6, .96], [.8, .985], [1, 1]];
+    let b = PG([[X(0), Y(0)], ...c.map(p => [X(p[0]), Y(p[1])]), [X(1), Y(0)]], "area");
+    for (let v = .25; v < 1; v += .25) b += L(X(v), Y(0), X(v), Y(1), "gr") + L(X(0), Y(v), X(1), Y(v), "gr");
+    b += R(X(0), Y(1), 220, 220, "frame", 0);
+    b += L(X(0), Y(0), X(1), Y(1), "ax dash") + PL([[X(0), Y(0)], [X(0), Y(1)], [X(1), Y(1)]], "lnok dash") + PL(c.map(p => [X(p[0]), Y(p[1])]), "ln");
+    b += C(X(0), Y(1), 5, "pt-ok");
+    [0, .5, 1].forEach(v => { const s = String(v).replace(".", ","); b += T(X(v), Y(0) + 16, s, "t-sm t-mu") + T(X(0) - 7, Y(v) + 4, s, "t-sm t-mu", "end"); });
+    b += T(X(.5), 288, "FPR (yanlış alarm oranı)", "t-sm") + VT(14, Y(.5), "TPR = recall", "t-sm");
+    b += T(X(.62), Y(.32), "AUC", "t-b t-acc");
+    const lx = 300;
+    b += L(lx, 50, lx + 28, 50, "ln") + T(lx + 36, 55, "model", "t-sm", "start");
+    b += L(lx, 78, lx + 28, 78, "ax dash") + T(lx + 36, 83, "rastgele: AUC = 0,5", "t-sm", "start");
+    b += L(lx, 106, lx + 28, 106, "lnok dash") + T(lx + 36, 111, "mükemmel: AUC = 1", "t-sm", "start");
+    b += R(lx, 126, 28, 14, "area", 2) + T(lx + 36, 138, "AUC = altındaki alan", "t-sm", "start");
+    b += T(lx, 176, "Eğri sol üst köşeye", "t-sm t-mu", "start") + T(lx, 194, "ne kadar yakınsa o kadar iyi.", "t-sm t-mu", "start");
+    return FIG(495, 298, b, "ROC eğrisi: eşik 1'den 0'a inerken her noktada (FPR, TPR) çizilir. Köşegen yazı-tura atmak demektir.");
+  }
+
+  /* ---------- Hafta 8 ---------- */
+  function figChain() {
+    const p = { A: [100, 36], B: [240, 36], C: [170, 110], D: [170, 184] };
+    let b = AR(...p.A, ...p.C, 17, 19) + AR(...p.B, ...p.C, 17, 19) + AR(...p.C, ...p.D, 17, 19);
+    Object.keys(p).forEach(k => { b += N(p[k][0], p[k][1], k); });
+    b += T(76, 41, "P(A) = 0,3", "t-sm t-mu", "end") + T(264, 41, "P(B) = 0,6", "t-sm t-mu", "start") + T(196, 115, "P(C | A, B): 4 satır", "t-sm t-mu", "start") + T(196, 189, "P(D | C): 2 satır", "t-sm t-mu", "start");
+    return FIG(360, 206, b, "Her düğüm yalnızca ebeveynlerine bakan bir tablo taşır. Birleşik olasılık = P(A)·P(B)·P(C|A,B)·P(D|C).");
+  }
+  function figConn() {
+    const P = [
+      { t: "Seri", n: { A: [40, 75], B: [110, 75], C: [180, 75] }, e: [["A", "B"], ["B", "C"]], u: ["açık", 1], k: ["bloke", 0] },
+      { t: "Iraksayan (ortak neden)", n: { B: [110, 48], A: [50, 108], C: [170, 108] }, e: [["B", "A"], ["B", "C"]], u: ["açık", 1], k: ["bloke", 0] },
+      { t: "Yakınsayan (ortak sonuç)", n: { A: [50, 48], C: [170, 48], B: [110, 108] }, e: [["A", "B"], ["C", "B"]], u: ["bloke", 0], k: ["açık", 1] }
+    ];
+    let b = "";
+    P.forEach((p, k) => {
+      const ox = k * 210;
+      if (k) b += L(ox, 10, ox, 175, "gr");
+      b += T(ox + 110, 20, p.t, "t-b");
+      p.e.forEach(([a, c]) => { b += AR(ox + p.n[a][0], p.n[a][1], ox + p.n[c][0], p.n[c][1], 17, 19); });
+      Object.keys(p.n).forEach(n => { b += N(ox + p.n[n][0], p.n[n][1], n, n === "B" ? "nd-b" : "nd"); });
+      const st = s => `<tspan class="t-b ${s[1] ? "t-ok" : "t-bad"}">${s[0]}</tspan>`;
+      b += T(ox + 110, 152, `B bilinmiyorsa: ${st(p.u)}`, "t-sm") + T(ox + 110, 172, `B biliniyorsa: ${st(p.k)}`, "t-sm");
+    });
+    b += T(315, 202, "Yakınsayanda B'nin bir alt düğümünün (çocuk, torun) bilinmesi de yolu açar.", "t-sm t-mu");
+    return FIG(630, 212, b, "Ezber: seri ve ıraksayan <b>bilinirse kapanır</b>, yakınsayan <b>bilinirse açılır</b>.");
+  }
+  function figDiamond() {
+    const p = { A: [130, 30], B: [50, 105], D: [210, 105], C: [130, 180] };
+    let b = AR(...p.A, ...p.B, 17, 19) + AR(...p.A, ...p.D, 17, 19) + AR(...p.B, ...p.C, 17, 19) + AR(...p.D, ...p.C, 17, 19);
+    Object.keys(p).forEach(k => { b += N(p[k][0], p[k][1], k); });
+    return FIG(260, 204, b, "Küçük örnek ağ: A-B-C ve A-D-C seri, B-A-D ıraksayan (A'da), B-C-D yakınsayan (C'de).");
+  }
+  function figWH() {
+    let b = AR(180, 40, 80, 130, 17, 19) + AR(180, 40, 280, 130, 17, 19);
+    b += N(180, 40, "I") + T(204, 37, "Buzlanma", "t-b", "start") + T(204, 55, "P(I) = 0,7", "t-sm t-mu", "start");
+    b += N(80, 130, "W") + T(80, 168, "Watson kaza", "t-b") + T(80, 186, "P(W|I)=0,8 · P(W|¬I)=0,1", "t-sm t-mu");
+    b += N(280, 130, "H") + T(280, 168, "Holmes kaza", "t-b") + T(280, 186, "P(H|I)=0,8 · P(H|¬I)=0,1", "t-sm t-mu");
+    return FIG(370, 196, b, "Ortak neden (ıraksayan): I bilinmezken Watson'ın kazası Holmes için de bilgi taşır; I bilinince ikisi bağımsızlaşır.");
+  }
+  function figNB() {
+    const xs = [["x₁", 60], ["x₂", 140], ["x₃", 220], ["xₙ", 300]];
+    let b = "";
+    xs.forEach(x => { b += AR(180, 32, x[1], 112, 17, 19); });
+    b += N(180, 32, "C", "nd-b") + T(205, 37, "sınıf (ör. spam / normal)", "t-sm t-mu", "start");
+    xs.forEach(x => { b += N(x[1], 112, x[0]); });
+    b += T(260, 117, "…", "t-b t-mu") + T(180, 160, "P(C | x₁…xₙ) ∝ P(C) · P(x₁|C) · P(x₂|C) · … · P(xₙ|C)", "t-sm");
+    return FIG(360, 172, b, "Naive Bayes bir Bayes ağıdır: sınıf, tüm özelliklerin tek ebeveyni. Özellikler arasında ok yok, yani sınıf bilinince birbirlerinden bağımsız sayılırlar.");
+  }
+
+  /* ---------- Hafta 9 ---------- */
+  function figBooks() {
+    const X = v => 40 + v * 50, Y = v => 280 - v * 50; let b = "";
+    for (let i = 0; i <= 5; i++) b += L(X(i), Y(0), X(i), Y(5.4), "gr") + L(X(0), Y(i), X(5.4), Y(i), "gr") + T(X(i), Y(0) + 16, i, "t-sm t-mu") + T(X(0) - 8, Y(i) + 4, i, "t-sm t-mu", "end");
+    b += T(X(2.7), 312, "Snow Crash puanı", "t-sm") + VT(12, Y(2.7), "Dragon Tattoo puanı", "t-sm");
+    b += PL([[X(4), Y(2)], [X(5), Y(2)], [X(5), Y(5)]], "ln2") + L(X(4), Y(2), X(5), Y(5), "ln");
+    const ppl = [["Amy", 5, 5, "end", -10, -10], ["Bill", 2, 5, "middle", 0, -12], ["Jim", 1, 4, "end", -10, 5]];
+    ppl.forEach(p => { b += C(X(p[1]), Y(p[2]), 6, "pt-a") + T(X(p[1]) + p[4], Y(p[2]) + p[5], p[0], "t-sm t-b", p[3]); });
+    b += C(X(4), Y(2), 7, "pt-b") + T(X(4) - 10, Y(2) + 20, "Bayan X", "t-sm t-b t-warn", "end");
+    const lx = 345;
+    b += T(lx, 50, "Bayan X'e uzaklık", "t-b", "start") + T(lx, 74, "Amy: Manhattan 4 · Öklid 3,16", "t-sm", "start") + T(lx, 94, "Bill: Manhattan 5 · Öklid 3,61", "t-sm", "start") + T(lx, 114, "Jim: Manhattan 5 · Öklid 3,61", "t-sm", "start");
+    b += L(lx, 146, lx + 26, 146, "ln2") + T(lx + 34, 151, "Manhattan (1 + 3)", "t-sm", "start") + L(lx, 170, lx + 26, 170, "ln") + T(lx + 34, 175, "Öklid (√10)", "t-sm", "start");
+    b += T(lx, 212, "En yakın komşu Amy:", "t-sm t-mu", "start") + T(lx, 230, "onun sevdiği kitap önerilir.", "t-sm t-mu", "start");
+    return FIG(560, 318, b, "Her kullanıcı, verdiği puanlara göre bir noktadır. Öneri = sana en yakın noktadaki kişinin beğendikleri.");
+  }
+  function figPearson() {
+    const cl = [4.75, 4.5, 5, 4.25, 4], rb = [4, 3, 5, 2, 1];
+    const X = v => 60 + (v - 3.8) * 220, Y = v => 230 - v * 40; let b = "";
+    [4, 4.5, 5].forEach(v => { b += L(X(v), Y(0), X(v), Y(5.4), "gr") + T(X(v), Y(0) + 16, String(v).replace(".", ","), "t-sm t-mu"); });
+    for (let i = 1; i <= 5; i++) b += L(X(3.8), Y(i), X(5.15), Y(i), "gr") + T(X(3.8) - 8, Y(i) + 4, i, "t-sm t-mu", "end");
+    b += L(X(3.8), Y(0), X(5.15), Y(0), "ax") + L(X(3.8), Y(0), X(3.8), Y(5.4), "ax");
+    b += L(X(3.92), Y(4 * 3.92 - 15), X(5.08), Y(4 * 5.08 - 15), "ln");
+    cl.forEach((v, i) => { b += C(X(v), Y(rb[i]), 6, "pt-b"); });
+    b += T(X(4.47), 262, "Clara'nın puanı (hep 4–5 arası)", "t-sm") + VT(16, Y(2.7), "Robert'ın puanı (1–5)", "t-sm");
+    b += T(X(4.0), Y(4.6), "Hepsi tek doğru üstünde", "t-sm t-b t-acc", "start") + T(X(4.0), Y(4.6) + 18, "→ Pearson r = 1", "t-sm t-b t-acc", "start");
+    return FIG(380, 272, b, "Not şişmesi: Clara hep yüksek puan veriyor, Robert tüm ölçeği kullanıyor. Mesafeye göre uzak görünürler ama zevkleri aynı sırada; Pearson bunu yakalar.");
+  }
+
+  /* ---------- Hafta 10 ---------- */
+  const flowExcel = FLOW(["her satır için uzaklık sütunu", "uzaklığa göre sırala", "ilk k satırı al", "Başarı: ortalama · Durum: çoğunluk"], "Excel'deki akış, 6. haftadaki kNN algoritmasının aynısı.");
+
+  window.WEEK_EXTRAS = {
+    1: {
+      key: ["<b>YZ ⊃ ML ⊃ DL.</b> Makine öğrenmesi kuralı veriden öğrenir: <i>veri + cevap → kural</i>.",
+        "Etiket varsa <b>denetimli</b>: çıktı kategori ise sınıflandırma, sayı ise regresyon. Etiket yoksa <b>denetimsiz</b> (kümeleme). Ödül/ceza varsa <b>pekiştirmeli</b>.",
+        "<b>Parametreyi</b> model öğrenir (katsayılar), <b>hiperparametreyi</b> biz seçeriz (kNN'de k).",
+        "Eğitimde iyi + testte kötü = <b>aşırı öğrenme</b>. İkisinde de kötü = <b>yetersiz öğrenme</b>.",
+        "scikit-learn kalıbı hep aynı: <code>model oluştur → fit → predict</code>."],
+      exam: "Verilen senaryonun öğrenme türünü bulmak, parametre/hiperparametre ayrımı, eğitim-test başarısından aşırı öğrenme yorumu.",
+      figs: { 1: [figAI()], 4: [FLOW(["Problemi tanımla", "Veri topla", "Ön işle (H2)", "Özellik + bölme (H3)", "Model eğit (H4–6)", "Değerlendir (H7)", "İyileştir"])], 5: [figFit()] },
+      checks: { 1: [5], 2: [7, 6], 3: [1, 4], 5: [8], 6: [12], 7: [15] }
+    },
+    2: {
+      key: ["Veri tipleri: <b>nominal</b> (sırasız), <b>ordinal</b> (sıralı), <b>ayrık</b> (sayılabilir), <b>sürekli</b>.",
+        "Eksik veri: aykırı değer varsa <b>medyan</b>, yoksa ortalama, kategorikse <b>mod</b>.",
+        "Aykırı değer: <b>IQR = Q3 − Q1</b>; sınırlar Q1 − 1,5·IQR ve Q3 + 1,5·IQR.",
+        "<b>Min-Max</b> → [0, 1] (aykırıya duyarlı). <b>Z-skor</b> → ortalama 0, std 1.",
+        "Ölçekleyiciyi <b>yalnızca eğitim verisinde</b> fit et, teste sadece transform uygula."],
+      exam: "IQR sınırlarını ve aykırı değeri bulmak, Min-Max ve z-skor hesaplamak, eksik değer hangi istatistikle doldurulur.",
+      figs: { 3: [figBox()] },
+      tools: { 5: ["prep"] },
+      checks: { 1: [0, 1], 2: [3, 4], 3: [8, 14], 4: [15], 5: [6, 13], 6: [17] }
+    },
+    3: {
+      key: ["<b>Seçim</b> var olan sütunlardan seçer (filtre / sarmalayıcı / gömülü). <b>Çıkarım</b> yeni sütun üretir (PCA).",
+        "Nominal → <b>one-hot</b> (k sütun, drop_first ile k−1). Ordinal → 0, 1, 2.",
+        "<b>Eğitim</b> öğrenir, <b>doğrulama</b> ayar yapar, <b>test</b> en sonda bir kez ölçer.",
+        "k-fold: her turda 1 parça test, k−1 parça eğitim; sonuç ortalama.",
+        "Sızıntıyı önleyen sıra: <b>böl → eğitimde fit → ikisine transform</b>."],
+      exam: "One-hot sonrası sütun sayısı, fold başına eğitim/test örnek sayısı, verilen işlemin veri sızıntısı olup olmadığı.",
+      figs: { 5: [figSplit()], 6: [figKfold()], 7: [FLOW(["1. Böl (eğitim / test)", "2. fit: yalnızca eğitim", "3. transform: eğitim + test"], "Ölçekleyici, eksik değer doldurucu, kodlayıcı… hepsi için aynı sıra.")] },
+      checks: { 1: [14], 2: [0, 2], 3: [1], 4: [3, 4], 5: [9], 6: [8], 7: [10] }
+    },
+    4: {
+      key: ["<b>ŷ = b₀ + b₁x</b>; b₁ = Σ(x−x̄)(y−ȳ) / Σ(x−x̄)², b₀ = ȳ − b₁x̄.",
+        "<b>MAE</b> = ortalama |hata|, <b>MSE</b> = ortalama hata², <b>RMSE</b> = √MSE. Her zaman RMSE ≥ MAE.",
+        "<b>R² = 1 − SSE/SST</b>: 1 mükemmel, 0 ortalama kadar, negatif = ortalamadan kötü. Basit regresyonda R² = r².",
+        "Ayarlanmış R² gereksiz değişkeni cezalandırır. <b>Lasso</b> katsayıyı sıfırlar, <b>Ridge</b> küçültür."],
+      exam: "Küçük bir veriyle b₀ ve b₁ hesaplayıp tahmin yapmak; MAE, MSE, RMSE ve R² hesaplamak.",
+      figs: { 2: [figResid()] },
+      tools: { 4: ["reg"] },
+      checks: { 1: [0], 2: [2, 3], 3: [5], 4: [10, 11], 5: [16], 6: [17, 18], 7: [23], 8: [26], 9: [27, 28], 10: [29, 33] }
+    },
+    5: {
+      key: ["Adı regresyon ama bir <b>sınıflandırma</b> yöntemi: z = b₀ + b₁x, <b>P = σ(z) = 1 / (1 + e⁻ᶻ)</b>.",
+        "<b>σ(0) = 0,5</b>, yani karar sınırı z = 0. σ(2) ≈ 0,88, σ(−2) ≈ 0,12.",
+        "Eşik düşerse daha çok örnek pozitif olur: recall ↑, precision ↓.",
+        "<b>odds = p / (1 − p)</b>, logit = ln(odds) = z. Katsayı b → odds e<sup>b</sup> katına çıkar.",
+        "Log-loss ile eğitilir; karar sınırı doğrusaldır."],
+      exam: "Verilen z için olasılık ve sınıf bulmak, odds/logit hesabı, eşik değişince tahminin nasıl değiştiği.",
+      figs: { 2: [flowLogit] },
+      tools: { 3: ["sig"] },
+      checks: { 1: [0], 2: [1, 3, 4], 3: [5, 6], 4: [7, 9], 5: [12], 6: [13] }
+    },
+    6: {
+      key: ["<b>Tembel öğrenici:</b> veriyi saklar; tahminde en yakın k komşuya bakar (sınıf: oy, regresyon: ortalama).",
+        "<b>Öklid</b> = √Σ fark², <b>Manhattan</b> = Σ |fark|; Minkowski r = 1 Manhattan, r = 2 Öklid.",
+        "Küçük k → aşırı öğrenme, büyük k → yetersiz öğrenme. İkili problemde k tek; seçim doğrulama ile.",
+        "<b>Ölçekleme şart:</b> büyük ölçekli özellik mesafeyi ele geçirir.",
+        "<b>Ağırlıklı kNN:</b> w = 1/d, yakın komşunun sözü daha çok geçer."],
+      exam: "Mesafe tablosu kurup k = 1, 3, 5 için tahmin; ağırlıklı oylama; ölçeklemeden sonra en yakın komşunun değişmesi.",
+      figs: { 2: [flowKnn], 3: [figDist()], 4: [figKnn()] },
+      tools: { 4: ["knn"] },
+      checks: { 1: [0, 1], 3: [2, 3], 4: [9, 11], 5: [6, 7], 7: [19, 20, 21], 8: [23, 24], 9: [25, 26], 10: [27, 28], 11: [29], 12: [31, 32], 13: [33] }
+    },
+    7: {
+      key: ["TP / FP / FN / TN: <b>ikinci harf tahmindir</b>, ilk harf tahminin doğru mu yanlış mı olduğu.",
+        "<b>Precision</b> = TP / (TP + FP): pozitif dediklerim. <b>Recall</b> = TP / (TP + FN): gerçek pozitifler.",
+        "<b>F1</b> ikisinin harmonik ortalaması. Dengesiz veride <b>accuracy yanıltır</b>.",
+        "Kaçırmak pahalı → <b>recall</b>; yanlış alarm pahalı → <b>precision</b>.",
+        "<b>ROC</b>: x = FPR, y = TPR. AUC 1 mükemmel, 0,5 rastgele."],
+      exam: "Karışıklık matrisinden tüm metrikleri hesaplamak ve senaryoya göre (kanser, spam) doğru metriği seçmek.",
+      figs: { 2: [figCm()], 4: [figRoc()] },
+      tools: { 2: ["cm"] },
+      checks: { 1: [0, 1], 2: [8, 9], 3: [10, 11], 4: [14, 15] }
+    },
+    8: {
+      key: ["<b>P(A|B) = P(A,B) / P(B)</b>; Bayes: P(A|B) = P(B|A)·P(A) / P(B). Paydaya hep koşulun toplamı gelir.",
+        "Bayes ağı = <b>DAG</b> + her düğüme P(düğüm | ebeveynler). Zincir kuralı: birleşik = ∏ P(Vᵢ | ebeveynler).",
+        "<b>Seri ve ıraksayan:</b> ortadaki biliniyorsa bloke. <b>Yakınsayan:</b> ortadaki ve soyu bilinmiyorsa bloke.",
+        "<b>d-ayrışma:</b> tüm yollar bloke ise ayrışmış (koşullu bağımsız); bir yol açıksa bağlantılı.",
+        "<b>Naive Bayes:</b> P(C)·∏P(xᵢ|C) en büyük olan sınıf seçilir."],
+      exam: "d-ayrışma sorusu (yolları tek tek bul, her ara düğümü kontrol et), Watson-Holmes ve zincir kuralı hesapları.",
+      figs: { 4: [{ html: figChain(), after: "Zincir kuralı örneği" }], 5: [figConn()], 6: [{ html: figDiamond(), after: "Küçük örnek" }], 7: [figWH()], 8: [figNB()] },
+      tools: { 3: ["bayes"], 6: ["dsep"] },
+      checks: { 1: [2, 1], 2: [3, 4, 5, 6], 3: [8, 9], 4: [11, 13, 18], 5: [21, 22, 24], 6: [34, 36, 40], 7: [49, 50], 8: [10] }
+    },
+    9: {
+      key: ["<b>İşbirlikçi filtreleme:</b> sana benzeyen kullanıcıların beğendiklerini önerir.",
+        "<b>Mesafe</b> (Manhattan, Öklid, Minkowski) küçükse benzer; <b>Pearson</b> ve <b>kosinüs</b> büyükse benzer.",
+        "Yalnızca <b>ortak puanlanan</b> öğeler kullanılır; boşluklara 0 yazmak yanıltır.",
+        "Not şişmesi → <b>Pearson</b>; seyrek veri → <b>kosinüs</b>; yoğun veri → Öklid / Manhattan.",
+        "Tek komşu yerine <b>k komşu</b>; puanlar Pearson'a göre ağırlıklı ortalanır."],
+      exam: "İki kullanıcı arasında mesafe / Pearson / kosinüs hesabı, hangi ölçünün ne zaman kullanıldığı, k komşuyla tahmini puan.",
+      figs: { 2: [figBooks()], 7: [figPearson()] },
+      tools: { 10: ["pdf"] },
+      checks: { 1: [0], 2: [1, 5], 3: [8, 9], 4: [13, 14], 5: [17], 6: [20], 7: [22, 26], 8: [28, 31], 9: [33, 39], 10: [46], 11: [52] }
+    },
+    10: {
+      key: ["Excel akışı: uzaklık sütunu → sırala → ilk k satır → <b>ortalama</b> (Başarı) veya <b>çoğunluk</b> (Durum).",
+        "k değişince regresyon tahmini değişir (k = 3: 43, k = 5: 39, k = 7: 41,43); sınıf Kaldı olarak kalır.",
+        "Standartlaştırmada μ ve σ <b>yalnızca eğitim</b> satırlarından; test satırı eğitimde kullanılmaz.",
+        "<b>Naive Bayes:</b> önsel × koşullu olasılıklar. Laplace (+1 / +2) sıfır olasılığı önler; skorlar normalize edilir."],
+      exam: "Verilen komşulardan farklı k için tahmin, ağırlıklı kNN, Laplace'lı koşullu olasılık ve normalize edilmiş NB sonucu.",
+      figs: { 2: [flowExcel] },
+      tools: { 4: ["xl"], 9: ["nb"] },
+      checks: { 1: [0, 1], 2: [12], 3: [2, 3], 4: [4, 5, 6], 5: [13, 14], 6: [18], 7: [16, 19], 8: [21, 23], 9: [26, 27, 35], 10: [36] }
+    }
+  };
+})();
+
+/* ===== extras2.js ===== */
+/* Klasik vize soruları (q.c = 1, q.s = konunun anlatıldığı bölüm), eksik konu anlatımları (teach),
+   sezgi/benzetme kutuları (intuit), haftalar arası bağlantılar (links), kartlar (cards), karşılaştırmalar ve karar ağaçları. */
+(function () {
+  const X = window.WEEK_EXTRAS, W = id => WEEKS.find(w => w.id === id);
+  const TEACH = (title, html) => `<div class="teach"><div class="teachh">📌 ${title}</div>${html}</div>`;
+  const SEZ = html => `<div class="intuit"><b>💡 Sezgi:</b> ${html}</div>`;
+
+  /* ---------- eksik konu anlatımları: klasik soruların cevabı sitede mutlaka anlatılmış olsun ---------- */
+  const teach = {
+    1: { 5: TEACH("Sınavda sık sorulur: aşırı öğrenme nasıl önlenir?", `
+<ul>
+  <li><b>Daha fazla eğitim verisi</b> toplamak (ezberlemek zorlaşır).</li>
+  <li><b>Daha basit model</b> seçmek (ör. kNN'de daha büyük k, polinom regresyonda daha düşük derece).</li>
+  <li><b>Düzenlileştirme</b> (L1 / Lasso, L2 / Ridge): büyük katsayıları cezalandırır (4. hafta).</li>
+  <li><b>Gereksiz özellikleri çıkarmak</b> (özellik seçimi, 3. hafta).</li>
+  <li><b>Çapraz doğrulama</b> ile hiperparametre seçmek; test kümesini ayar için kullanmamak (3. hafta).</li>
+  <li><b>Erken durdurma:</b> yinelemeli eğitimde doğrulama hatası artmaya başlayınca eğitimi durdurmak.</li>
+</ul>
+<p><b>Yanlılık–varyans dengesi (bias–variance trade-off):</b> <b>Yanlılık</b>, modelin fazla basit olmasından gelen sistematik hatadır → yetersiz öğrenme. <b>Varyans</b>, modelin eğitim verisindeki küçük değişikliklere aşırı duyarlı olmasıdır → aşırı öğrenme. Model karmaşıklaştıkça yanlılık azalır, varyans artar. Amaç, toplam test hatasının en küçük olduğu orta noktayı bulmaktır (ör. kNN'de uygun k).</p>
+<table><tr><th></th><th>Yetersiz öğrenme</th><th>Aşırı öğrenme</th></tr>
+<tr><td>Hata kaynağı</td><td>Yüksek yanlılık (bias)</td><td>Yüksek varyans</td></tr>
+<tr><td>Eğitim / test başarısı</td><td>İkisi de düşük</td><td>Eğitim yüksek, test düşük</td></tr>
+<tr><td>Çözüm</td><td>Daha karmaşık model, daha iyi özellikler, daha uzun eğitim</td><td>Daha çok veri, daha basit model, düzenlileştirme, özellik seçimi</td></tr></table>`) },
+    2: { 4: TEACH("Sınavda sık sorulur: veri ön işleme neden gereklidir?", `
+<ul>
+  <li>Gerçek veri <b>kirlidir</b>: eksik değerler, tekrarlı kayıtlar, tutarsız yazımlar, yanlış tipler ve aykırı değerler içerir.</li>
+  <li>Çoğu algoritma <b>eksik değerle çalışmaz</b> ve <b>sayısal girdi</b> ister → eksikler doldurulur, kategorik sütunlar kodlanır.</li>
+  <li>Özelliklerin ölçekleri farklıysa mesafe ve gradyan tabanlı modeller (kNN, lojistik regresyon) bozulur → <b>ölçekleme</b>.</li>
+  <li><b>Çöp girerse çöp çıkar</b> (garbage in, garbage out): modelin kalitesi verinin kalitesini aşamaz.</li>
+</ul>
+<p><b>Tipik sıra:</b> veri toplama → birleştirme → temizleme (tekrar, tutarsız yazım, tip) → eksik değerler → aykırı değerler → dönüştürme (kodlama, ölçekleme) → eğitim/test ayrımı. (Ölçekleme ve doldurma istatistikleri yalnızca eğitim verisinden hesaplanır.)</p>`) },
+    3: { 6: TEACH("Sınavda sık sorulur: neden tek bir bölme yerine çapraz doğrulama?", `
+<ul>
+  <li>Tek bir eğitim/test bölmesinde sonuç, <b>hangi örneklerin teste düştüğüne</b> (şansa) bağlıdır.</li>
+  <li>k-fold'da <b>her örnek tam bir kez test</b>, k−1 kez eğitim kümesinde yer alır; veri israf edilmez (küçük veride önemli).</li>
+  <li>k skorun <b>ortalaması</b> (ve yayılımı) daha güvenilir bir başarı tahmini verir; hiperparametre (ör. kNN'de k) seçiminde kullanılır.</li>
+  <li><b>Dezavantaj:</b> model k kez eğitilir, hesap maliyeti artar.</li>
+  <li><b>Leave-one-out (LOO):</b> k = n olan özel durum. <b>Stratified k-fold:</b> her parçada sınıf oranlarını korur (dengesiz veride).</li>
+</ul>`) },
+    5: { 1: TEACH("Sınavda sık sorulur: doğrusal regresyon neden sınıflandırmada kullanılmaz?", `
+<ul>
+  <li>Doğrusal regresyonun çıktısı (−∞, +∞) arasındadır; 1,3 veya −0,2 gibi <b>olasılık olamayacak değerler</b> üretir.</li>
+  <li>Uçtaki tek bir örnek doğruyu ve dolayısıyla <b>0,5 eşiğinin düştüğü noktayı kaydırır</b>; sınıflandırma bozulur.</li>
+  <li>0/1 hedefte regresyonun hata varsayımları (normal dağılım, sabit varyans) sağlanmaz.</li>
+</ul>
+<p>Lojistik regresyon doğrusal skoru <b>sigmoid</b> ile (0, 1) aralığına sıkıştırır, çıktıyı olasılık olarak yorumlar ve <b>log-loss</b> ile eğitilir.</p>`) },
+    6: { 5: TEACH("Sınavda sık sorulur: kNN'in avantaj ve dezavantajları", `
+<table><tr><th>Avantajlar</th><th>Dezavantajlar</th></tr>
+<tr><td>Basit ve anlaşılır; eğitim aşaması yok denecek kadar hızlı</td><td>Tahmin yavaş: her sorguda tüm veriye uzaklık (O(n·d)); tüm veri bellekte tutulur</td></tr>
+<tr><td>Veri dağılımı varsaymaz (parametrik değil); doğrusal olmayan, esnek karar sınırları çizer</td><td>Ölçeklemeye, alakasız özelliklere ve boyutun lanetine duyarlı</td></tr>
+<tr><td>Hem sınıflandırma (oy) hem regresyon (ortalama) yapar</td><td>k ve mesafe ölçüsü seçilmek zorunda</td></tr>
+<tr><td>Yeni veri eklemek kolay: sadece kaydedilir</td><td>Dengesiz sınıflarda çoğunluk sınıfı oylamayı kazanır; gürültüye duyarlı (küçük k)</td></tr></table>`) },
+    10: { 10: TEACH("Sınavda sık sorulur: kNN ile Naive Bayes'in karşılaştırılması", `
+<table><tr><th></th><th>kNN</th><th>Naive Bayes</th></tr>
+<tr><td>Temel fikir</td><td>Mesafe: en yakın k komşunun oyu / ortalaması</td><td>Olasılık: P(C)·∏P(xᵢ | C) en büyük sınıf (Bayes teoremi)</td></tr>
+<tr><td>Eğitim</td><td>Yok; veri saklanır (tembel öğrenici)</td><td>Sayımlardan önsel ve koşullu olasılık tabloları çıkarılır</td></tr>
+<tr><td>Tahmin hızı</td><td>Yavaş: her sorguda tüm veriye uzaklık</td><td>Çok hızlı: birkaç çarpma</td></tr>
+<tr><td>Uygun veri</td><td>Sayısal, ölçeklenmiş özellikler</td><td>Kategorik özellikler (Düşük / Yüksek)</td></tr>
+<tr><td>Görev</td><td>Sınıflandırma ve regresyon</td><td>Sınıflandırma</td></tr>
+<tr><td>Varsayım / zayıf yan</td><td>Ölçeğe ve boyutun lanetine duyarlı; k seçimi gerekir</td><td>Özellikler sınıf verildiğinde bağımsız (naive); görülmeyen değer için Laplace gerekir</td></tr></table>`) }
+  };
+
+  /* ---------- sezgi / benzetme kutuları ---------- */
+  const intuit = {
+    1: { 1: SEZ("Klasik programlamada tarifi sen yazarsın. Makine öğrenmesinde bilgisayara yüzlerce yemek ve adlarını verirsin; tarifi (kuralı) kendisi çıkarır."),
+         5: SEZ("Aşırı öğrenme, çıkmış soruların cevaplarını ezberleyen öğrenci gibidir: aynı soru gelirse tam puan, biraz farklı soru gelirse çuvallar. Yetersiz öğrenme ise hiç çalışmayıp her soruya “C” diyen öğrencidir.") },
+    2: { 2: SEZ("Odaya bir milyarder girince odadakilerin <b>ortalama</b> geliri uçar, <b>medyan</b> geliri kıpırdamaz. Bu yüzden aykırı değer varsa medyan kullanılır."),
+         5: SEZ("Yaşı yılla, maaşı TL ile ölçersen mesafe hesabında maaş fil, yaş karınca olur. Ölçekleme ikisini aynı cetvele koyar.") },
+    3: { 4: SEZ("Şehirlere 0, 1, 2 vermek modele “İzmir = 2 × Ankara” ya da “İstanbul ile İzmir arası en uzak” gibi anlamsız şeyler söyler. One-hot her şehre ayrı bir evet/hayır lambası verir."),
+         5: SEZ("Eğitim kümesi ders çalışmak, doğrulama kümesi deneme sınavları, test kümesi gerçek vizedir. Vize sorularını önceden görürsen notun gerçek bilgini göstermez."),
+         7: SEZ("Veri sızıntısı, deneme sınavına cevap anahtarına bakarak girmek gibidir: puan yüksek çıkar ama gerçek sınavda işe yaramaz.") },
+    4: { 2: SEZ("Noktalarla doğru arasına yaylar bağladığını düşün: her yay, artığın karesi kadar çekiyor. Doğru, toplam çekme kuvvetinin en küçük olduğu yere oturur. En küçük kareler budur."),
+         4: SEZ("MAE “ortalama kaç puan şaşıyorum” sorusunun cevabıdır. MSE/RMSE büyük hataları karesini alarak büyüteç altına koyar: bir kez çok kötü şaşmak, birçok küçük şaşmadan pahalıya gelir.") },
+    5: { 2: SEZ("Sigmoid bir ışık dimmeri gibidir: z büyüdükçe lamba parlar ama asla %100'ü geçmez; z küçüldükçe söner ama asla tam %0 olmaz. z = 0'da tam ortada, %50'dedir."),
+         4: SEZ("Odds bahis dilidir: p = 0,8 ise odds = 4, yani “4'e 1” kazanma şansı.") },
+    6: { 1: SEZ("Yeni taşındığın mahallede hangi takımı tutacağını en yakın komşularına bakarak tahmin etmek: kNN tam olarak bu."),
+         4: SEZ("k = 1, tek bir arkadaşına sorup karar vermektir; o yanılırsa sen de yanılırsın. k çok büyükse bütün şehre sorarsın; çoğunluk her soruya aynı cevabı verir.") },
+    7: { 2: SEZ("Göle ağ atıyorsun. <b>Recall:</b> göldeki balıkların ne kadarını yakaladın? <b>Precision:</b> ağdan çıkanların ne kadarı gerçekten balık (gerisi ayakkabı, çöp)? Ağı büyütürsen recall artar ama ağa çöp de dolar.") },
+    8: { 3: SEZ("1000 kişide 10 hasta olsun. Test 9 hastayı yakalar ama 990 sağlamın yaklaşık 50'sine de yanlış alarm verir. Pozitif çıkan ~59 kişinin sadece 9'u hasta: %15. Nadir olaylarda pozitiflerin çoğu yanlış alarmdır."),
+         5: SEZ("Bilgiyi borulardan akan su gibi düşün. Seri ve ıraksayan bağlantıda ortadaki vana normalde açıktır; o düğüm <b>bilinince kapanır</b>. Yakınsayanda vana normalde kapalıdır; ortadaki düğüm ya da altındaki bir düğüm <b>bilinince açılır</b>."),
+         8: SEZ("Naive Bayes, üyelerinin birbiriyle hiç konuşmadan oy verdiği bir jüri gibidir: her özellik (kelime) sınıfa kendi kanıtını getirir, hepsi çarpılır.") },
+    9: { 6: SEZ("Bir arkadaşın her filme 4–5 verir, diğeri 1–5 arası; ama ikisinin de en sevdiği film aynı. Pearson “kaç puan verdin” diye değil “aynı yöne mi gidiyorsunuz” diye bakar."),
+         8: SEZ("Kosinüs iki okun arasındaki açıya bakar: okların uzunluğu (kaç şarkı dinlediğin) değil, yönü (zevkin) önemlidir.") },
+    10: { 9: SEZ("Hiç görmediğin bir değer için “imkânsız (0)” demek, tüm çarpımı sıfırlar. Laplace düzeltmesi her değere bir “bonus sayım” verir; hiçbir olasılık tam sıfır olmaz.") }
+  };
+
+  /* ---------- haftalar arası bağlantılar ---------- */
+  const links = {
+    1: [["Ölçekleme ve ön işleme", "2/5"], ["Eğitim / test ayrımı", "3/5"], ["Aşırı öğrenme kNN'de: k seçimi", "6/4"], ["Değerlendirme metrikleri", "7/2"]],
+    2: [["Ölçekleyici neden yalnız eğitimde fit edilir (sızıntı)", "3/7"], ["Ölçekleme kNN tahminini nasıl değiştirir", "6/8"], ["Excel'de standartlaştırma", "10/7"]],
+    3: [["Ölçekleme formülleri", "2/5"], ["k seçimi için doğrulama tablosu", "6/11"], ["Leave-one-out", "10/8"], ["Lasso ile gömülü özellik seçimi", "4/10"]],
+    4: [["kNN regresyonu", "6/10"], ["Gradyan inişi lojistik regresyonda", "5/5"], ["Pearson korelasyonu öneri sistemlerinde", "9/7"], ["Aşırı öğrenme ve yanlılık–varyans", "1/5"]],
+    5: [["Eşik ↔ precision/recall dengesi", "7/3"], ["ROC: eşiği kaydırmak", "7/4"], ["Özellik ölçekleme", "2/5"], ["Doğrusal regresyon", "4/2"]],
+    6: [["Ölçekleme formülleri", "2/5"], ["Öneri sistemleri: aynı fikir", "9/10"], ["Excel'de kNN", "10/2"], ["Yanlılık–varyans", "1/5"]],
+    7: [["Eşik değeri", "5/3"], ["Tanı testi: duyarlılık Bayes'te", "8/3"], ["Dengesiz veri ve stratify", "3/5"]],
+    8: [["Recall = duyarlılık = P(+ | hasta)", "7/2"], ["Naive Bayes Excel'de", "10/9"]],
+    9: [["Mesafe ölçüleri ve kNN", "6/3"], ["Pearson r ve regresyon", "4/7"], ["Ölçekleme", "2/5"]],
+    10: [["kNN teorisi", "6/1"], ["Naive Bayes teorisi", "8/8"], ["k-fold ve leave-one-out", "3/6"], ["Ölçekleme", "2/5"]]
+  };
+
+  /* ---------- karşılaştırma kartı / karar ağacı kısayolları ---------- */
+  const cmp = {
+    1: ["sinif-regresyon", "param-hiper", "over-under", "agac-gorev"], 2: ["minmax-z", "ort-medyan-mod", "agac-eksik", "agac-olcek"],
+    3: ["secim-cikarim", "onehot-ordinal", "egitim-dogrulama-test", "agac-kodlama"], 4: ["hata-olculeri", "l1-l2", "sinif-regresyon"],
+    5: ["modeller", "precision-recall"], 6: ["mesafeler", "over-under", "modeller"], 7: ["precision-recall", "tip1-tip2", "agac-metrik"],
+    8: ["baglantilar", "agac-dsep"], 9: ["mesafeler", "agac-benzerlik"], 10: ["modeller", "mesafeler"]
+  };
+
+  /* ---------- sembol ipuçları (formül kutularında) ---------- */
+  const gloss = {
+    2: { "σ": ["", "standart sapma"], "z": ["sym-acc", "z-skor: değer ortalamadan kaç standart sapma uzakta"] },
+    5: { "σ": ["sym-acc", "sigmoid fonksiyonu: 1 / (1 + e⁻ᶻ)"], "z": ["sym-acc", "doğrusal skor: b₀ + b₁x₁ + …"] }
+  };
+
+  /* ---------- klasik vize soruları ---------- */
+  const O = (s, q, a) => ({ t: "open", s, q, a });
+  const classic = {
+    1: [
+      O(1, "Makine öğrenmesini tanımlayınız. Klasik programlamadan farkı nedir?", "Açıkça kural yazmadan, <b>verilerden örüntü öğrenen</b> ve bu öğrendiğiyle yeni veriler için tahmin yapan algoritmalardır. Klasik programlamada <b>veri + kural → cevap</b> (kuralı programcı yazar); makine öğrenmesinde <b>veri + cevap → kural (model)</b> (kural veriden öğrenilir)."),
+      O(3, "Denetimli, denetimsiz ve pekiştirmeli öğrenmeyi karşılaştırıp her birine bir örnek veriniz.", "<b>Denetimli:</b> etiketli veriyle girdiden çıktıyı tahmin etmeyi öğrenir (spam tespiti, ev fiyatı tahmini). <b>Denetimsiz:</b> etiket yoktur, verideki gizli yapıyı bulur (müşteri segmentasyonu / kümeleme, PCA). <b>Pekiştirmeli:</b> ajan ortamla etkileşir, ödül ve cezaya göre en iyi davranışı öğrenir (oyun oynayan ajan, robot, otonom araç). Ara tür: <b>yarı denetimli</b> (az etiketli + çok etiketsiz veri)."),
+      O(3, "Sınıflandırma ile regresyon arasındaki fark nedir? Birer örnek veriniz.", "İkisi de denetimli öğrenmedir. <b>Sınıflandırmada</b> çıktı bir <b>kategoridir</b> (spam / değil, hasta / sağlam). <b>Regresyonda</b> çıktı <b>sürekli bir sayıdır</b> (ev fiyatı, yarınki sıcaklık)."),
+      O(2, "Parametre ile hiperparametre arasındaki farkı örnekle açıklayınız.", "<b>Parametre</b>, eğitim sırasında veriden <u>öğrenilen</u> değerdir (regresyon katsayıları b₀, b₁). <b>Hiperparametre</b>, eğitimden <u>önce bizim seçtiğimiz</u> ayardır (kNN'de k); doğrulama kümesi veya çapraz doğrulamayla ayarlanır."),
+      O(5, "Aşırı öğrenme (overfitting) nedir? Nasıl anlaşılır ve hangi yöntemlerle önlenir?", "Modelin eğitim verisini gürültüsüyle birlikte <b>ezberlemesidir</b>. <b>Anlaşılması:</b> eğitim başarısı çok yüksek, test/doğrulama başarısı belirgin biçimde düşük. <b>Önleme:</b> daha fazla veri, daha basit model, düzenlileştirme (L1/L2), gereksiz özellikleri çıkarma, çapraz doğrulamayla hiperparametre seçimi, erken durdurma."),
+      O(5, "Yanlılık–varyans (bias–variance) dengesini açıklayınız.", "<b>Yüksek yanlılık:</b> model çok basit, sistematik hata yapar → yetersiz öğrenme (eğitim ve test kötü). <b>Yüksek varyans:</b> model eğitim verisine aşırı duyarlı → aşırı öğrenme (eğitim iyi, test kötü). Karmaşıklık arttıkça yanlılık azalır, varyans artar; amaç toplam test hatasını en aza indiren dengeyi bulmaktır (ör. kNN'de uygun k)."),
+      O(4, "Bir makine öğrenmesi projesinin adımlarını sıralayınız.", "1) Problemi tanımla → 2) Veri topla → 3) Veriyi ön işle (temizle, eksik/aykırı değer, ölçekle) → 4) Özellik mühendisliği ve eğitim/test ayrımı → 5) Model seç ve eğit → 6) Değerlendir → 7) İyileştir / canlıya al."),
+      { t: "mcp", s: 5, q: "Bir model eğitimde %72, testte %70 doğruluk alıyor; aynı problemde %95 civarı başarı mümkün. En olası durum nedir?", o: ["Yetersiz öğrenme (model çok basit)", "Aşırı öğrenme", "Veri sızıntısı", "Model mükemmel"], a: 0, e: "Eğitim ve test birbirine yakın ama ikisi de düşük: model veriyi yeterince öğrenemiyor (yüksek yanlılık)." },
+      { t: "mcp", s: 5, q: "Aşağıdakilerden hangisi aşırı öğrenmeyi AZALTMAZ?", o: ["Modeli daha karmaşık yapmak (ör. kNN'de k = 1)", "Daha fazla eğitim verisi toplamak", "Düzenlileştirme (L1/L2) eklemek", "Gereksiz özellikleri çıkarmak"], a: 0, e: "Karmaşıklığı artırmak varyansı, dolayısıyla aşırı öğrenmeyi artırır." }
+    ],
+    2: [
+      O(4, "Veri ön işleme neden gereklidir? Temel adımlarını yazınız.", "Gerçek veri eksik, tutarsız, tekrarlı ve aykırı değerli olabilir; çoğu algoritma eksik değerle çalışmaz, sayısal girdi ister ve ölçekten etkilenir. “Çöp girerse çöp çıkar.” <b>Adımlar:</b> toplama/birleştirme → temizleme (tekrar, tutarsız yazım, yanlış tip) → eksik değerler → aykırı değerler → dönüştürme (kodlama, ölçekleme) → eğitim/test ayrımı."),
+      O(2, "Eksik veriyle başa çıkma yöntemlerini yazınız. Hangisi ne zaman kullanılır?", "<b>Satır silme:</b> eksik oranı çok küçükse. <b>Sütun silme:</b> sütunun çoğu boşsa. <b>Ortalama:</b> sayısal, aykırı değer yok, simetrik. <b>Medyan:</b> sayısal ve aykırı değer var (medyan dirençli). <b>Mod:</b> kategorik değişken. <b>Model ile doldurma</b> (kNN imputer, regresyon): diğer özelliklerden tahmin edilebiliyorsa."),
+      O(3, "Aykırı değer nedir? Nasıl tespit edilir? Aykırı değerler her zaman silinmeli midir?", "Verinin geri kalanından belirgin biçimde uzak değerlerdir. <b>IQR yöntemi:</b> IQR = Q3 − Q1; Q1 − 1,5·IQR altı ve Q3 + 1,5·IQR üstü aykırıdır. <b>Z-skor:</b> |z| > 3. Her zaman silinmez: ölçüm hatası olabilir ama gerçek ve nadir bir durum da olabilir (çok yüksek gelir); nedeni incelenmelidir."),
+      O(5, "Normalizasyon (Min-Max) ile standardizasyon (z-skor) arasındaki fark nedir?", "<b>Min-Max:</b> x' = (x − min)/(max − min), değerleri [0, 1] aralığına getirir; aykırı değere çok duyarlıdır (min/max kayar). <b>Standardizasyon:</b> z = (x − μ)/σ, ortalamayı 0, standart sapmayı 1 yapar; aralık sınırsızdır, aykırı değerden daha az etkilenir. İkisinde de ölçekleyici yalnızca eğitim verisinde fit edilir."),
+      { t: "num", s: 5, q: "Değerler 20, 35, 50, 80. x = 35'in Min-Max normalizasyonu kaçtır?", a: 0.25, tol: 0.001, e: "(35 − 20)/(80 − 20) = 15/60 = 0,25." },
+      { t: "num", s: 5, q: "Ortalaması 50, standart sapması 10 olan bir özellikte x = 35'in z-skoru kaçtır?", a: -1.5, tol: 0.001, e: "z = (35 − 50)/10 = −1,5 (ortalamanın 1,5 std altında)." },
+      { t: "num", s: 3, q: "Veri: 2, 4, 5, 7, 8, 9, 11, 40. Q1 = 4,75 ve Q3 = 9,5'tir. IQR yöntemine göre ÜST sınır kaçtır? (3 ondalık)", a: 16.625, tol: 0.002, e: "IQR = 9,5 − 4,75 = 4,75; üst sınır = 9,5 + 1,5·4,75 = 16,625." },
+      { t: "mcp", s: 3, q: "Aynı veride (üst sınır 16,625; alt sınır −2,375) hangi değer aykırıdır?", o: ["40", "11", "2", "Hiçbiri"], a: 0, e: "Yalnızca 40, üst sınırın üzerinde." },
+      { t: "mcp", s: 1, q: "'Müşteri memnuniyeti: 1–5 yıldız' değişkeni hangi veri tipidir?", o: ["Ordinal (sıralı kategorik)", "Nominal", "Sürekli", "Oran ölçeği"], a: 0, e: "Kategoriler arasında doğal bir sıra var ama yıldızlar arası farkın eşit olduğu garanti değil: ordinal." }
+    ],
+    3: [
+      O(3, "Özellik seçimi ile özellik çıkarımı arasındaki fark nedir? Birer örnek veriniz.", "<b>Seçim:</b> mevcut özelliklerden en faydalı olanları tutar, yeni özellik üretmez (korelasyonla filtreleme, RFE, Lasso). <b>Çıkarım:</b> mevcut özelliklerden yeni (dönüştürülmüş) özellikler türetir, genelde boyut azaltmak için (PCA)."),
+      O(2, "Filtre, sarmalayıcı (wrapper) ve gömülü (embedded) özellik seçim yöntemlerini karşılaştırınız.", "<b>Filtre:</b> modelden bağımsız, istatistiksel skorla seçer (korelasyon, ki-kare, varyans eşiği); hızlıdır. <b>Sarmalayıcı:</b> farklı özellik altkümelerini model üzerinde dener (ileri seçim, geri eleme, RFE); yavaştır ama genelde daha iyidir. <b>Gömülü:</b> seçim model eğitimi sırasında olur (Lasso / L1, ağaçların özellik önemi)."),
+      O(4, "One-hot kodlama nedir? Nominal bir değişkene neden 0, 1, 2 gibi etiket kodlaması uygulanmaz?", "Her kategori için ayrı bir 0/1 sütunu oluşturmaktır (Renk → Renk_Kırmızı, Renk_Mavi, Renk_Yeşil). Nominal değişkene 0, 1, 2 verilirse model kategoriler arasında olmayan bir <b>sıralama ve mesafe</b> öğrenir (Yeşil > Mavi > Kırmızı). Sıralı (ordinal) değişkenlerde ise 0, 1, 2 kodlaması uygundur. k kategori için drop_first ile k−1 sütun yeterlidir (dummy tuzağı)."),
+      O(5, "Veri neden eğitim, doğrulama ve test kümelerine ayrılır?", "<b>Eğitim</b> kümesinde model parametrelerini öğrenir. <b>Doğrulama</b> kümesiyle hiperparametre ayarı ve model seçimi yapılır. <b>Test</b> kümesi, modelin hiç görmediği veride nihai başarısını ölçmek için en sonda bir kez kullanılır. Ayırmazsak, ezberleyen model de yüksek skor alır ve başarı olduğundan iyi görünür."),
+      O(6, "k-katlı çapraz doğrulamayı açıklayınız. Avantaj ve dezavantajı nedir?", "Veri k eşit parçaya bölünür; her turda 1 parça test, kalan k−1 parça eğitim olur; k tur sonunda skorların ortalaması alınır. <b>Avantaj:</b> sonuç tek bir rastgele bölmenin şansına bağlı kalmaz, her örnek hem eğitimde hem testte kullanılır, küçük veride güvenilir tahmin verir. <b>Dezavantaj:</b> model k kez eğitilir (maliyet)."),
+      O(7, "Veri sızıntısı (data leakage) nedir? İki örnek veriniz, nasıl önlenir?", "Test verisine ait bilginin eğitime karışmasıdır; başarı olduğundan yüksek görünür. <b>Örnekler:</b> (1) ölçekleyiciyi veya eksik değer doldurucuyu veriyi bölmeden önce tüm veride fit etmek, (2) hedeften türetilmiş bir özelliği girdiye koymak. <b>Önleme:</b> önce böl → yalnızca eğitimde fit → eğitim ve teste transform; test kümesini ayar için kullanma."),
+      { t: "num", s: 4, q: "'Renk' sütununda 6 farklı kategori var. drop_first=True ile one-hot kodlanınca kaç sütun oluşur?", a: 5, tol: 0.01, e: "k − 1 = 5." },
+      { t: "num", s: 6, q: "500 örnek 10-katlı çapraz doğrulamayla değerlendiriliyor. Her turda test parçasında kaç örnek vardır?", a: 50, tol: 0.01, e: "500 / 10 = 50 (eğitimde 450)." }
+    ],
+    4: [
+      O(2, "En küçük kareler (OLS) yöntemini açıklayınız.", "Regresyon doğrusunu, <b>artıkların (y − ŷ) karelerinin toplamını en küçük</b> yapacak şekilde bulan yöntemdir. Basit regresyonda b₁ = Σ(x − x̄)(y − ȳ) / Σ(x − x̄)², b₀ = ȳ − b₁x̄. Bulunan doğru her zaman (x̄, ȳ) noktasından geçer ve artıkların toplamı 0'dır."),
+      { t: "num", s: 2, q: "x = [1, 2, 3], y = [2, 3, 5]. En küçük kareler eğimi b1 kaçtır?", a: 1.5, tol: 0.001, e: "x̄ = 2, ȳ = 3,333. Σ(x−x̄)(y−ȳ) = (−1)(−1,333) + 0 + (1)(1,667) = 3; Σ(x−x̄)² = 2; b1 = 3/2 = 1,5." },
+      { t: "num", s: 2, q: "Aynı veri için (ȳ ≈ 3,333, x̄ = 2, b1 = 1,5) kesim b0 kaçtır? (3 ondalık)", a: 0.333, tol: 0.002, e: "b0 = 3,333 − 1,5·2 = 0,333." },
+      { t: "num", s: 2, q: "Aynı modelle (ŷ = 0,333 + 1,5x) x = 4 için tahmin kaçtır? (2 ondalık)", a: 6.33, tol: 0.011, e: "0,333 + 6 = 6,333." },
+      { t: "num", s: 4, q: "Gerçek y = [10, 12, 15], tahmin ŷ = [11, 12, 13]. RMSE kaçtır? (3 ondalık)", a: 1.291, tol: 0.002, e: "Hatalar 1, 0, 2 → MSE = (1 + 0 + 4)/3 = 1,667 → RMSE = √1,667 ≈ 1,291. (MAE = 1.)" },
+      O(4, "R² nasıl yorumlanır? R² = 0,85 ne anlama gelir?", "R² = 1 − SSE/SST, modelin hedef değişkendeki değişimin (varyansın) ne kadarını açıkladığıdır. R² = 0,85: değişimin <b>%85'i</b> model tarafından açıklanıyor. R² = 1 mükemmel, 0 yalnızca ortalamayı tahmin etmek kadar, negatif ise ortalamadan bile kötü demektir."),
+      O(4, "MAE ile RMSE arasındaki fark nedir? Hangisi aykırı değerlere daha duyarlıdır?", "MAE hataların mutlak değerlerinin ortalamasıdır: “ortalama kaç birim yanılıyoruz”. RMSE, hata karelerinin ortalamasının köküdür; kare alındığı için büyük hataları orantısız cezalandırır, bu yüzden <b>aykırı değerlere RMSE daha duyarlıdır</b>. İkisi de hedefle aynı birimdedir ve her zaman RMSE ≥ MAE."),
+      O(3, "Basit ve çoklu doğrusal regresyon arasındaki fark nedir? Doğrusal regresyonun varsayımlarını yazınız.", "Basit regresyonda tek bağımsız değişken (ŷ = b₀ + b₁x), çoklu regresyonda birden fazla (ŷ = b₀ + b₁x₁ + … + bₚxₚ) vardır; çokluda her katsayı, diğerleri sabitken o değişkenin etkisidir. <b>Varsayımlar:</b> doğrusallık, hataların bağımsızlığı, sabit varyans, hataların normal dağılımı (ayrıca bağımsız değişkenler arasında güçlü çoklu doğrusal bağlantı olmamalı)."),
+      O(10, "Ridge (L2) ve Lasso (L1) düzenlileştirme arasındaki fark nedir?", "İkisi de katsayıları küçülterek aşırı öğrenmeyi azaltır. <b>Lasso (L1)</b> bazı katsayıları tam <b>sıfıra</b> indirebilir, yani özellik seçimi de yapar. <b>Ridge (L2)</b> katsayıları küçültür ama sıfırlamaz.")
+    ],
+    5: [
+      O(1, "Lojistik regresyon adında 'regresyon' geçmesine rağmen neden bir sınıflandırma yöntemidir? Doğrusal regresyon sınıflandırmada neden uygun değildir?", "Çıktısı bir <b>sınıfa ait olma olasılığıdır</b>; bu olasılık eşikle karşılaştırılarak sınıf kararı verilir. 'Regresyon' adı, log-odds'u doğrusal modellemesinden gelir. Doğrusal regresyon (−∞, +∞) çıktı ürettiği için olasılık olarak yorumlanamaz ve uçtaki örnekler doğruyu (ve eşiğin düştüğü noktayı) kaydırır. Lojistik regresyon sigmoidle çıktıyı (0, 1) aralığına sıkıştırır."),
+      O(2, "Sigmoid fonksiyonunu yazınız ve özelliklerini açıklayınız.", "σ(z) = 1 / (1 + e⁻ᶻ). Çıktısı her zaman (0, 1) aralığındadır, S şeklinde ve monoton artandır. σ(0) = 0,5; z → +∞ iken 1'e, z → −∞ iken 0'a yaklaşır; σ(−z) = 1 − σ(z)."),
+      { t: "num", s: 2, q: "z = −1 için σ(z) kaçtır? (e ≈ 2,718; 4 ondalık)", a: 0.2689, tol: 0.0003, e: "1/(1 + e¹) = 1/3,718 ≈ 0,2689." },
+      { t: "num", s: 2, q: "Model z = −3 + 0,5x. x = 10 için P(y = 1) kaçtır? (4 ondalık)", a: 0.8808, tol: 0.0003, e: "z = −3 + 5 = 2 → σ(2) = 0,8808." },
+      { t: "num", s: 3, q: "z = −3 + 0,5x modelinde karar sınırı (P = 0,5) hangi x değerindedir?", a: 6, tol: 0.001, e: "P = 0,5 ⇔ z = 0 ⇔ −3 + 0,5x = 0 ⇔ x = 6." },
+      { t: "num", s: 4, q: "p = 0,75 olasılığının odds değeri kaçtır?", a: 3, tol: 0.001, e: "0,75 / 0,25 = 3." },
+      O(4, "Odds ve log-odds kavramlarını açıklayınız. Lojistik regresyonda bir katsayı nasıl yorumlanır?", "<b>Odds</b> = p / (1 − p): olayın olma olasılığının olmama olasılığına oranı (p = 0,8 → 4). <b>Log-odds (logit)</b> = ln(p / (1 − p)) = z; lojistik regresyon log-odds'u doğrusal modeller. Katsayı b: x bir birim artınca log-odds b kadar, <b>odds e^b katı</b> değişir."),
+      O(3, "Sınıflandırma eşiği değiştirilirse ne olur? Hangi durumda eşik düşürülür?", "Varsayılan eşik 0,5'tir. Eşik <b>düşürülürse</b> daha çok örnek pozitif sayılır: recall artar, precision genelde düşer. Eşik yükseltilirse tersi olur. Pozitifi kaçırmanın pahalı olduğu durumlarda (hastalık taraması, dolandırıcılık) eşik düşürülür.")
+    ],
+    6: [
+      O(2, "kNN algoritmasının adımlarını yazınız.", "1) k değerini ve mesafe ölçüsünü seç. 2) Yeni örneğin tüm eğitim örneklerine uzaklığını hesapla. 3) Uzaklıkları sırala, en yakın k örneği al. 4) Sınıflandırmada çoğunluk oyu, regresyonda komşuların hedef değerlerinin ortalaması ile tahmin yap. (Öncesinde özellikleri ölçekle.)"),
+      O(4, "kNN'de k değeri nasıl seçilir? Çok küçük ve çok büyük k'nın etkisi nedir?", "k bir hiperparametredir; <b>doğrulama kümesi veya çapraz doğrulama</b> ile seçilir (kaba başlangıç √n, ikili problemde tek sayı). <b>Çok küçük k</b> (k = 1): gürültüye duyarlı, karmaşık sınır → aşırı öğrenme (yüksek varyans). <b>Çok büyük k:</b> fazla düzgün sınır → yetersiz öğrenme (yüksek yanlılık); k = n ise hep çoğunluk sınıfı."),
+      O(5, "kNN'de neden özellik ölçekleme yapılmalıdır?", "kNN mesafe hesaplar; ölçeği büyük olan özellik (ör. maaş 20.000–100.000) mesafeyi domine eder, küçük ölçekli özellik (yaş 20–60) etkisiz kalır. Min-Max veya z-skor ile ölçekleme her özelliğe eşit söz hakkı verir; ölçekleme sonucu en yakın komşu ve tahmin değişebilir."),
+      O(5, "kNN'in avantaj ve dezavantajlarını yazınız.", "<b>Avantaj:</b> basit, eğitim aşaması yok denecek kadar hızlı, dağılım varsaymaz, esnek (doğrusal olmayan) sınırlar, hem sınıflandırma hem regresyon. <b>Dezavantaj:</b> tahmin yavaş ve bellek ister (tüm veri), ölçeklemeye, alakasız özelliklere ve boyutun lanetine duyarlı, k ve mesafe seçimi gerekir, dengesiz sınıflarda çoğunluk sınıfı kazanır."),
+      O(1, "kNN neden 'tembel öğrenici' ve 'parametrik olmayan' bir yöntem olarak adlandırılır?", "<b>Tembel:</b> eğitim aşamasında model kurmaz, veriyi saklar; tüm hesap tahmin anında yapılır. <b>Parametrik olmayan:</b> veri dağılımı hakkında varsayım yapmaz ve sabit sayıda öğrenilen parametresi yoktur; tek ayarı hiperparametre k'dır."),
+      { t: "mcp", s: 5, q: "Eğitim: P1(1,4)=Evet, P2(2,2)=Hayır, P3(3,5)=Evet, P4(4,0)=Hayır, P5(5,5)=Evet. Sorgu q = (3,3), Öklid, k = 3. Tahmin nedir?", o: ["Evet", "Hayır", "Beraberlik", "Belirsiz"], a: 0, e: "Mesafeler: P2 √2 ≈ 1,414 (Hayır), P3 2 (Evet), P1 √5 ≈ 2,236 (Evet), P5 √8 ≈ 2,828 (Evet), P4 √10 ≈ 3,162 (Hayır). En yakın 3: 2 Evet, 1 Hayır → Evet." },
+      { t: "mcp", s: 5, q: "Aynı veride k = 1 için tahmin nedir?", o: ["Hayır", "Evet", "Beraberlik", "Belirsiz"], a: 0, e: "En yakın tek komşu P2 (1,414) → Hayır. k değişince karar değişti." },
+      { t: "num", s: 3, q: "Aynı veride q = (3,3) ile P5 (5,5) arasındaki Manhattan mesafesi kaçtır?", a: 4, tol: 0.001, e: "|3 − 5| + |3 − 5| = 4." }
+    ],
+    7: [
+      O(1, "Karışıklık matrisini çizip TP, FP, FN, TN kavramlarını açıklayınız. Tip I ve Tip II hata hangileridir?", "Satırlar gerçek, sütunlar tahmin sınıfıdır. <b>TP:</b> pozitif dedik, gerçekten pozitif. <b>TN:</b> negatif dedik, gerçekten negatif. <b>FP:</b> pozitif dedik ama negatif (yanlış alarm) → <b>Tip I hata</b>. <b>FN:</b> negatif dedik ama pozitif (kaçırma) → <b>Tip II hata</b>."),
+      { t: "num", s: 2, q: "TP = 30, FP = 10, FN = 20, TN = 40. Doğruluk (accuracy) kaçtır?", a: 0.7, tol: 0.001, e: "(30 + 40)/100 = 0,70." },
+      { t: "num", s: 2, q: "Aynı matris için precision kaçtır?", a: 0.75, tol: 0.001, e: "30/(30 + 10) = 0,75." },
+      { t: "num", s: 2, q: "Aynı matris için recall kaçtır?", a: 0.6, tol: 0.001, e: "30/(30 + 20) = 0,60." },
+      { t: "num", s: 2, q: "Aynı matris için F1 kaçtır? (4 ondalık)", a: 0.6667, tol: 0.0003, e: "2·0,75·0,6/(0,75 + 0,6) = 0,9/1,35 = 0,6667." },
+      O(3, "Dengesiz veri setinde doğruluk (accuracy) neden yanıltıcıdır? Yerine hangi metrikler kullanılır?", "Çoğunluk sınıfını hep tahmin eden bir model yüksek accuracy alır ama azınlık sınıfını hiç yakalamaz. Örnek: 990 sağlam, 10 hasta; herkese “sağlam” diyen model %99 accuracy alır ama recall = 0'dır. Yerine <b>precision, recall, F1 ve AUC</b> kullanılır."),
+      O(3, "Precision ile recall arasındaki fark nedir? Hangi durumda hangisi daha önemlidir?", "<b>Precision</b> = TP/(TP + FP): pozitif dediklerimizin kaçı gerçekten pozitif? <b>Recall</b> = TP/(TP + FN): gerçek pozitiflerin kaçını yakaladık? Kaçırmak pahalıysa (kanser taraması, dolandırıcılık) <b>recall</b>; yanlış alarm pahalıysa (önemli e-postanın spam'e düşmesi) <b>precision</b> önemlidir. İkisini dengelemek için F1."),
+      O(4, "ROC eğrisi ve AUC nedir? AUC = 0,5 ve AUC = 1 ne anlama gelir?", "ROC eğrisi, eşik değiştirilirken <b>FPR (x ekseni)</b> ile <b>TPR / recall (y ekseni)</b> arasındaki ilişkiyi çizer. <b>AUC</b> eğrinin altındaki alandır; eşikten bağımsız bir başarı ölçüsüdür. AUC = 1 mükemmel ayrım, AUC = 0,5 rastgele tahmin (köşegen) demektir.")
+    ],
+    8: [
+      O(1, "Bayes teoremini yazınız; önsel, olabilirlik ve sonsal kavramlarını açıklayınız.", "P(A|B) = P(B|A)·P(A) / P(B). <b>P(A):</b> önsel (kanıttan önceki inanç). <b>P(B|A):</b> olabilirlik (A doğruysa kanıtın görülme olasılığı). <b>P(A|B):</b> sonsal (kanıttan sonraki güncellenmiş inanç). <b>P(B):</b> normalleştirme sabiti; toplam olasılıkla P(B|A)P(A) + P(B|¬A)P(¬A)."),
+      { t: "num", s: 3, q: "Hastalığın görülme oranı %2. Test hastaların %95'inde, sağlamların %10'unda pozitif çıkıyor. Testi pozitif çıkan birinin hasta olma olasılığı kaçtır? (3 ondalık)", a: 0.162, tol: 0.0011, e: "P(+) = 0,95·0,02 + 0,10·0,98 = 0,019 + 0,098 = 0,117; P(hasta|+) = 0,019/0,117 ≈ 0,162." },
+      O(4, "Bayes ağı nedir? Koşullu olasılık tablosu (CPT) ve zincir kuralını açıklayınız.", "Değişkenleri düğüm, doğrudan etkileri yönlü ok olan <b>yönlü döngüsüz bir çizgedir (DAG)</b>. Her düğüm için ebeveynleri verildiğinde koşullu olasılık tablosu <b>P(düğüm | ebeveynler)</b> tanımlıdır (ebeveyni yoksa önsel P(düğüm)). <b>Zincir kuralı:</b> P(V₁, …, Vₙ) = ∏ P(Vᵢ | ebeveynler(Vᵢ)); bu sayede birleşik dağılım küçük tablolara bölünür ve parametre sayısı azalır."),
+      O(5, "Seri, ıraksayan ve yakınsayan bağlantılarda bilginin akışını yazınız.", "<b>Seri</b> (A → B → C) ve <b>ıraksayan</b> (A ← B → C): B bilinmiyorsa A ile C bağlantılı (açık); <b>B bilinirse bloke</b>. <b>Yakınsayan</b> (A → B ← C): hiçbir şey bilinmiyorsa <b>bloke</b>; <b>B veya B'nin bir alt düğümü bilinirse açılır</b>."),
+      O(6, "d-ayrışma nedir? İki değişkenin d-ayrışmış olup olmadığı nasıl belirlenir?", "İki değişken arasındaki <b>her yol</b> bloke ise değişkenler d-ayrışmıştır, yani kanıt verildiğinde koşullu bağımsızdır; en az bir yol açıksa d-bağlantılıdır. <b>Adımlar:</b> 1) iki düğüm arasındaki tüm yolları bul (okların yönünden bağımsız), 2) her yoldaki ara düğümün tipini belirle (seri / ıraksayan / yakınsayan), 3) bilinen düğümlere göre bloke olup olmadığını kontrol et, 4) tüm yollar bloke → d-ayrışmış."),
+      O(5, "Açıklama etkisi (explaining away) nedir? Örnek veriniz.", "Yakınsayan bağlantıda ortak sonuç gözlendiğinde, nedenlerden birinin doğrulanması diğer nedenin olasılığını <b>düşürür</b>; yani normalde bağımsız olan nedenler bağımlı hale gelir. Örnek: boğaz ağrısı bakteriyel veya viral enfeksiyondan olabilir; ağrıyı görünce ikisinin olasılığı artar, bakteriyel enfeksiyon kesinleşince viral enfeksiyon olasılığı düşer."),
+      { t: "mcp", s: 5, q: "Ağ: Yağmur → Islak çim ← Fıskiye, Islak çim → Kaygan yol. Yalnızca 'Kaygan yol' gözlendi. Yağmur ve Fıskiye d-ayrışmış mıdır?", o: ["Hayır, d-bağlantılı: Islak çim yakınsayan ve alt düğümü Kaygan yol bilindi", "Evet, d-ayrışmış: Islak çimin kendisi bilinmiyor", "Evet, çünkü aralarında doğrudan ok yok", "Hesaplanamaz"], a: 0, e: "Yakınsayan düğümü açan şey, düğümün kendisinin VEYA alt soyundan birinin bilinmesidir." },
+      O(8, "Naive Bayes sınıflandırıcısını açıklayınız. Neden 'naive' (saf) denir?", "Sınıf düğümünün tüm özelliklerin tek ebeveyni olduğu özel bir Bayes ağıdır. Tahmin: P(C | x₁…xₙ) ∝ P(C)·∏ P(xᵢ | C); en büyük değeri veren sınıf seçilir. 'Naive' denmesinin nedeni, özelliklerin <b>sınıf verildiğinde birbirinden bağımsız</b> olduğunu varsaymasıdır (gerçekte çoğu zaman tam doğru değildir)."),
+      { t: "num", s: 8, q: "Naive Bayes: P(Evet) = 9/14, P(Güneşli | Evet) = 2/9, P(Hayır) = 5/14, P(Güneşli | Hayır) = 3/5. Hava güneşliyken P(Evet | Güneşli) kaçtır?", a: 0.4, tol: 0.001, e: "Evet: 9/14·2/9 = 2/14; Hayır: 5/14·3/5 = 3/14. Normalize: 2/(2 + 3) = 0,4 → tahmin Hayır." }
+    ],
+    9: [
+      O(1, "İşbirlikçi filtreleme nedir? Nasıl öneri üretir?", "Öneriyi <b>başka kullanıcıların beğenilerine</b> dayanarak yapan yöntemdir. 1) Kullanıcıları puanlarına göre noktalara çevirip hedef kullanıcıya en benzer kullanıcı(lar)ı bulur (mesafe veya benzerlikle). 2) Onların beğendiği, hedef kullanıcının henüz görmediği ürünleri önerir. 6. haftadaki kNN fikrinin öneri sistemine uygulanmasıdır."),
+      { t: "num", s: 3, q: "Kullanıcı u = (5, 3, 4), v = (4, 1, 5) aynı üç ürüne puan vermiş. Manhattan uzaklığı kaçtır?", a: 4, tol: 0.001, e: "1 + 2 + 1 = 4." },
+      { t: "num", s: 3, q: "Aynı kullanıcılar için Öklid uzaklığı kaçtır? (3 ondalık)", a: 2.449, tol: 0.002, e: "√(1 + 4 + 1) = √6 ≈ 2,449." },
+      { t: "num", s: 8, q: "x = (1, 2, 2), y = (2, 1, 2). Kosinüs benzerliği kaçtır? (3 ondalık)", a: 0.889, tol: 0.002, e: "x·y = 2 + 2 + 4 = 8; ‖x‖ = ‖y‖ = 3; 8/9 ≈ 0,889." },
+      O(7, "Not şişmesi (grade inflation) nedir? Hangi benzerlik ölçüsü bu sorunu çözer, neden?", "Kullanıcıların puan ölçeğini farklı kullanmasıdır: biri her şeye 4–5 verir, diğeri 1–5 arasını kullanır. Mesafe ölçüleri bu kişileri uzak gösterir. <b>Pearson korelasyonu</b> puanların büyüklüğüne değil, birlikte artıp azalmasına (eğilime) bakar; zevkleri aynı sıradaysa r = 1 olur."),
+      O(9, "Hangi durumda hangi benzerlik ölçüsü kullanılmalıdır?", "<b>Not şişmesi</b> (kullanıcılar ölçeği farklı kullanıyor) → <b>Pearson</b>. Veri <b>seyrek</b> (çok sayıda puanlanmamış öğe, 0-0 eşleşmeleri) → <b>kosinüs</b>. Veri <b>yoğun</b> ve değerlerin büyüklüğü önemli → <b>Öklid / Manhattan</b> (Manhattan hızlıdır). Mesafede küçük, Pearson/kosinüste büyük değer = benzer."),
+      O(10, "Öneri üretirken neden tek bir en yakın komşu yerine k komşu kullanılır? Ağırlıklandırma nasıl yapılır?", "Tek komşunun kişisel tuhaflıkları doğrudan öneriye geçer (PDF'teki polka örneği). k komşu kullanılırsa öneri birçok benzer kişinin ortak beğenisine dayanır. Her komşunun etkisi benzerliğiyle orantılıdır: ağırlık = komşunun Pearson'ı / k komşunun Pearson toplamı; tahmini puan = Σ ağırlık × komşunun puanı."),
+      { t: "mcp", s: 3, q: "İki kullanıcı arasındaki mesafe hesaplanırken hangi ürünler kullanılır?", o: ["Yalnızca ikisinin de puanladığı ortak ürünler", "Tüm ürünler; puanlanmayanlar 0 alınır", "Yalnızca hedef kullanıcının puanladıkları", "Rastgele seçilen ürünler"], a: 0, e: "Boşlara 0 yazmak mesafeyi bozar; yalnızca ortak puanlananlar kullanılır." }
+    ],
+    10: [
+      O(2, "Excel'de kNN regresyonu ve sınıflandırması adım adım nasıl yapılır?", "1) Test satırı (303) ayrı tutulur, eğitim satırları 2–301'dir. 2) Her eğitim satırı için test satırına uzaklık sütunu hesaplanır (Öklid: <code>=SQRT((A$303-A2)^2+…+(E$303-E2)^2)</code>). 3) Satırlar uzaklığa göre küçükten büyüğe sıralanır. 4) İlk k satır alınır. 5) <b>Başarı</b> (sayı) için bu k satırın ortalaması → kNN regresyon; <b>Durum</b> (0/1) için çoğunluk → kNN sınıflandırma."),
+      O(9, "Laplace düzeltmesi nedir, neden gerekir?", "Naive Bayes'te bir özellik değeri bir sınıfta hiç görülmemişse koşullu olasılık 0 olur ve tüm çarpım sıfırlanır. Laplace düzeltmesi her sayıma 1 ekler: P = (sayım + 1)/(n + m) (m: değer sayısı; Düşük/Yüksek için m = 2). Böylece hiçbir olasılık tam 0 olmaz."),
+      { t: "num", s: 4, q: "En yakın 3 komşunun Başarı değerleri 52, 60, 47. kNN regresyon tahmini kaçtır?", a: 53, tol: 0.001, e: "(52 + 60 + 47)/3 = 159/3 = 53." },
+      { t: "mcp", s: 4, q: "En yakın 5 komşunun Durum değerleri 1, 0, 1, 1, 0. kNN sınıflandırma kararı nedir?", o: ["Geçti (1): 3'e 2", "Kaldı (0)", "Beraberlik", "Belirsiz"], a: 0, e: "Çoğunluk oyu: üç 1, iki 0." },
+      { t: "num", s: 5, q: "Ağırlıklı kNN (w = 1/d), k = 2: komşu 1 (d = 1, y = 50), komşu 2 (d = 4, y = 70). Tahmin kaçtır?", a: 54, tol: 0.001, e: "Ağırlıklar 1 ve 0,25: (50·1 + 70·0,25)/(1,25) = 67,5/1,25 = 54." },
+      { t: "num", s: 9, q: "Bir sınıfta 40 kayıt var ve hiçbirinde A = Yüksek değil. Laplace'lı (+1, +2) P(A = Yüksek | sınıf) kaçtır? (4 ondalık)", a: 0.0238, tol: 0.0002, e: "(0 + 1)/(40 + 2) = 1/42 ≈ 0,0238 (Laplace'sız 0 olurdu)." },
+      O(8, "Modelin başarısını tek bir test satırıyla değerlendirmek neden yetersizdir? Leave-one-out çapraz doğrulama nedir?", "Tek satırda doğru tahmin şans eseri olabilir; genel başarı hakkında bilgi vermez. Ayrı bir test kümesi veya çapraz doğrulama ve uygun metrikler (doğruluk, RMSE) gerekir. <b>Leave-one-out:</b> her turda 1 satır test, kalan n−1 satır eğitim olur; n tur sonunda sonuçların ortalaması alınır (k = n olan k-fold)."),
+      O(10, "kNN ile Naive Bayes'i karşılaştırınız.", "<b>kNN:</b> mesafe tabanlı, tembel öğrenici (eğitimde veriyi saklar), sayısal ve ölçekli veriye uygun; tahmin yavaş; k ve mesafe seçimi gerekir. <b>Naive Bayes:</b> olasılık tabanlı (Bayes teoremi), eğitimde sayımlardan olasılık tablosu çıkarır, tahmin çok hızlı; kategorik veriye uygun; özelliklerin sınıf verildiğinde bağımsız olduğunu varsayar; sıfır olasılık için Laplace gerekir.")
+    ]
+  };
+  Object.entries(classic).forEach(([id, list]) => list.forEach(q => { q.c = 1; W(+id).qs.push(q); }));
+
+  /* ---------- kartlar: [ön yüz, arka yüz, bölüm] ---------- */
+  const cards = {
+    1: [["YZ, ML ve DL arasındaki ilişki?", "YZ ⊃ ML ⊃ DL: derin öğrenme ML'nin, ML de YZ'nin alt kümesidir.", 1], ["Klasik programlama ↔ makine öğrenmesi", "Klasik: veri + kural → cevap. ML: veri + cevap → kural (model).", 1], ["Özellik (X) ve etiket (y)", "Özellik: girdi değişkenleri (yaş, tansiyon). Etiket: tahmin edilen çıktı (diyabet var / yok).", 2], ["Parametre ↔ hiperparametre", "Parametre eğitimde öğrenilir (katsayılar). Hiperparametreyi eğitimden önce biz seçeriz (kNN'de k).", 2], ["Denetimsiz öğrenme", "Etiketsiz veride gizli yapıyı bulma: kümeleme (k-means), boyut indirgeme (PCA).", 3], ["Pekiştirmeli öğrenme", "Ajan ortamla etkileşir, ödül/cezaya göre davranış öğrenir (oyun, robot).", 3], ["Aşırı öğrenmenin belirtisi", "Eğitimde çok iyi, testte kötü (ezber). Yüksek varyans.", 5], ["Yetersiz öğrenmenin belirtisi", "Eğitimde de testte de kötü (model çok basit). Yüksek yanlılık.", 5], ["Aşırı öğrenmeyi önlemenin yolları", "Daha çok veri, daha basit model, düzenlileştirme (L1/L2), özellik seçimi, çapraz doğrulama, erken durdurma.", 5], ["scikit-learn temel kalıbı", "model oluştur → fit (eğit) → predict (tahmin).", 6]],
+    2: [["Nominal ↔ ordinal", "Nominal: sırasız kategori (kan grubu). Ordinal: sıralı kategori (eğitim düzeyi).", 1], ["Ayrık ↔ sürekli", "Ayrık: sayılabilir (çocuk sayısı). Sürekli: aralıkta her değer (boy).", 1], ["Aykırı değer varken eksik sayısal veri neyle doldurulur?", "Medyan (aykırıdan etkilenmez).", 2], ["Kategorik eksik veri neyle doldurulur?", "Mod (en sık değer).", 2], ["IQR aykırı değer sınırları", "IQR = Q3 − Q1; alt = Q1 − 1,5·IQR, üst = Q3 + 1,5·IQR.", 3], ["Min-Max formülü ve aralığı", "x' = (x − min)/(max − min) → [0, 1].", 5], ["Z-skor formülü", "z = (x − μ)/σ → ortalama 0, std 1.", 5], ["Ölçekleyici nerede fit edilir?", "Yalnızca eğitim verisinde; teste sadece transform.", 5], ["Garbage in, garbage out", "Modelin kalitesi verinin kalitesini aşamaz.", 6]],
+    3: [["Özellik seçimi ↔ çıkarımı", "Seçim: mevcut sütunlardan bazılarını tutar. Çıkarım: yeni sütun üretir (PCA).", 3], ["Filtre yöntemi", "Modelden bağımsız istatistiksel skor (korelasyon, ki-kare); hızlı.", 2], ["Sarmalayıcı (wrapper) yöntem", "Altkümeleri model üzerinde dener (ileri seçim, RFE); yavaş ama iyi.", 2], ["Gömülü (embedded) yöntem", "Seçim eğitim sırasında olur (Lasso, ağaç özellik önemi).", 2], ["Nominal değişken nasıl kodlanır?", "One-hot (k sütun; drop_first ile k−1).", 4], ["Dummy tuzağı", "k kategori için k−1 sütun yeter; sonuncusu diğerlerinden çıkarılabilir (çoklu doğrusallık).", 4], ["Doğrulama kümesi ne için?", "Hiperparametre ayarı ve model seçimi.", 5], ["k-fold CV'de her tur", "1 parça test, k−1 parça eğitim; sonuç k skorun ortalaması.", 6], ["Veri sızıntısını önleyen sıra", "Böl → eğitimde fit → eğitim ve teste transform.", 7]],
+    4: [["b₁ (eğim) formülü", "b₁ = Σ(x − x̄)(y − ȳ) / Σ(x − x̄)²", 2], ["b₀ (kesim) formülü", "b₀ = ȳ − b₁·x̄", 2], ["Artık (residual)", "y − ŷ (gerçek − tahmin); OLS'de toplamı 0.", 2], ["MAE / MSE / RMSE", "MAE = ort. |hata|; MSE = ort. hata²; RMSE = √MSE (RMSE ≥ MAE).", 4], ["R² formülü ve yorumu", "1 − SSE/SST; 1 mükemmel, 0 ortalama kadar, negatif olabilir.", 4], ["Basit regresyonda R² ile r", "R² = r² (r'nin işareti eğimle aynı).", 7], ["Ayarlanmış R² neden var?", "R² değişken eklenince asla düşmez; ayarlanmış R² gereksiz değişkeni cezalandırır.", 8], ["Gradyan inişi güncellemesi", "b ← b − α·∂MSE/∂b; α büyükse ıraksar, küçükse yavaş.", 9], ["Lasso ↔ Ridge", "Lasso (L1) katsayıları sıfırlayabilir (özellik seçer); Ridge (L2) yalnızca küçültür.", 10]],
+    5: [["Sigmoid", "σ(z) = 1/(1 + e⁻ᶻ), çıktı (0, 1).", 2], ["σ(0), σ(2), σ(−2)", "0,5 · 0,8808 · 0,1192", 2], ["Karar sınırı", "P = 0,5 ⇔ z = 0 (doğrusal sınır).", 3], ["Eşik düşürülürse ne olur?", "Daha çok pozitif: recall ↑, precision ↓.", 3], ["Odds", "p/(1 − p); p = 0,8 → 4.", 4], ["Logit (log-odds)", "ln(p/(1 − p)) = z: lojistik regresyon log-odds'u doğrusal modeller.", 4], ["Katsayı b'nin yorumu", "x bir birim artınca log-odds b kadar artar, odds e^b katına çıkar.", 4], ["Lojistik regresyonun kayıp fonksiyonu", "Log-loss (çapraz entropi), en çok olabilirlik.", 5]],
+    6: [["kNN sınıflandırma ↔ regresyon", "Sınıflandırma: k komşunun çoğunluk oyu. Regresyon: hedef değerlerinin ortalaması.", 1], ["kNN neden tembel öğrenici?", "Eğitimde model kurmaz, veriyi saklar; hesap tahmin anında yapılır.", 1], ["Öklid ve Manhattan", "Öklid = √Σ(xᵢ − yᵢ)², Manhattan = Σ|xᵢ − yᵢ|.", 3], ["Minkowski r = 1, r = 2", "r = 1 Manhattan, r = 2 Öklid.", 3], ["Küçük k ↔ büyük k", "Küçük k: aşırı öğrenme (varyans). Büyük k: yetersiz öğrenme (yanlılık).", 4], ["İkili problemde k neden tek?", "Oylamada beraberliği önlemek için.", 4], ["kNN'de ölçekleme neden şart?", "Büyük ölçekli özellik mesafeyi domine eder.", 5], ["Ağırlıklı kNN", "w = 1/d: yakın komşunun oyu daha ağır.", 5], ["Boyutun laneti", "Çok boyutta mesafeler birbirine yaklaşır, 'yakın komşu' anlamını yitirir.", 13]],
+    7: [["FN nedir?", "Gerçek pozitif ama negatif tahmin: kaçırma (Tip II hata).", 1], ["FP nedir?", "Gerçek negatif ama pozitif tahmin: yanlış alarm (Tip I hata).", 1], ["Precision", "TP/(TP + FP): pozitif dediklerimin kaçı doğru?", 2], ["Recall", "TP/(TP + FN): gerçek pozitiflerin kaçını yakaladım?", 2], ["Specificity", "TN/(TN + FP)", 2], ["F1", "2PR/(P + R): precision ve recall'un harmonik ortalaması.", 2], ["Kanser taraması hangi metrik?", "Recall (kaçırmak pahalı).", 3], ["Spam filtresi hangi metrik? (pozitif = spam)", "Precision (önemli e-postayı spam'e atmak pahalı).", 3], ["ROC eksenleri ve AUC", "x: FPR, y: TPR. AUC 1 mükemmel, 0,5 rastgele.", 4]],
+    8: [["Koşullu olasılık", "P(A|B) = P(A,B) / P(B)", 1], ["Bayes teoremi", "P(A|B) = P(B|A)·P(A) / P(B)", 1], ["Toplam olasılık", "P(B) = P(B|A)P(A) + P(B|¬A)P(¬A)", 1], ["Zincir kuralı (Bayes ağı)", "P(V₁…Vₙ) = ∏ P(Vᵢ | ebeveynler(Vᵢ))", 4], ["Seri ve ıraksayan bağlantı", "Ortadaki düğüm biliniyorsa bloke.", 5], ["Yakınsayan bağlantı", "Ortadaki düğüm ve soyu bilinmiyorsa bloke; biri bilinirse açık.", 5], ["d-ayrışmış ne demek?", "Tüm yollar bloke → koşullu bağımsız.", 6], ["Açıklama etkisi", "Ortak sonuç gözlenince bir nedenin doğrulanması diğer nedenin olasılığını düşürür.", 5], ["Naive Bayes karar kuralı", "En büyük P(C)·∏P(xᵢ|C) değerini veren sınıf.", 8]],
+    9: [["İşbirlikçi filtreleme", "Sana benzeyen kullanıcıların beğendiklerini önerir.", 1], ["Mesafe mi benzerlik mi?", "Manhattan/Öklid küçük = benzer; Pearson/kosinüs büyük = benzer.", 9], ["Mesafe hangi ürünlerle hesaplanır?", "Yalnızca iki kullanıcının ortak puanladıklarıyla.", 3], ["Minkowski r büyüdükçe", "En büyük tek farkın etkisi artar; r → ∞ supremum (en büyük fark).", 4], ["Not şişmesi → hangi ölçü?", "Pearson (kullanıcıların ölçek kullanım farkını yok eder).", 7], ["Seyrek veri → hangi ölçü?", "Kosinüs (0-0 eşleşmelerini yok sayar).", 8], ["Pearson aralığı", "−1 ile +1; 1 tam uyum.", 7], ["k komşulu öneride ağırlık", "Komşunun Pearson'ı / k komşunun Pearson toplamı.", 10]],
+    10: [["Excel'de test satırı", "303. satır; eğitim 2–301 (test satırı eğitimde kullanılmaz).", 1], ["Başarı ↔ Durum tahmini", "Başarı (sayı): k komşunun ortalaması. Durum (0/1): çoğunluk oyu.", 2], ["k = 3, 5, 7 için Başarı tahminleri", "43 · 39 · 41,43 (sınıf hep Kaldı).", 4], ["Standartlaştırmada μ ve σ nereden?", "Yalnızca eğitim satırlarından.", 7], ["Leave-one-out", "Her turda 1 satır test, kalan n−1 eğitim (k = n katlı CV).", 8], ["Laplace düzeltmesi", "(sayım + 1)/(n + 2): görülmeyen değerin olasılığı 0 olmaz.", 9], ["NB ham skorları", "Toplamları 1 değildir; normalize edilerek yüzdeye çevrilir.", 9], ["'Naive' varsayım", "Özellikler sınıf verildiğinde birbirinden bağımsız.", 9]]
+  };
+
+  /* ---------- özet kartları: her ana bölüm aynı şablonla (tanım → sezgi → formül → örnek) ----------
+     s verilmezse sezgi satırı o bölümün sezgi kutusundan alınır (kutu ayrıca gösterilmez). Örnekler sitedeki çözümlü örneklerin sayılarıdır. */
+  const K = (t, f, o, s) => ({ t, f, o, s });
+  const concepts = {
+    1: {
+      1: K("Açıkça kural yazmadan veriden örüntü öğrenip yeni veride tahmin yapan algoritmalar. YZ ⊃ ML ⊃ DL.", "Klasik: veri + kural → cevap · ML: veri + cevap → kural (model)", "Binlerce etiketli e-postadan spam filtresi öğrenmek."),
+      2: K("Örnek = bir satır, özellik (X) = girdi, etiket (y) = tahmin edilecek çıktı. Parametreyi model öğrenir, hiperparametreyi biz seçeriz.", "ŷ = f(X)", "Diyabet tahmini: yaş, kan şekeri = X; diyabet var/yok = y; kNN'deki k = hiperparametre.", "Parametre, öğrencinin çalışarak öğrendiği bilgidir; hiperparametre, çalışmaya başlamadan seçilen yöntemdir (kaç saat, hangi kitap)."),
+      3: K("Etiketli veri → denetimli (çıktı kategori ise sınıflandırma, sayı ise regresyon). Etiketsiz → denetimsiz. Ödül/ceza → pekiştirmeli.", "", "Spam / değil → sınıflandırma · ev fiyatı → regresyon · müşteri grupları → kümeleme.", "Denetimli: cevap anahtarıyla çalışmak. Denetimsiz: cevap anahtarı olmadan kitapları konularına göre raflara dizmek. Pekiştirmeli: bisiklete düşe kalka binmeyi öğrenmek."),
+      5: K("Aşırı öğrenme: eğitimde çok iyi, testte kötü (ezber, yüksek varyans). Yetersiz öğrenme: ikisinde de kötü (fazla basit model, yüksek yanlılık).", "", "Eğitim %99 / test %60 → aşırı öğrenme. Eğitim %72 / test %70 (mümkün olan %95) → yetersiz öğrenme.")
+    },
+    2: {
+      1: K("Kategorik: nominal (sırasız) / ordinal (sıralı). Sayısal: ayrık (sayılabilir) / sürekli (aralıkta her değer).", "", "Kan grubu nominal, eğitim düzeyi ordinal, çocuk sayısı ayrık, boy sürekli.", "Kategorileri anlamlı biçimde sıraya dizebiliyor musun? Dizebiliyorsan ordinal, dizemiyorsan nominal."),
+      2: K("Eksik değerler silinir ya da doldurulur: sayısalda ortalama veya medyan, kategorikte mod.", "Aykırı değer varsa medyan · yoksa ortalama · kategorikse mod", "[4, 6, ?, 100, 8, 12] → medyan 8 ile doldurulur (ortalama 26 olurdu; 100 onu yukarı çeker)."),
+      3: K("Verinin geri kalanından belirgin biçimde uzak değer. Hata da olabilir gerçek de; körü körüne silinmez.", "IQR = Q3 − Q1 · sınırlar: Q1 − 1,5·IQR ve Q3 + 1,5·IQR · z-skor: |z| > 3", "Q1 = 10, Q3 = 20 → IQR = 10 → sınırlar −5 ve 35 → 40 aykırı.", "Sınıf fotoğrafında bir basketbolcu herkesten çok uzun görünür: ölçüm hatası değil, gerçek ama sıra dışı bir değer."),
+      5: K("Özellikleri benzer ölçeğe getirmek; mesafe (kNN) ve gradyan (lojistik regresyon) tabanlı modeller için gerekli.", "Min-Max: (x − min)/(max − min) → [0, 1] · Z-skor: (x − μ)/σ → ortalama 0, std 1", "10, 20, 30, 50 verisinde x = 30 → 0,5 · μ = 60, σ = 5 iken x = 70 → z = 2.")
+    },
+    3: {
+      2: K("Mevcut özelliklerden en faydalı olanları seçmek; yeni özellik üretmez. Filtre / sarmalayıcı / gömülü.", "", "Hedefle ilişkisi zayıf sütunları atmak (filtre) · Lasso'nun sıfırladığı katsayılar (gömülü).", "Valize sığmayacak kadar eşyan varsa en gerekli olanları seçersin; eşyaları değiştirmezsin."),
+      3: K("Mevcut özelliklerden yeni, genelde daha az sayıda özellik türetmek.", "PCA: yeni bileşen = özelliklerin doğrusal birleşimi", "10 sütunu PCA ile 3 bileşene indirmek.", "Eşyaları vakumlu poşete sıkıştırmak gibi: bilgi duruyor ama başka biçimde ve daha az yer kaplıyor."),
+      4: K("Kategorik sütunu sayıya çevirmek: sıralıysa ordinal (0, 1, 2), sırasızsa one-hot.", "k kategori → k sütun (drop_first ile k − 1)", "Renk {Kırmızı, Mavi, Yeşil} → Renk_Kırmızı, Renk_Mavi, Renk_Yeşil."),
+      5: K("Eğitim kümesi öğrenir, doğrulama kümesi ayar yapar, test kümesi en sonda bir kez ölçer.", "Tipik oranlar: %70 / 15 / 15 veya %80 / 20", "1000 örnek, %20 test → 200 test örneği."),
+      6: K("Veri k parçaya bölünür; her parça bir kez test olur, sonuç k skorun ortalamasıdır.", "Test parçası = n / k · eğitim = n − n / k", "200 örnek, 5-fold → her turda 40 test, 160 eğitim.", "Her öğrencinin bir kez sözlüye kalktığı sınıf: not, tek bir şanslı ya da şanssız sözlüye göre değil hepsinin ortalamasına göre verilir."),
+      7: K("Test verisine ait bilginin eğitime karışması; başarı olduğundan yüksek görünür.", "Doğru sıra: böl → fit (yalnızca eğitim) → transform (eğitim + test)", "StandardScaler'ı veriyi bölmeden önce tüm veride fit etmek.")
+    },
+    4: {
+      2: K("Tek değişkenle doğru uydurmak: artık karelerinin toplamını en küçük yapan doğru (en küçük kareler, OLS).", "ŷ = b₀ + b₁x · b₁ = Σ(x − x̄)(y − ȳ) / Σ(x − x̄)² · b₀ = ȳ − b₁x̄", "x = 1…5, y = 2, 4, 5, 4, 5 → ŷ = 2,2 + 0,6x; x = 6 için 5,8."),
+      3: K("Birden çok bağımsız değişken; her katsayı, diğerleri sabitken o değişkenin etkisidir.", "ŷ = b₀ + b₁x₁ + … + bₚxₚ", "ŷ = 5 + 2x₁ − 3x₂; x₁ = 4, x₂ = 1 → 10.", "Ev fiyatını metrekare, oda sayısı ve konum birlikte belirler; her birinin payı ayrı bir katsayıdır."),
+      4: K("Tahmin hatasını özetleyen ölçüler: MAE, MSE, RMSE küçük olmalı; R² 1'e yakın olmalı.", "MAE = ort. |y − ŷ| · MSE = ort. (y − ŷ)² · RMSE = √MSE · R² = 1 − SSE/SST", "y = [3, 5, 2, 7], ŷ = [2, 5, 4, 8] → MAE 1, MSE 1,5, RMSE 1,22, R² 0,59."),
+      7: K("Pearson r doğrusal ilişkinin yönünü ve gücünü ölçer (−1 … +1); basit regresyonda R² = r².", "R² = r² · b₁ = r · (s_y / s_x)", "r = 0,9 → R² = 0,81.", "r, noktaların bir doğru etrafında ne kadar sıkı toplandığıdır; işareti doğrunun yukarı mı aşağı mı gittiğini söyler."),
+      8: K("Gereksiz değişken eklemeyi cezalandıran R²; çoklu regresyonda modelleri karşılaştırmak için.", "R²adj = 1 − (1 − R²)(n − 1) / (n − p − 1)", "n = 20, p = 3, R² = 0,80 → 0,7625.", "R² sepete her ürün eklendikçe ağırlaşan bir terazi gibidir; ayarlanmış R² işe yaramayan ürünler için ceza keser."),
+      9: K("Kaybı adım adım küçültmek için katsayıları gradyanın tersi yönünde güncellemek.", "b ← b − α · ∂MSE/∂b", "b₀ = 0, α = 0,1, ∂MSE/∂b₀ = −8 → yeni b₀ = 0,8.", "Sisli bir dağdan en dik iniş yönünde adım adım inmek: adım (α) çok büyükse vadinin karşısına sıçrarsın, çok küçükse hiç varamazsın.")
+    },
+    5: {
+      2: K("Doğrusal skoru sigmoidle (0, 1) aralığına sıkıştırıp sınıf olasılığı olarak yorumlamak.", "z = b₀ + b₁x · P(y = 1) = σ(z) = 1 / (1 + e⁻ᶻ)", "z = −4 + x; x = 6 → z = 2 → P = 0,8808."),
+      3: K("P eşikten (varsayılan 0,5) büyük veya eşitse sınıf 1. P = 0,5 ⇔ z = 0: karar sınırı doğrusaldır.", "P ≥ eşik → sınıf 1 · karar sınırı: z = 0", "P = 0,73: eşik 0,5 → sınıf 1; eşik 0,8 → sınıf 0.", "Eşik bir kapı görevlisidir: eşiği düşürürsen kapıdan daha çok kişi girer (recall ↑) ama aralarına istenmeyenler de karışır (precision ↓)."),
+      4: K("Odds, olma olasılığının olmama olasılığına oranıdır; logit onun logaritmasıdır ve z'ye eşittir.", "odds = p / (1 − p) · logit = ln(odds) = z · katsayı b → odds × e^b", "p = 0,8 → odds 4 · b = 0,7 → x bir artınca odds ≈ 2 katı."),
+      5: K("Katsayılar log-loss'u (çapraz entropi) en aza indiren yinelemeli yöntemlerle (ör. gradyan inişi) bulunur; kapalı form yoktur.", "En çok olabilirlik ⇔ log-loss minimizasyonu", "Doğru sınıfa çok düşük olasılık veren (emin ama yanlış) tahmin en ağır cezayı alır.", "Log-loss, “kesin eminim” deyip yanılanı en ağır cezalandıran bir öğretmen gibidir.")
+    },
+    6: {
+      1: K("Yeni örneğin sınıfını veya değerini en yakın k eğitim örneğine bakarak tahmin eden tembel öğrenici.", "Sınıflandırma: çoğunluk oyu · Regresyon: komşuların ortalaması", "k = 3 komşu: K, K, M → K."),
+      3: K("İki noktanın ne kadar uzak olduğunu ölçer; kNN bütünüyle buna dayanır.", "Öklid = √Σ(xᵢ − yᵢ)² · Manhattan = Σ|xᵢ − yᵢ| · Minkowski = (Σ|xᵢ − yᵢ|ʳ)^(1/r)", "(1, 2) ile (4, 6): Manhattan 7, Öklid 5.", "Manhattan taksiyle sokak sokak gitmektir, Öklid kuşun düz uçmasıdır."),
+      4: K("k bir hiperparametredir; doğrulama kümesi veya çapraz doğrulama ile seçilir.", "Küçük k → yüksek varyans (aşırı) · büyük k → yüksek yanlılık (yetersiz) · başlangıç √n, ikili problemde tek k", "Doğrulama doğruluğu en yüksek olan k = 5 (0,89) seçilir; k = 1'in eğitim doğruluğu 1,00 yanıltıcıdır."),
+      5: K("kNN'in başarısı ölçeklemeye, alakasız özelliklere ve k'ya bağlıdır; ağırlıklı kNN'de yakın komşunun sözü daha çok geçer.", "Ölçekleme şart · ağırlık w = 1/d", "A (d = 1), B (d = 3), B (d = 3,2): sade oylama B, ağırlıklı oylama A (1 > 0,646).", "Ağırlıklı kNN'de kapının hemen yanındaki komşunun sözü, sokağın sonundakinden daha çok dinlenir.")
+    },
+    7: {
+      1: K("Gerçek ve tahmin edilen sınıfları çaprazlayan 2×2 tablo: TP, FP, FN, TN.", "Satır: gerçek · Sütun: tahmin · FP = Tip I hata · FN = Tip II hata", "Gerçekte hasta olana “sağlam” demek → FN.", "İlk harf “doğru mu bildim?”, ikinci harf “ne dedim?” sorusunun cevabıdır. FP = pozitif dedim ama yanlıştı."),
+      2: K("Karışıklık matrisinden türeyen oranlar; her biri farklı bir soruya cevap verir.", "Accuracy = (TP + TN)/toplam · Precision = TP/(TP + FP) · Recall = TP/(TP + FN) · F1 = 2PR/(P + R)", "TP 40, FN 10, FP 5, TN 45 → accuracy 0,85, precision 0,889, recall 0,80, F1 0,842."),
+      4: K("ROC, eşik değişirken TPR'nin FPR'ye karşı çizilen eğrisidir; AUC eğrinin altındaki alandır ve eşikten bağımsızdır.", "x = FPR = FP/(FP + TN) · y = TPR = TP/(TP + FN)", "AUC = 1 mükemmel ayrım, AUC = 0,5 yazı-tura.", "Alarmın hassasiyet düğmesini baştan sona çevirirken her ayarda “kaç hırsız yakaladım, kaç kez boşuna öttü” noktalarını birleştirmek.")
+    },
+    8: {
+      1: K("Olayların olasılıkları ve aralarındaki ilişki; Bayes teoremi koşullu olasılığı tersine çevirir.", "P(A|B) = P(A,B) / P(B) · P(A|B) = P(B|A)·P(A) / P(B)", "P(A,B) = 0,12, P(B) = 0,4 → P(A|B) = 0,3.", "Önsel, kanıtı görmeden önceki inancındır; sonsal, kanıtı görünce güncellediğin inanç."),
+      3: K("Test sonucu (kanıt) ile hastalık olasılığını güncellemek. Hastalık nadirse pozitiflerin çoğu yanlış alarmdır (taban oranı etkisi).", "P(H|+) = P(+|H)P(H) / [P(+|H)P(H) + P(+|¬H)P(¬H)]", "Oran %1, duyarlılık 0,90, yanlış pozitif 0,05 → P(hasta | +) = 0,154."),
+      4: K("Değişkenlerin düğüm, doğrudan etkilerin ok olduğu DAG; her düğümde P(düğüm | ebeveynler) tablosu (CPT).", "P(V₁ … Vₙ) = ∏ P(Vᵢ | ebeveynler(Vᵢ))", "A → C ← B, C → D: P(hepsi T) = 0,3·0,6·0,9·0,8 = 0,1296; 15 yerine 8 parametre.", "Kocaman bir ortak olasılık tablosunu, her düğümün yalnızca ebeveynlerine baktığı küçük tablolara bölmek."),
+      5: K("Üç düğümlü üç temel yapı, bilginin bir uçtan diğerine akıp akmadığını belirler.", "Seri / ıraksayan: B bilinirse bloke · Yakınsayan: B ve soyu bilinmezse bloke", "Boğaz ağrısı biliniyorsa bakteriyel ve viral enfeksiyon bağımlı hale gelir (açıklama etkisi)."),
+      6: K("İki düğüm arasındaki tüm yollar bloke ise düğümler d-ayrışmıştır (koşullu bağımsızdır).", "Tüm yollar bloke → d-ayrışmış · en az bir yol açık → d-bağlantılı", "A → B → C, A → D → C ağında B ve D bilinirse A ile C d-ayrışmış.", "İki şehir arasındaki tüm yollar kapalıysa haber ulaşamaz; açık tek bir yol bile yeter."),
+      8: K("Sınıfın tüm özelliklerin tek ebeveyni olduğu Bayes ağı; özellikler sınıf verildiğinde bağımsız varsayılır.", "P(C | x₁ … xₙ) ∝ P(C) · ∏ P(xᵢ | C)", "Spam: 0,4·0,5·0,1 = 0,02, normal: 0,012 → P(spam | x) = 0,625.")
+    },
+    9: {
+      1: K("Sana en çok benzeyen kullanıcıları bulup onların beğendiği, senin görmediğin ürünleri önermek.", "benzerlik / mesafe → en yakın komşu(lar) → görmediğin ürünler", "Bayan X'e en yakın kullanıcı Amy → Amy'nin 5 yıldız verdiği kitap önerilir.", "Müzik zevki seninkine en çok benzeyen arkadaşının çalma listesine göz atmak."),
+      2: K("Kullanıcılar verdikleri puanlara göre noktalardır; Manhattan ve Öklid aralarındaki uzaklığı ölçer.", "Manhattan = |x₁ − x₂| + |y₁ − y₂| · Öklid = √((x₁ − x₂)² + (y₁ − y₂)²)", "Amy (5, 5) – Bayan X (4, 2): Manhattan 4, Öklid 3,16.", "Manhattan taksiyle sokak sokak gitmek, Öklid kuş uçuşu; düz çizgi her zaman en kısa yoldur."),
+      4: K("Manhattan ve Öklid'i genelleyen mesafe; r büyüdükçe en büyük tek fark baskınlaşır.", "(Σ|xᵢ − yᵢ|ʳ)^(1/r) · r = 1 Manhattan · r = 2 Öklid · r → ∞ en büyük fark", "Farklar 1,5; 1,5; 3; 2; 1 → r = 1: 9 · r = 2: 4,30 · r → ∞: 3.", "r bir büyüteç gibidir: büyüdükçe en büyük farkı daha da büyütür."),
+      7: K("İki kullanıcının puanlama eğilimlerinin doğrusal uyumu (−1 … +1); not şişmesini giderir.", "r = Σ(x − x̄)(y − ȳ) / √(Σ(x − x̄)² · Σ(y − ȳ)²)", "Clara (hep 4–5) ve Robert (1–5) aynı sırada puanlıyor → r = 1.", "Pearson iki kişinin puanlarının birlikte inip çıkıp çıkmadığına bakar; kimin cömert puan verdiği önemli değildir."),
+      8: K("İki puan vektörü arasındaki açının kosinüsü; seyrek veride 0-0 eşleşmelerini yok sayar.", "cos(x, y) = x·y / (‖x‖ · ‖y‖)", "(1, 0, 1) ve (1, 1, 0) → 1 / (√2 · √2) = 0,5.")
+    },
+    10: {
+      2: K("Excel'de kNN: her satır için uzaklık sütunu, sıralama, ilk k satırın ortalaması (Başarı) veya çoğunluğu (Durum).", "=SQRT((A$303−A2)^2 + … + (E$303−E2)^2) · ŷ = (1/k) Σ yᵢ", "En yakın 5 komşunun Başarısı 40, 41, 48, 26, 40 → 39; Durumların hepsi 0 → Kaldı.", "Sınıfa yeni gelen öğrencinin notunu, notları ona en çok benzeyen 5 öğrencinin ortalamasıyla tahmin etmek."),
+      5: K("Yakın komşulara daha çok ağırlık veren kNN.", "ŷ = Σ wᵢyᵢ / Σ wᵢ, wᵢ = 1/(dᵢ + ε)", "Sade ortalama 39 → ağırlıklı 39,49 (çok yakın komşunun değeri 40'ın ağırlığı arttı).", "Kapının yanındaki komşunun fikri, uzaktakilerden daha çok sayılır."),
+      9: K("Kategorik özelliklerle Naive Bayes: önsel × koşullu olasılıklar; Laplace sıfır olasılığı önler, skorlar normalize edilir.", "P(xⱼ | c) = (sayım + 1) / (n_c + 2) · skor(c) = P(c) · ∏ P(xⱼ | c)", "Kaldı sınıfında A = Düşük: (116 + 1)/(152 + 2) = 0,7597; sonuç: Kaldı %68,36.")
+    }
+  };
+
+  Object.keys(X).forEach(id => Object.assign(X[id], { teach: teach[id] || {}, intuit: intuit[id] || {}, links: links[id] || [], cmp: cmp[id] || [], gloss: gloss[id] || {}, cards: cards[id] || [], concept: concepts[id] || {} }));
+
+  /* ---------- sık karıştırılanlar: karşılaştırma tabloları ---------- */
+  window.COMPARES = [
+    { id: "sinif-regresyon", t: "Sınıflandırma ↔ Regresyon", w: [1, 4], h: ["", "Sınıflandırma", "Regresyon"], r: [["Çıktı", "Kategori (spam / değil)", "Sürekli sayı (fiyat, sıcaklık)"], ["Örnek algoritma", "Lojistik regresyon, kNN (oy), Naive Bayes", "Doğrusal regresyon, kNN (ortalama)"], ["Metrikler", "Accuracy, precision, recall, F1, AUC", "MAE, MSE, RMSE, R²"]], tip: "Soru “kaç / ne kadar” diyorsa regresyon, “hangisi / evet mi hayır mı” diyorsa sınıflandırma." },
+    { id: "param-hiper", t: "Parametre ↔ Hiperparametre", w: [1], h: ["", "Parametre", "Hiperparametre"], r: [["Kim belirler?", "Model, eğitim sırasında veriden öğrenir", "Biz, eğitimden önce seçeriz"], ["Örnek", "Regresyon katsayıları b₀, b₁", "kNN'de k, öğrenme oranı α, C"], ["Nasıl ayarlanır?", "fit()", "Doğrulama kümesi / çapraz doğrulama"]], tip: "“Eğitimde öğrenilen” = parametre." },
+    { id: "over-under", t: "Aşırı öğrenme ↔ Yetersiz öğrenme", w: [1, 6], h: ["", "Aşırı öğrenme", "Yetersiz öğrenme"], r: [["Eğitim / test", "Eğitim çok iyi, test kötü", "İkisi de kötü"], ["Hata kaynağı", "Yüksek varyans", "Yüksek yanlılık"], ["kNN'de", "Çok küçük k (k = 1)", "Çok büyük k (k = n)"], ["Çözüm", "Daha çok veri, basit model, düzenlileştirme, özellik seçimi", "Daha karmaşık model, daha iyi özellikler"]], tip: "Eğitim–test farkı büyükse aşırı, ikisi de düşükse yetersiz." },
+    { id: "minmax-z", t: "Min-Max normalizasyonu ↔ Z-skor standardizasyonu", w: [2], h: ["", "Min-Max", "Z-skor"], r: [["Formül", "(x − min)/(max − min)", "(x − μ)/σ"], ["Sonuç", "[0, 1] aralığı", "Ortalama 0, std 1 (aralık sınırsız)"], ["Aykırı değer", "Çok duyarlı", "Daha az duyarlı"], ["sklearn", "MinMaxScaler", "StandardScaler"]], tip: "İkisinde de fit yalnızca eğitim verisinde." },
+    { id: "ort-medyan-mod", t: "Eksik veri: ortalama ↔ medyan ↔ mod", w: [2], h: ["", "Ortalama", "Medyan", "Mod"], r: [["Veri tipi", "Sayısal", "Sayısal", "Kategorik"], ["Ne zaman?", "Aykırı yok, simetrik", "Aykırı değer var", "Kategorik sütun"], ["Aykırıya duyarlılık", "Yüksek", "Düşük", "—"]], tip: "Milyarder odaya girer: ortalama uçar, medyan kıpırdamaz." },
+    { id: "secim-cikarim", t: "Özellik seçimi ↔ Özellik çıkarımı", w: [3], h: ["", "Seçim", "Çıkarım"], r: [["Ne yapar?", "Mevcut sütunların bir kısmını tutar", "Yeni (dönüştürülmüş) sütunlar üretir"], ["Örnek", "Filtre, wrapper (RFE), Lasso", "PCA"], ["Yorumlanabilirlik", "Orijinal sütunlar kalır", "Yeni bileşenler yorumlanması zor"]], tip: "Seçimde orijinal sütun adı kalır, çıkarımda kalmaz." },
+    { id: "onehot-ordinal", t: "One-hot ↔ Ordinal (etiket) kodlama", w: [3], h: ["", "One-hot", "Ordinal"], r: [["Değişken tipi", "Nominal (sırasız)", "Ordinal (sıralı)"], ["Çıktı", "Her kategori için 0/1 sütunu (k veya k−1)", "Tek sütun: 0, 1, 2…"], ["Örnek", "Şehir, renk", "Memnuniyet: düşük/orta/yüksek"], ["Yanlış kullanımda", "Gereksiz sütun (dummy tuzağı)", "Nominalde sahte sıralama"]] },
+    { id: "egitim-dogrulama-test", t: "Eğitim ↔ Doğrulama ↔ Test", w: [3], h: ["", "Eğitim", "Doğrulama", "Test"], r: [["Görev", "Parametreleri öğrenmek", "Hiperparametre ayarı, model seçimi", "Nihai başarıyı ölçmek"], ["Ne zaman?", "Sürekli", "Model geliştirirken", "En sonda, bir kez"], ["Benzetme", "Ders çalışmak", "Deneme sınavı", "Gerçek vize"]] },
+    { id: "hata-olculeri", t: "MAE ↔ MSE ↔ RMSE ↔ R²", w: [4], h: ["", "MAE", "MSE", "RMSE", "R²"], r: [["Formül", "ort. |y − ŷ|", "ort. (y − ŷ)²", "√MSE", "1 − SSE/SST"], ["Birim", "Hedefle aynı", "Hedefin karesi", "Hedefle aynı", "Birimsiz"], ["İyi değer", "Küçük", "Küçük", "Küçük", "1'e yakın"], ["Aykırı değer", "Dirençli", "Çok duyarlı", "Duyarlı", "—"]], tip: "Her zaman RMSE ≥ MAE." },
+    { id: "l1-l2", t: "Lasso (L1) ↔ Ridge (L2)", w: [4], h: ["", "Lasso (L1)", "Ridge (L2)"], r: [["Katsayılara etkisi", "Bazılarını tam sıfırlar", "Küçültür, sıfırlamaz"], ["Özellik seçimi", "Yapar (gömülü)", "Yapmaz"], ["Ortak amaç", "Aşırı öğrenmeyi azaltmak", "Aşırı öğrenmeyi azaltmak"]] },
+    { id: "precision-recall", t: "Precision ↔ Recall (↔ Specificity)", w: [5, 7], h: ["", "Precision", "Recall (duyarlılık)", "Specificity"], r: [["Formül", "TP/(TP + FP)", "TP/(TP + FN)", "TN/(TN + FP)"], ["Soru", "Pozitif dediklerimin kaçı doğru?", "Gerçek pozitiflerin kaçını yakaladım?", "Gerçek negatiflerin kaçını doğru bildim?"], ["Önemli olduğu durum", "Yanlış alarm pahalı (spam filtresi)", "Kaçırmak pahalı (kanser, dolandırıcılık)", "Sağlamı hasta dememek"], ["Eşik düşerse", "Genelde düşer", "Artar", "Düşer"]], tip: "Balık ağı: recall = göldeki balıkların ne kadarı ağda; precision = ağdakilerin ne kadarı balık." },
+    { id: "tip1-tip2", t: "Tip I hata ↔ Tip II hata", w: [7], h: ["", "Tip I", "Tip II"], r: [["Matriste", "FP", "FN"], ["Anlamı", "Yanlış alarm (sağlama hasta demek)", "Kaçırma (hastaya sağlam demek)"], ["Azaltan metrik", "Precision / specificity yükselir", "Recall yükselir"]] },
+    { id: "mesafeler", t: "Manhattan ↔ Öklid ↔ Pearson ↔ Kosinüs", w: [6, 9, 10], h: ["", "Manhattan", "Öklid", "Pearson", "Kosinüs"], r: [["Tür", "Mesafe", "Mesafe", "Benzerlik", "Benzerlik"], ["Benzer =", "Küçük", "Küçük", "Büyük (−1…1)", "Büyük (0…1, puanlarda)"], ["Formül", "Σ|xᵢ − yᵢ|", "√Σ(xᵢ − yᵢ)²", "Kovaryans / std çarpımı", "x·y / (‖x‖‖y‖)"], ["Ne zaman?", "Yoğun veri; hızlı", "Yoğun veri", "Not şişmesi", "Seyrek veri"]], tip: "Öklid ≤ Manhattan, her zaman." },
+    { id: "baglantilar", t: "Seri ↔ Iraksayan ↔ Yakınsayan", w: [8], h: ["", "Seri", "Iraksayan", "Yakınsayan"], r: [["Yapı", "A → B → C", "A ← B → C (ortak neden)", "A → B ← C (ortak sonuç)"], ["B bilinmiyorsa", "Açık", "Açık", "Bloke"], ["B (veya yakınsayanda soyu) biliniyorsa", "Bloke", "Bloke", "Açık"], ["Örnek", "Buzlanma → Kaza → Gecikme", "Hastalık → Ateş, Öksürük", "Bakteri → Boğaz ağrısı ← Virüs"]], tip: "Seri ve ıraksayan bilinince kapanır, yakınsayan bilinince açılır." },
+    { id: "modeller", t: "Doğrusal regresyon ↔ Lojistik regresyon ↔ kNN ↔ Naive Bayes", w: [5, 6, 10], h: ["", "Doğrusal regr.", "Lojistik regr.", "kNN", "Naive Bayes"], r: [["Görev", "Regresyon", "Sınıflandırma", "İkisi de", "Sınıflandırma"], ["Temel fikir", "En küçük kareler doğrusu", "Sigmoid(doğrusal skor) = olasılık", "En yakın k komşunun oyu / ortalaması", "P(C)·∏P(xᵢ|C)"], ["Eğitim", "Katsayılar (kapalı form / GD)", "Log-loss ile katsayılar", "Yok: veriyi saklar (tembel)", "Sayımlardan olasılık tablosu"], ["Ölçekleme", "Yorum/GD için faydalı", "Gerekli (GD, düzenlileştirme)", "Şart", "Gerekmez"], ["Zayıf yanı", "Doğrusal ilişki varsayar", "Doğrusal karar sınırı", "Yavaş tahmin, boyutun laneti", "Bağımsızlık varsayımı, sıfır olasılık"]] }
+  ];
+
+  /* ---------- karar ağaçları ---------- */
+  const A = (a) => ({ a }), Qn = (q, o) => ({ q, o });
+  window.TREES = [
+    { id: "agac-gorev", t: "Bu hangi öğrenme türü / görev?", w: [1], n: Qn("Veride doğru cevap (etiket) var mı?", [["Evet", Qn("Tahmin edilen çıktı ne?", [["Kategori (spam / değil)", A("<b>Denetimli → Sınıflandırma.</b> Örn. lojistik regresyon, kNN, Naive Bayes.")], ["Sayı (fiyat, sıcaklık)", A("<b>Denetimli → Regresyon.</b> Örn. doğrusal regresyon, kNN regresyonu.")]])], ["Hayır", Qn("Ajan ortamla etkileşip ödül/ceza mı alıyor?", [["Evet", A("<b>Pekiştirmeli öğrenme.</b> Örn. oyun oynayan ajan, robot.")], ["Hayır", A("<b>Denetimsiz öğrenme.</b> Örn. kümeleme (müşteri segmentasyonu), boyut indirgeme (PCA).")]])], ["Az kısmında var", A("<b>Yarı denetimli öğrenme:</b> az etiketli + çok etiketsiz veri.")]]) },
+    { id: "agac-eksik", t: "Eksik veriyi neyle doldurayım?", w: [2], n: Qn("Sütunun büyük kısmı mı boş?", [["Evet", A("<b>Sütunu sil</b> (doldurulan değer uydurma olur).")], ["Hayır", Qn("Değişken kategorik mi?", [["Evet", A("<b>Mod</b> (en sık değer).")], ["Hayır (sayısal)", Qn("Aykırı değer var mı / dağılım çarpık mı?", [["Evet", A("<b>Medyan</b> (aykırıdan etkilenmez).")], ["Hayır", A("<b>Ortalama.</b> (Eksik satır çok azsa satırı silmek de olur.)")]])]])]]) },
+    { id: "agac-olcek", t: "Ölçekleme gerekir mi, hangisi?", w: [2], n: Qn("Model mesafe veya gradyan tabanlı mı? (kNN, lojistik regresyon, gradyan inişi)", [["Hayır (ör. karar ağacı)", A("<b>Ölçekleme gerekmez.</b>")], ["Evet", Qn("Veride belirgin aykırı değerler var mı?", [["Evet", A("<b>Z-skor (StandardScaler)</b>: aykırıdan daha az etkilenir.")], ["Hayır, [0, 1] aralığı istiyorum", A("<b>Min-Max (MinMaxScaler).</b> Her durumda: fit yalnızca eğitimde, teste transform.")]])]]) },
+    { id: "agac-kodlama", t: "Kategorik değişkeni nasıl kodlayayım?", w: [3], n: Qn("Kategoriler arasında doğal bir sıra var mı? (düşük < orta < yüksek)", [["Evet", A("<b>Ordinal kodlama:</b> 0, 1, 2…")], ["Hayır (şehir, renk)", A("<b>One-hot kodlama:</b> k kategori → k sütun; drop_first ile k−1 (dummy tuzağı). 0, 1, 2 verirsen model sahte sıralama öğrenir.")]]) },
+    { id: "agac-metrik", t: "Hangi değerlendirme metriği?", w: [4, 7], n: Qn("Görev ne?", [["Regresyon", Qn("Büyük hatalar özellikle pahalı mı?", [["Evet", A("<b>RMSE / MSE</b> (büyük hataları kareyle cezalandırır). Açıklanan varyans için <b>R²</b>.")], ["Hayır", A("<b>MAE</b> (aykırıya dirençli, “ortalama kaç birim şaşıyorum”). Açıklanan varyans için <b>R²</b>.")]])], ["Sınıflandırma", Qn("Sınıflar dengeli mi?", [["Evet", A("<b>Accuracy</b> yeterli olabilir (yanında F1'e de bak).")], ["Hayır (ör. %1 pozitif)", Qn("Hangi hata daha pahalı?", [["Kaçırmak (FN)", A("<b>Recall</b> (kanser taraması, dolandırıcılık).")], ["Yanlış alarm (FP)", A("<b>Precision</b> (spam filtresi).")], ["İkisi de önemli", A("<b>F1</b>; eşikten bağımsız genel ölçü için <b>AUC</b>.")]])]])]]) },
+    { id: "agac-benzerlik", t: "Hangi mesafe / benzerlik ölçüsü?", w: [9], n: Qn("Kullanıcılar puan ölçeğini farklı mı kullanıyor? (biri hep 4–5, diğeri 1–5)", [["Evet", A("<b>Pearson korelasyonu</b> (not şişmesini giderir).")], ["Hayır", Qn("Veri seyrek mi? (çoğu öğe puanlanmamış)", [["Evet", A("<b>Kosinüs benzerliği</b> (0-0 eşleşmelerini yok sayar).")], ["Hayır (yoğun)", A("<b>Öklid veya Manhattan</b> (Manhattan daha hızlı).")]])]]) },
+    { id: "agac-dsep", t: "d-ayrışma: bu yol açık mı?", w: [8], n: Qn("Yoldaki ara düğüm hangi tipte?", [["Seri (→ B →) veya ıraksayan (← B →)", Qn("B biliniyor (gözlendi) mu?", [["Evet", A("Bu düğüm yolu <b>BLOKE</b> eder.")], ["Hayır", A("Bu düğüm geçişe izin verir; yoldaki diğer ara düğümlere de bak.")]])], ["Yakınsayan (→ B ←)", Qn("B'nin kendisi veya alt soyundan biri biliniyor mu?", [["Evet", A("Bu düğüm geçişe izin verir (<b>açılır</b>); diğer ara düğümlere de bak.")], ["Hayır", A("Bu düğüm yolu <b>BLOKE</b> eder.")]])]]) }
+  ];
+})();
+
 /* ===== app.js ===== */
 /* Uygulama: yönlendirme, sorular, ilerleme, deneme sınavı */
 (function () {
@@ -2162,15 +2985,27 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
   // soruları numarala
   const ALL = [];
   WEEKS.forEach(w => w.qs.forEach((q, i) => { q.id = "w" + w.id + "-" + i; q.week = w.id; q.n = i + 1; ALL.push(q); }));
+  const EX = id => (window.WEEK_EXTRAS || {})[id] || {};
+  // bölüm başlıkları ve her sorunun anlatıldığı bölüm (q.sec)
+  const SECT = {};
+  WEEKS.forEach(w => {
+    SECT[w.id] = {}; const re = /<h3>(\d+)\.\s*([\s\S]*?)<\/h3>/g; let m;
+    while ((m = re.exec(w.theory))) if (!SECT[w.id][m[1]]) SECT[w.id][m[1]] = m[2].replace(/<[^>]+>/g, "");
+    Object.entries(EX(w.id).checks || {}).forEach(([s, a]) => a.forEach(k => { if (w.qs[k]) w.qs[k].sec = +s; }));
+    w.qs.forEach(q => { if (q.s) q.sec = q.s; });
+  });
+  const secLink = q => (q.sec && SECT[q.week][q.sec] ? `<a href="#/hafta/${q.week}/${q.sec}">${wl(q.week)} · ${q.sec}. ${SECT[q.week][q.sec]}</a>` : "");
+  const POOL = () => ALL.filter(q => q.t !== "open"); // deneme sınavı yalnızca otomatik puanlanan sorulardan
 
   /* ---------- soru bileşeni ---------- */
   function makeQ(q, opts) {
     opts = opts || {};
     const exam = !!opts.exam;
     const prog = store.get();
-    const el = h("div", "q" + (!exam && prog[q.id] === 1 ? " prev-ok" : "") + (!exam && prog[q.id] === 0 ? " prev-bad" : ""));
+    const el = h("div", "q" + (q.c ? " classic" : "") + (!exam && prog[q.id] === 1 ? " prev-ok" : "") + (!exam && prog[q.id] === 0 ? " prev-bad" : ""));
     const label = opts.label || ("Soru " + q.n);
-    el.innerHTML = `<div class="qlabel">${label}${opts.showWeek ? ` <span class="chip">${wl(q.week)}</span>` : ""}<span class="qtype">${q.t === "num" ? "Hesaplama" : q.t === "tf" ? "Doğru / Yanlış" : "Çoktan seçmeli"}</span></div><div class="qt">${q.q}</div>`;
+    const tname = q.t === "num" ? "Hesaplama" : q.t === "tf" ? "Doğru / Yanlış" : q.t === "open" ? "Açık uçlu" : "Çoktan seçmeli";
+    el.innerHTML = `<div class="qlabel">${label}${q.c ? ' <span class="chip ctag">Klasik</span>' : ""}${opts.showWeek ? ` <span class="chip">${wl(q.week)}</span>` : ""}<span class="qtype">${tname}</span></div><div class="qt">${q.q}</div>${opts.where && q.sec ? `<div class="where small">📖 Anlatıldığı yer: ${secLink(q)}</div>` : ""}`;
     const body = h("div", "qbody"), fb = h("div", "fb hidden");
     el.append(body, fb);
     let done = false, ok = null, picked = null, input = null;
@@ -2179,11 +3014,25 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
       if (done) return; done = true; ok = isOk;
       el.classList.remove("prev-ok", "prev-bad"); el.classList.add(isOk ? "is-ok" : "is-bad");
       fb.classList.remove("hidden");
-      fb.innerHTML = `<b>${isOk ? "✓ Doğru." : "✗ Yanlış."}</b> ${extra || ""} ${q.e}`;
+      const headTxt = q.t === "open" ? (isOk ? "✓ Güzel, bunu biliyorsun." : "✗ Yanlışlarım'a eklendi; bölümü tekrar oku.") : (isOk ? "✓ Doğru." : "✗ Yanlış.");
+      const back = !isOk && q.sec && !opts.inSection ? `<div class="reread">📖 Konuyu tekrar oku: ${secLink(q)}</div>` : "";
+      fb.innerHTML = `<b>${headTxt}</b> ${extra || ""} ${q.e || ""}${back}`;
       if (!exam) { const p = store.get(); p[q.id] = isOk ? 1 : 0; store.set(p); opts.onAnswer && opts.onAnswer(); }
     }
 
-    if (q.t === "num") {
+    if (q.t === "open") {
+      const ta = h("textarea"); ta.rows = 3; ta.placeholder = "Önce cevabını kendi cümlelerinle yaz (ya da kâğıda). Sonra örnek cevapla karşılaştır.";
+      ta.setAttribute("aria-label", "Cevabın");
+      const row = h("div", "btns"), show = h("button", "", "Örnek cevabı göster"); row.append(show);
+      const model = h("div", "model hidden", `<b>Örnek cevap:</b> ${q.a}`);
+      const grade = h("div", "btns hidden"), yes = h("button", "primary", "✓ Bildim"), no = h("button", "", "✗ Eksik / bilemedim");
+      grade.append(h("span", "muted small selfq", "Kendi cevabını örnekle karşılaştır, dürüstçe işaretle:"), yes, no);
+      body.append(ta, row, model, grade);
+      show.onclick = () => { model.classList.remove("hidden"); grade.classList.remove("hidden"); row.remove(); };
+      yes.onclick = () => { grade.remove(); reveal(true); };
+      no.onclick = () => { grade.remove(); reveal(false); };
+      el.api = { grade() { return false; } };
+    } else if (q.t === "num") {
       const row = h("div", "numrow");
       input = h("input"); input.type = "text"; input.inputMode = "decimal"; input.placeholder = "Cevabın (ör. 0,85)"; input.setAttribute("aria-label", "Cevap");
       const btn = h("button", "primary", "Kontrol et");
@@ -2244,8 +3093,8 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
     const hero = h("section", "hero", `
       <h1>Makine Öğrenmesi · Vize Hazırlık</h1>
       <p>Konu anlatımı, çözümlü örnekler, <b>${total}</b> alıştırma, etkileşimli araçlar ve deneme sınavı. Dersin ilk 7 haftası, <b>Bayes ağları</b>, <b>PDF (işbirlikçi filtreleme)</b> ve <b>Excel (kNN + Naive Bayes)</b> uygulaması tek yerde.</p>
-      <div class="herobtns"><a class="btn primary" href="#/hafta/1">Hafta 1'den başla</a><a class="btn" href="#/hafta/8">Bayes ağları</a><a class="btn" href="#/hafta/9">PDF konuları</a><a class="btn" href="#/hafta/10">Excel uygulaması</a><a class="btn" href="#/sinav">Deneme sınavı</a><a class="btn" href="#/formuller">Formül kartı</a></div>
-      <div class="stats hero-stats"><div><b>Çözülen</b> ${ans}/${total}</div><div><b>Doğru</b> ${ok}</div><div><b>Başarı</b> ${ans ? Math.round(ok / ans * 100) + "%" : "—"}</div></div>`);
+      <div class="herobtns"><a class="btn primary" href="#/hafta/1">Hafta 1'den başla</a><a class="btn" href="#/hafta/8">Bayes ağları</a><a class="btn" href="#/hafta/9">PDF konuları</a><a class="btn" href="#/hafta/10">Excel uygulaması</a><a class="btn" href="#/kartlar">Kartlar (aralıklı tekrar)</a><a class="btn" href="#/karsilastir">Sık karıştırılanlar</a><a class="btn" href="#/sinav">Deneme sınavı</a><a class="btn" href="#/formuller">Formül kartı</a></div>
+      <div class="stats hero-stats"><div><b>Çözülen</b> ${ans}/${total}</div><div><b>Doğru</b> ${ok}</div><div><b>Başarı</b> ${ans ? Math.round(ok / ans * 100) + "%" : "—"}</div>${ans - ok ? `<div><a href="#/yanlislar"><b>Yanlışlarım</b> ${ans - ok} → tekrar çöz</a></div>` : ""}</div>`);
     app.append(hero);
     const grid = h("section", "grid");
     WEEKS.forEach(w => {
@@ -2256,38 +3105,314 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
     });
     app.append(h("h2", "sec", "Nasıl çalışmalı?"), h("div", "howto", `
       <ol>
-        <li>Her haftanın <b>konu anlatımını</b> oku, çözümlü örnekleri kâğıtta kendin yeniden çöz.</li>
-        <li><b>Alıştırmaları</b> çöz. Hesaplamalı sorularda sonucu kendin bul, sonra kontrol et; açıklamadan hatanı gör.</li>
-        <li><b>Araçlar</b> sayfasında kNN, regresyon, sigmoid ve metrikleri deneyerek sezgi kazan.</li>
+        <li>Her haftaya <b>“Bu haftanın özü”</b> kutusuyla başla, sonra konu anlatımını şemalara bakarak oku. Çözümlü örnekleri kâğıtta kendin yeniden çöz.</li>
+        <li>Her bölümün sonundaki <b>“Kendini yokla”</b> sorularını hemen çöz; takılırsan bölümü bir daha oku.</li>
+        <li>Bölümlerin içindeki <b>“Dene”</b> araçlarıyla (kNN, regresyon, sigmoid, metrikler...) sürgüleri oynatıp sezgi kazan. Hepsi <b>Araçlar</b> sayfasında da toplu duruyor.</li>
+        <li>Çözümlü örnekler <b>adım adım</b> açılır: her adımı açmadan önce kendin tahmin et.</li>
+        <li>Haftanın sonundaki <b>🎓 Klasik vize soruları</b>nı çöz: “tanımlayınız, karşılaştırınız, açıklayınız” tipi sorularda önce kendi cevabını yaz, sonra örnek cevapla karşılaştır.</li>
+        <li>Sayfa sonundaki <b>alıştırmaları</b> çöz. Yanlış yaptıkların <b>Yanlışlarım</b> sayfasında birikir; oradan tekrar çöz.</li>
+        <li>Her gün birkaç dakika <b>Kartlar</b>'ı çevir (aralıklı tekrar); karıştırdığın kavramlar için <b>Sık karıştırılanlar</b> sayfasındaki karar ağaçlarını kullan.</li>
         <li>Vizeye yakın <b>deneme sınavı</b> ile eksik haftaları bul (sonuç ekranı hafta bazında başarını gösterir).</li>
         <li>Son gün <b>formül kartına</b> bak.</li>
       </ol>
       <p class="muted small">İlerlemen tarayıcında saklanır (başka cihazla paylaşılmaz).</p>`));
   }
 
+  const wrongCount = wid => { const p = store.get(); return ALL.filter(q => p[q.id] === 0 && (!wid || q.week === wid)).length; };
+
+  /* konu anlatımına şema, araç ve "Kendini yokla" sorularını yerleştir */
+  function enhanceTheory(th, w, X, onAnswer) {
+    const heads = [...th.children].filter(e => e.tagName === "H3"), secs = {};
+    heads.forEach((hd, k) => { const m = hd.textContent.match(/^(\d+)\./); if (m && !secs[m[1]]) { secs[m[1]] = { hd, next: heads[k + 1] || null }; hd.id = "s-" + m[1]; } });
+    const inSec = (s, el) => { for (let e = s.hd.nextElementSibling; e && e !== s.next; e = e.nextElementSibling) if (e === el) return true; return false; };
+    const addEnd = (s, el) => (s.next ? th.insertBefore(el, s.next) : th.append(el));
+    const frag = html => { const t = document.createElement("div"); t.innerHTML = html.trim(); return t.firstElementChild; };
+    const afterIntro = s => { const nx = s.hd.nextElementSibling; return nx && nx.tagName === "P" && nx !== s.next ? nx : s.hd; };
+    Object.entries(X.figs || {}).forEach(([n, list]) => {
+      const s = secs[n]; if (!s) return;
+      list.forEach(f => {
+        const html = typeof f === "string" ? f : f.html;
+        let ref = s.hd;
+        if (f.after) { const hh = [...th.querySelectorAll("h4")].find(e => inSec(s, e) && e.textContent.startsWith(f.after)); if (hh) ref = hh; }
+        const nx = ref.nextElementSibling; if (nx && nx.tagName === "P" && nx !== s.next) ref = nx; // giriş cümlesinden sonra
+        ref.after(frag(html));
+      });
+    });
+    // özet kart (tanım → sezgi → formül → örnek) açıksa, o bölümün sezgisi kartın içine taşınır
+    const cards = conceptOn() ? (X.concept || {}) : {};
+    const sezOf = n => ((X.intuit || {})[n] || "").replace(/^<div class="intuit"><b>💡 Sezgi:<\/b>\s*/, "").replace(/<\/div>$/, "");
+    // sezgi kutusu: giriş cümlesinden hemen sonra (şemadan önce)
+    Object.entries(X.intuit || {}).forEach(([n, html]) => { const s = secs[n]; if (s && !cards[n]) afterIntro(s).after(frag(html)); });
+    Object.entries(cards).forEach(([n, c]) => {
+      const s = secs[n]; if (!s) return;
+      const rows = [["Tanım", c.t, ""], ["Sezgi", sezOf(n) || c.s, ""], ["Formül", c.f, "cf"], ["Örnek", c.o, ""]].filter(r => r[1]);
+      s.hd.after(frag(`<div class="concept"><div class="conh">Özet kart</div>${rows.map(r => `<div class="crow"><span class="ck ck-${r[0] === "Tanım" ? "t" : r[0] === "Sezgi" ? "s" : r[0] === "Formül" ? "f" : "o"}">${r[0]}</span><div class="${r[2]}">${r[1]}</div></div>`).join("")}</div>`));
+    });
+    // "sınavda sık sorulur" ek anlatımları: bölüm sonunda
+    Object.entries(X.teach || {}).forEach(([n, html]) => { const s = secs[n]; if (s) addEnd(s, frag(html)); });
+    Object.entries(X.tools || {}).forEach(([n, ids]) => {
+      const s = secs[n]; if (!s) return;
+      ids.forEach(tid => {
+        const t = (window.TOOLS || []).find(x => x.id === tid); if (!t) return;
+        const box = h("section", "tool embed"); box.append(h("h4", "", `Dene: ${t.title}`));
+        const inner = h("div", "toolbody"); box.append(inner); addEnd(s, box); t.fn(inner);
+      });
+    });
+    let used = 0;
+    Object.entries(X.checks || {}).forEach(([n, idx]) => {
+      const s = secs[n]; if (!s) return;
+      const qs = idx.map(k => w.qs[k]).filter(Boolean); if (!qs.length) return;
+      const box = h("div", "check", `<div class="checkh">✎ Kendini yokla <span class="muted small">${qs.length} soru · bu bölümü okuduysan çözebilmelisin</span></div>`);
+      box.dataset.sec = n;
+      qs.forEach(q => box.append(makeQ(q, { onAnswer, inSection: true }))); addEnd(s, box); used += qs.length;
+    });
+    return used;
+  }
+
+  /* çözümlü örnekleri adım adım aç ("önce sen dene") */
+  const stepsOn = () => { try { return localStorage.getItem("mlvize.steps") !== "0"; } catch (e) { return true; } };
+  const conceptOn = () => { try { return localStorage.getItem("mlvize.concept") !== "0"; } catch (e) { return true; } };
+  function stepify(root) {
+    root.querySelectorAll(".example").forEach(ex => {
+      const groups = [[]];
+      [...ex.childNodes].forEach(n => { if (n.nodeName === "BR") groups.push([]); else groups[groups.length - 1].push(n); });
+      const st = groups.filter(g => g.some(n => n.nodeType === 1 || n.textContent.trim()));
+      if (st.length < 3) return;
+      // ilk satır kalın bir başlıkla başlıyorsa (soru/veri) açık kalır, yoksa hepsi kapalı başlar
+      const firstEl = st[0].find(n => n.nodeType === 1 || n.textContent.trim());
+      const showFirst = firstEl && firstEl.nodeType === 1 && firstEl.tagName === "B";
+      ex.innerHTML = ""; ex.classList.add("stepped");
+      const divs = st.map((g, i) => { const d = h("div", "step" + (i === 0 && showFirst ? "" : " hidden")); g.forEach(n => d.append(n)); ex.append(d); return d; });
+      let shown = showFirst ? 1 : 0;
+      const bar = h("div", "stepbar"), nx = h("button", "primary", shown ? "Sonraki adım ▸" : "Çözümü adım adım aç ▸"), all = h("button", "ghost", "Hepsini göster"), cnt = h("span", "muted small");
+      const upd = () => { cnt.textContent = `${shown}/${divs.length} adım`; nx.textContent = "Sonraki adım ▸"; if (shown >= divs.length) bar.remove(); };
+      nx.onclick = () => { divs[shown++].classList.remove("hidden"); upd(); if (shown === 1) nx.textContent = "Sonraki adım ▸"; };
+      all.onclick = () => { divs.forEach(d => d.classList.remove("hidden")); shown = divs.length; upd(); };
+      bar.append(h("span", "muted small steptip", "✎ Önce kendin çöz, sonra adımları aç."), nx, all, cnt);
+      ex.append(bar); cnt.textContent = `${shown}/${divs.length} adım`;
+    });
+  }
+
+  /* formül kutularındaki sembollere renk + açıklama */
+  const GLOSS = {
+    "TP": ["sym-ok", "Doğru pozitif: pozitif dedik, gerçekten pozitif"], "TN": ["sym-ok", "Doğru negatif: negatif dedik, gerçekten negatif"],
+    "FP": ["sym-bad", "Yanlış pozitif: yanlış alarm (Tip I hata)"], "FN": ["sym-bad", "Yanlış negatif: kaçırılan pozitif (Tip II hata)"],
+    "TPR": ["sym-acc", "Doğru pozitif oranı = recall"], "FPR": ["sym-warn", "Yanlış pozitif oranı = FP / (FP + TN)"],
+    "ŷ": ["sym-acc", "Modelin tahmini"], "x̄": ["", "x değerlerinin ortalaması"], "ȳ": ["", "y değerlerinin ortalaması"], "μ": ["", "ortalama"],
+    "IQR": ["", "Çeyrekler açıklığı: Q3 − Q1"], "Q1": ["", "1. çeyrek: verinin %25'i bunun altında"], "Q3": ["", "3. çeyrek: verinin %75'i bunun altında"],
+    "SSE": ["", "Hata kareleri toplamı: Σ(y − ŷ)²"], "SST": ["", "Toplam kareler: Σ(y − ȳ)², ortalamaya göre toplam değişim"],
+    "R²": ["sym-acc", "Belirlilik katsayısı: açıklanan değişim oranı"], "α": ["", "Öğrenme oranı (adım büyüklüğü)"]
+  };
+  function glossify(root, extra) {
+    const map = Object.assign({}, GLOSS, extra || {}), keys = Object.keys(map).sort((a, b) => b.length - a.length);
+    const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), L = "A-Za-zÇĞİÖŞÜçğıöşü";
+    const re = new RegExp(`(?<![${L}])(${keys.map(esc).join("|")})(?![${L}\\u0300-\\u036f])`, "g");
+    root.querySelectorAll(".formula, .concept .cf").forEach(f => {
+      const tw = document.createTreeWalker(f, NodeFilter.SHOW_TEXT), nodes = []; while (tw.nextNode()) nodes.push(tw.currentNode);
+      nodes.forEach(n => {
+        const s = n.textContent; if (n.parentElement.closest(".sym, code") || s.search(re) < 0) return;
+        const fr = document.createDocumentFragment(); let last = 0;
+        s.replace(re, (m0, g, off) => { fr.append(s.slice(last, off)); const sp = h("span", "sym " + map[g][0]); sp.textContent = g; sp.dataset.t = map[g][1]; sp.tabIndex = 0; fr.append(sp); last = off + m0.length; return m0; });
+        fr.append(s.slice(last)); n.replaceWith(fr);
+      });
+    });
+  }
+  // tek bir yüzen ipucu (formül kutusu kaydırılabilir olduğu için CSS ipucu kesilirdi)
+  const tip = h("div", "symtip hidden"); document.body.append(tip);
+  const showTip = el => { tip.textContent = el.dataset.t; tip.classList.remove("hidden"); const r = el.getBoundingClientRect(), tw = tip.offsetWidth, th2 = tip.offsetHeight; tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, r.left + r.width / 2 - tw / 2)) + "px"; tip.style.top = (r.top > th2 + 70 ? r.top - th2 - 8 : r.bottom + 8) + "px"; };
+  document.addEventListener("mouseover", e => { const s = e.target.closest && e.target.closest(".sym"); if (s) showTip(s); });
+  document.addEventListener("mouseout", e => { if (e.target.closest && e.target.closest(".sym")) tip.classList.add("hidden"); });
+  document.addEventListener("focusin", e => { const s = e.target.closest && e.target.closest(".sym"); if (s) showTip(s); });
+  document.addEventListener("focusout", () => tip.classList.add("hidden"));
+  document.addEventListener("scroll", () => tip.classList.add("hidden"), true);
+
+  /* okuma ilerleme çubuğu ve içindekilerde bulunulan bölüm */
+  window.addEventListener("scroll", () => {
+    const rb = document.querySelector(".readbar"); if (!rb) return;
+    const max = document.documentElement.scrollHeight - innerHeight; rb.style.width = (max > 0 ? Math.min(100, scrollY / max * 100) : 0) + "%";
+    const links = document.querySelectorAll(".tocpanel a[data-to]"); let cur = null;
+    links.forEach(a => { const t = document.getElementById(a.dataset.to); if (t && t.getBoundingClientRect().top < 140) cur = a; });
+    links.forEach(a => a.classList.toggle("cur", a === cur));
+  }, { passive: true });
+
   function pageWeek(id) {
     const i = WEEKS.findIndex(w => w.id === id); if (i < 0) return pageHome();
-    const w = WEEKS[i];
+    const w = WEEKS[i], X = (window.WEEK_EXTRAS || {})[w.id] || {};
     app.innerHTML = "";
+    const inline = new Set(); Object.values(X.checks || {}).forEach(a => a.forEach(k => inline.add(k)));
+    const classic = w.qs.filter(q => q.c), rest = w.qs.filter((q, k) => !inline.has(k) && !q.c), wn = wrongCount(w.id);
     const head = h("section", "whead", `<div class="wk">${wl(w.id)}</div><h1>${w.title}</h1><p class="muted">${w.sub}</p>
-      <div class="jump"><a href="#theory" data-j="theory">Konu anlatımı</a><a href="#practice" data-j="practice">Alıştırmalar (${w.qs.length})</a></div>`);
+      <div class="jump"><a href="#theory" data-j="theory">Konu anlatımı</a>${classic.length ? `<a href="#classic" data-j="classic">Klasik sorular (${classic.length})</a>` : ""}<a href="#practice" data-j="practice">Alıştırmalar (${rest.length})</a>${wn ? `<a href="#/yanlislar/${w.id}">Yanlışların (${wn})</a>` : ""}<a href="#/kartlar/${w.id}">Kartlar</a></div>
+      <div class="viewopts"><label><input type="checkbox" id="conT" ${conceptOn() ? "checked" : ""}> Bölüm başlarında özet kart (tanım → sezgi → formül → örnek)</label><label><input type="checkbox" id="stepT" ${stepsOn() ? "checked" : ""}> Çözümlü örnekleri adım adım aç (önce sen dene)</label></div>`);
     app.append(head);
     head.querySelectorAll("[data-j]").forEach(a => a.onclick = e => { e.preventDefault(); document.getElementById(a.dataset.j).scrollIntoView({ behavior: "smooth" }); });
+    const optT = (sel, key) => { head.querySelector(sel).onchange = e => { try { localStorage.setItem(key, e.target.checked ? "1" : "0"); } catch (er) { /* yoksay */ } const y = scrollY; pageWeek(id); window.scrollTo(0, y); }; };
+    optT("#stepT", "mlvize.steps"); optT("#conT", "mlvize.concept");
+    if (X.key) {
+      const cm = (X.cmp || []).map(cid => { const c = (window.COMPARES || []).find(x => x.id === cid) || (window.TREES || []).find(x => x.id === cid); return c ? `<a class="lchip" href="#/karsilastir/${cid}">${cid.startsWith("agac") ? "🧭 " : "⇄ "}${c.t}</a>` : ""; }).join("");
+      const ln = (X.links || []).map(([t, to]) => { const [lw, ls] = to.split("/"); return `<a class="lchip" href="#/hafta/${to}">${t} <span class="muted">· ${wl(+lw)}${ls ? ", " + ls + ". bölüm" : ""}</span></a>`; }).join("");
+      const es = h("section", "essence", `<h2>★ Bu haftanın özü</h2><ul>${X.key.map(k => `<li>${k}</li>`).join("")}</ul>${X.exam ? `<div class="exam"><b>Vizede beklenen:</b> ${X.exam}${classic.length ? ` <a href="#classic" data-j2="classic">→ ${classic.length} klasik soru</a>` : ""}</div>` : ""}
+        ${cm ? `<div class="lrow"><b>Sık karıştırılanlar:</b> ${cm}</div>` : ""}${ln ? `<div class="lrow"><b>🔗 Bağlantılı konular:</b> ${ln}</div>` : ""}`);
+      es.id = "essence"; app.append(es);
+      es.querySelectorAll("[data-j2]").forEach(a => a.onclick = e => { e.preventDefault(); document.getElementById("classic").scrollIntoView({ behavior: "smooth" }); });
+    }
     const th = h("article", "theory", w.theory); th.id = "theory"; app.append(th);
 
     const pr = h("section", "practice"); pr.id = "practice";
     const sc = h("div", "score");
-    const upd = () => { const s = weekStats(w); sc.innerHTML = `<b>${s.right}</b> doğru · ${s.answered}/${s.total} çözüldü`; };
+    const upd = () => { const s = weekStats(w); sc.innerHTML = `<b>${s.right}</b> doğru · ${s.answered}/${s.total} çözüldü`; refreshNav(); updToc(); };
+    const nInline = enhanceTheory(th, w, X, upd);
+    glossify(th, X.gloss);
+    if (stepsOn()) stepify(th);
+
+    if (classic.length) {
+      const cb = h("section", "classicbox"); cb.id = "classic";
+      cb.append(h("h2", "sec", "🎓 Klasik vize soruları"), h("p", "muted small", "Sınavlarda sık çıkan tipte sorular: tanım, karşılaştırma, “açıklayınız”, kısa hesap. Açık uçlu olanlarda önce kendi cevabını yaz, sonra örnek cevapla karşılaştırıp kendini dürüstçe işaretle (bilemediklerin Yanlışlarım'a düşer). Her sorunun altında konunun anlatıldığı bölüm yazıyor."));
+      classic.forEach((q, k) => cb.append(makeQ(q, { onAnswer: upd, where: true, label: "Klasik " + (k + 1) })));
+      app.append(cb);
+    }
+
     const top = h("div", "ptop"); top.append(h("h2", "sec", "Alıştırmalar"), sc);
     const rs = h("button", "ghost", "Bu haftanın ilerlemesini sıfırla");
     rs.onclick = () => { if (!confirm("Bu haftanın ilerlemesi silinsin mi?")) return; const p = store.get(); w.qs.forEach(q => delete p[q.id]); store.set(p); pageWeek(id); window.scrollTo(0, document.getElementById("practice").offsetTop - 60); };
-    pr.append(top); upd();
-    w.qs.forEach(q => pr.append(makeQ(q, { onAnswer: upd })));
+    pr.append(top);
+    if (nInline || classic.length) pr.append(h("p", "muted small", `Bu haftanın ${nInline} sorusu konu anlatımındaki “Kendini yokla” kutularında, ${classic.length} sorusu klasik sorular bölümünde; burada kalan ${rest.length} soru var. Sağdaki sayaç hepsini birlikte sayar.`));
+    rest.forEach(q => pr.append(makeQ(q, { onAnswer: upd })));
     pr.append(rs); app.append(pr);
+
+    /* içindekiler paneli + okuma çubuğu */
+    const secsEl = [...th.querySelectorAll(":scope > h3[id]")];
+    const tocBtn = h("button", "tocbtn", "☰ Bölümler"), toc = h("nav", "tocpanel hidden");
+    toc.setAttribute("aria-label", "Bu sayfadaki bölümler");
+    toc.innerHTML = `<div class="toch">Bu sayfada</div>${X.key ? `<a href="#" data-to="essence">★ Haftanın özü</a>` : ""}${secsEl.map(s => `<a href="#" data-to="${s.id}">${s.textContent}<span class="st" data-st="${s.id.slice(2)}"></span></a>`).join("")}${classic.length ? `<a href="#" data-to="classic">🎓 Klasik sorular</a>` : ""}<a href="#" data-to="practice">✎ Alıştırmalar</a>`;
+    tocBtn.onclick = e => { e.stopPropagation(); toc.classList.toggle("hidden"); };
+    toc.onclick = e => { const a = e.target.closest("a[data-to]"); if (!a) return; e.preventDefault(); document.getElementById(a.dataset.to).scrollIntoView({ behavior: "smooth" }); if (innerWidth < 1440) toc.classList.add("hidden"); };
+    document.addEventListener("click", function off(e) { if (!document.body.contains(toc)) return document.removeEventListener("click", off); if (!toc.contains(e.target) && e.target !== tocBtn && innerWidth < 1440) toc.classList.add("hidden"); });
+    if (innerWidth >= 1440) toc.classList.remove("hidden");
+    app.append(h("div", "readbar"), tocBtn, toc);
+    function updToc() {
+      const p = store.get();
+      toc.querySelectorAll("[data-st]").forEach(sp => {
+        const idx = (X.checks || {})[sp.dataset.st]; if (!idx) return;
+        const qs = idx.map(k => w.qs[k]).filter(Boolean), okN = qs.filter(q => p[q.id] === 1).length, ans = qs.filter(q => p[q.id] != null).length;
+        sp.textContent = okN === qs.length ? " ✓" : ans ? " •" : ""; sp.className = "st " + (okN === qs.length ? "ok" : ans ? "part" : "");
+      });
+    }
+    upd();
 
     const pn = h("div", "pn");
     pn.innerHTML = (i > 0 ? `<a class="btn" href="#/hafta/${WEEKS[i - 1].id}">← ${wl(WEEKS[i - 1].id)}</a>` : "<span></span>") + (i < WEEKS.length - 1 ? `<a class="btn primary" href="#/hafta/${WEEKS[i + 1].id}">${wl(WEEKS[i + 1].id)} →</a>` : `<a class="btn primary" href="#/sinav">Deneme sınavına geç →</a>`);
     app.append(pn);
+  }
+
+  /* ---------- yanlışlarım ---------- */
+  function pageWrong(wid) {
+    const p = store.get(), all = ALL.filter(q => p[q.id] === 0);
+    const list = all.filter(q => !wid || q.week === wid);
+    app.innerHTML = "";
+    const weeksWith = WEEKS.filter(w => all.some(q => q.week === w.id));
+    const head = h("section", "whead", `<h1>Yanlışlarım</h1>
+      <p class="muted">Alıştırmalarda, “Kendini yokla” kutularında ve deneme sınavında yanlış cevapladığın sorular burada toplanır. Doğru çözdüğün soru bir dahaki gelişinde listeden düşer.</p>
+      ${all.length ? `<div class="sliders"><label>Göster <select id="wrW"><option value="0">Tüm haftalar (${all.length})</option>${weeksWith.map(w => `<option value="${w.id}" ${w.id === wid ? "selected" : ""}>${wl(w.id)} (${all.filter(q => q.week === w.id).length})</option>`).join("")}</select></label></div>` : ""}`);
+    app.append(head);
+    const sel = head.querySelector("#wrW"); if (sel) sel.onchange = () => { location.hash = +sel.value ? "#/yanlislar/" + sel.value : "#/yanlislar"; };
+    if (!list.length) {
+      app.append(h("div", "empty", all.length ? `Bu haftada yanlışın kalmadı. <a href="#/yanlislar">Diğer haftalara bak →</a>` : `<b>Şu an yanlış cevapladığın soru yok.</b> Alıştırma çözdükçe ya da <a href="#/sinav">deneme sınavı</a> yaptıkça yanlışların burada birikir.`));
+      return;
+    }
+    const sc = h("div", "score");
+    const upd = () => { const pp = store.get(), left = list.filter(q => pp[q.id] === 0).length; sc.innerHTML = `<b>${list.length - left}</b> düzeltildi · ${left} kaldı`; refreshNav(); };
+    const top = h("div", "ptop"); top.append(h("h2", "sec", "Tekrar çöz"), sc); app.append(top); upd();
+    WEEKS.forEach(w => {
+      const qs = list.filter(q => q.week === w.id); if (!qs.length) return;
+      app.append(h("h3", "", `${wl(w.id)}: ${w.title} <a class="small" href="#/hafta/${w.id}">konuya dön →</a>`));
+      qs.forEach(q => app.append(makeQ(q, { onAnswer: upd, where: true })));
+    });
+  }
+
+  /* ---------- kartlar: Leitner kutularıyla aralıklı tekrar ---------- */
+  const cstore = {
+    get() { try { return JSON.parse(localStorage.getItem("mlvize.cards")) || {}; } catch (e) { return {}; } },
+    set(o) { try { localStorage.setItem("mlvize.cards", JSON.stringify(o)); } catch (e) { /* yoksay */ } }
+  };
+  const INTERVAL = [0, 1, 2, 4, 7, 15]; // kutu → kaç gün sonra tekrar
+  const today = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5);
+  function pageCards(wid) {
+    const deck = [];
+    WEEKS.forEach(w => (EX(w.id).cards || []).forEach((c, i) => deck.push({ id: `k${w.id}-${i}`, week: w.id, f: c[0], b: c[1], s: c[2] })));
+    const list = deck.filter(c => !wid || c.week === wid);
+    let st = cstore.get(), t0 = today();
+    const isDue = c => !st[c.id] || st[c.id].due <= t0;
+    app.innerHTML = "";
+    const head = h("section", "whead", `<h1>Kartlar</h1>
+      <p class="muted">Önce soruyu oku, cevabı <b>kafanda söyle</b>, sonra kartı çevir. Bildiklerin kutu kutu ilerler ve gittikçe daha seyrek sorulur (1, 2, 4, 7, 15 gün sonra); bilemediklerin başa döner ve bugün tekrar gelir. Buna <b>aralıklı tekrar</b> denir: unutmak üzereyken hatırlamak, bilgiyi kalıcı yapar.</p>
+      <div class="sliders"><label>Deste <select id="cW"><option value="0">Tüm haftalar (${deck.length})</option>${WEEKS.filter(w => (EX(w.id).cards || []).length).map(w => `<option value="${w.id}" ${w.id === wid ? "selected" : ""}>${wl(w.id)} (${EX(w.id).cards.length})</option>`).join("")}</select></label></div>`);
+    app.append(head);
+    head.querySelector("#cW").onchange = e => { location.hash = +e.target.value ? "#/kartlar/" + e.target.value : "#/kartlar"; };
+    const stats = h("div", "stats"), area = h("div", "cardarea"); app.append(stats, area);
+    const boxes = () => { const b = [0, 0, 0, 0, 0, 0]; list.forEach(c => b[st[c.id] ? st[c.id].box : 0]++); return b; };
+    const drawStats = () => { const b = boxes(); stats.innerHTML = `<div><b>Bugün</b> ${list.filter(isDue).length} kart</div><div><b>Yeni</b> ${b[0]}</div>${[1, 2, 3, 4, 5].map(k => `<div><b>Kutu ${k}</b> ${b[k]}</div>`).join("")}<div><b>Kalıcı (kutu 4–5)</b> ${b[4] + b[5]}/${list.length}</div>`; };
+    let queue = shuffle(list.filter(isDue));
+    function show() {
+      drawStats();
+      if (!queue.length) {
+        area.innerHTML = `<div class="empty"><b>Bugünlük bu destede tekrar edilecek kart kalmadı.</b> Yarın tekrar gel; kartlar zamanı gelince geri döner.</div>`;
+        const again = h("button", "", "Yine de hepsini çalış"); again.onclick = () => { queue = shuffle(list); show(); }; area.append(again); return;
+      }
+      const c = queue[0], box = st[c.id] ? st[c.id].box : 0;
+      area.innerHTML = "";
+      const card = h("div", "fcard", `<div class="qlabel">${wl(c.week)} · ${box ? "Kutu " + box : "Yeni kart"}<span class="qtype">${queue.length} kart kaldı</span></div><div class="ffront">${c.f}</div><div class="fback hidden">${c.b}${c.s && SECT[c.week][c.s] ? `<div class="where small">📖 <a href="#/hafta/${c.week}/${c.s}">${c.s}. ${SECT[c.week][c.s]}</a></div>` : ""}</div>`);
+      const flip = h("button", "primary", "Cevabı göster (boşluk)"), yes = h("button", "primary hidden", "✓ Bildim (1)"), no = h("button", "hidden", "✗ Bilemedim (2)");
+      const row = h("div", "btns"); row.append(flip, no, yes); card.append(row); area.append(card);
+      const doFlip = () => { card.querySelector(".fback").classList.remove("hidden"); flip.classList.add("hidden"); yes.classList.remove("hidden"); no.classList.remove("hidden"); };
+      const answer = good => {
+        const cur = st[c.id] || { box: 0 }, nb = good ? Math.min(5, cur.box + 1) : 1;
+        st[c.id] = { box: nb, due: t0 + (good ? INTERVAL[nb] : 0) }; cstore.set(st);
+        queue.shift(); if (!good) queue.push(c); show();
+      };
+      flip.onclick = doFlip; yes.onclick = () => answer(true); no.onclick = () => answer(false);
+      area.onkey = e => { if (e.key === " " && !flip.classList.contains("hidden")) { e.preventDefault(); doFlip(); } else if (flip.classList.contains("hidden") && (e.key === "1" || e.key === "2")) answer(e.key === "1"); };
+    }
+    const onKey = e => { if (!document.body.contains(area)) return document.removeEventListener("keydown", onKey); if (e.target.matches && e.target.matches("input, textarea, select")) return; area.onkey && area.onkey(e); };
+    document.addEventListener("keydown", onKey);
+    show();
+    const rs = h("button", "ghost", "Bu destenin kart ilerlemesini sıfırla");
+    rs.onclick = () => { if (!confirm("Kart ilerlemesi silinsin mi?")) return; list.forEach(c => delete st[c.id]); cstore.set(st); pageCards(wid); };
+    app.append(h("p", "", ""), rs);
+  }
+
+  /* ---------- sık karıştırılanlar ve karar ağaçları ---------- */
+  function pageCompare() {
+    app.innerHTML = "";
+    app.append(h("section", "whead", `<h1>Sık karıştırılanlar</h1><p class="muted">Sınavda en çok puan kaybettiren şey, birbirine benzeyen kavramları karıştırmak. Önce karar ağaçlarıyla “hangisini ne zaman” sorusunu çalış, sonra tablolarla farkları pekiştir. Her başlıkta konunun anlatıldığı haftaya bağlantı var.</p>
+      <div class="jump"><a href="#" data-j="trees">🧭 Karar ağaçları (${(window.TREES || []).length})</a><a href="#" data-j="tables">⇄ Karşılaştırma tabloları (${(window.COMPARES || []).length})</a></div>`));
+    app.querySelectorAll("[data-j]").forEach(a => a.onclick = e => { e.preventDefault(); document.getElementById(a.dataset.j).scrollIntoView({ behavior: "smooth" }); });
+    const wk = ids => ids.map(i => `<a class="chip" href="#/hafta/${i}">${wl(i)}</a>`).join(" ");
+    const trees = h("section", ""); trees.id = "trees"; trees.append(h("h2", "sec", "🧭 Karar ağaçları: hangisini ne zaman?"));
+    (window.TREES || []).forEach(t => {
+      const box = h("div", "tree tool"); box.id = "c-" + t.id;
+      box.innerHTML = `<h3>${t.t} <span class="small">${wk(t.w)}</span></h3>`;
+      const body = h("div", "treebody"); box.append(body); trees.append(box);
+      const path = [];
+      const draw = node => {
+        body.innerHTML = path.map(p => `<div class="tpath"><span class="muted">${p[0]}</span> → <b>${p[1]}</b></div>`).join("");
+        if (node.a) {
+          body.append(h("div", "tans", node.a));
+        } else {
+          body.append(h("div", "tq", node.q));
+          const row = h("div", "btns"); node.o.forEach(([lab, nx]) => { const b = h("button", "", lab); b.onclick = () => { path.push([node.q, lab]); draw(nx); }; row.append(b); }); body.append(row);
+        }
+        if (path.length) { const r = h("button", "ghost", "↺ Baştan"); r.onclick = () => { path.length = 0; draw(t.n); }; body.append(r); }
+      };
+      draw(t.n);
+    });
+    const tables = h("section", ""); tables.id = "tables"; tables.append(h("h2", "sec", "⇄ Karşılaştırma tabloları"));
+    (window.COMPARES || []).forEach(c => {
+      const box = h("div", "cmp tool"); box.id = "c-" + c.id;
+      box.innerHTML = `<h3>${c.t} <span class="small">${wk(c.w)}</span></h3><div class="tablewrap"><table><tr>${c.h.map(x => `<th>${x}</th>`).join("")}</tr>${c.r.map(r => `<tr>${r.map((x, i) => i ? `<td>${x}</td>` : `<th>${x}</th>`).join("")}</tr>`).join("")}</table></div>${c.tip ? `<div class="tip"><b>Akılda kalsın:</b> ${c.tip}</div>` : ""}`;
+      tables.append(box);
+    });
+    app.append(trees, tables);
   }
 
   function pageTools() {
@@ -2359,13 +3484,13 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
   function pageExam() {
     app.innerHTML = "";
     const box = h("section", "whead", `<h1>Deneme Sınavı</h1><p class="muted">Sorular tüm haftalardan rastgele seçilir. Cevapları işaretle, en sonda “Sınavı bitir” de; doğrular ve açıklamalar o zaman görünür.</p>
-      <div class="sliders"><label>Soru sayısı <select id="exN"><option>10</option><option selected>20</option><option>30</option><option>${ALL.length}</option></select></label>
+      <div class="sliders"><label>Soru sayısı <select id="exN"><option>10</option><option selected>20</option><option>30</option><option value="${POOL().length}">Hepsi (${POOL().length})</option></select></label>
       <label>Kapsam <select id="exW"><option value="0">Tüm haftalar</option>${WEEKS.map(w => `<option value="${w.id}">Sadece ${wl(w.id)}</option>`).join("")}</select></label></div>
       <div class="btns"><button class="primary" id="exGo">Sınavı başlat</button></div>`);
     app.append(box);
     box.querySelector("#exGo").onclick = () => {
       const wsel = +box.querySelector("#exW").value, n = +box.querySelector("#exN").value;
-      const pool = ALL.filter(q => !wsel || q.week === wsel);
+      const pool = POOL().filter(q => !wsel || q.week === wsel);
       startExam(shuffle(pool).slice(0, Math.min(n, pool.length)));
     };
   }
@@ -2385,8 +3510,10 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
       const pct = Math.round(right / qs.length * 100);
       const res = h("section", "result", `<h2>Sonuç: ${right} / ${qs.length} (%${pct})</h2>
         <p>${pct >= 85 ? "Harika, vizeye hazırsın." : pct >= 60 ? "İyi gidiyorsun, aşağıdaki zayıf haftalara bir daha bak." : "Konu anlatımlarını tekrar oku, sonra yeniden dene."}</p>
-        <table><tr><th>Hafta</th><th>Doğru</th><th>Başarı</th></tr>${Object.keys(per).sort().map(k => `<tr><td><a href="#/hafta/${k}">${wl(+k)}: ${WEEKS[k - 1].title}</a></td><td>${per[k][0]}/${per[k][1]}</td><td>%${Math.round(per[k][0] / per[k][1] * 100)}</td></tr>`).join("")}</table>
-        <div class="btns"><a class="btn primary" href="#/sinav">Yeni sınav</a><a class="btn" href="#/">Ana sayfa</a></div>`);
+        <table><tr><th>Hafta</th><th>Doğru</th><th>Başarı</th><th>Ne yapmalı?</th></tr>${Object.keys(per).sort((a, b) => a - b).map(k => { const pc = Math.round(per[k][0] / per[k][1] * 100), wk = WEEKS.find(x => x.id === +k); return `<tr class="${pc < 70 ? "bad" : ""}"><td><a href="#/hafta/${k}">${wl(+k)}: ${wk.title}</a></td><td>${per[k][0]}/${per[k][1]}</td><td>%${pc}</td><td>${pc < 70 ? `<a href="#/hafta/${k}">Özü ve konuyu oku</a> · <a href="#/yanlislar/${k}">yanlışları çöz</a> · <a href="#/kartlar/${k}">kartlar</a>` : "✓ İyi"}</td></tr>`; }).join("")}</table>
+        <p class="muted small">Yanlış yaptığın her sorunun altında, konunun anlatıldığı bölüme giden bir “Konuyu tekrar oku” bağlantısı var (bölümü belli olan sorularda).</p>
+        <div class="btns"><a class="btn primary" href="#/sinav">Yeni sınav</a>${right < qs.length ? `<a class="btn" href="#/yanlislar">Yanlışlarımı tekrar çöz (${qs.length - right})</a>` : ""}<a class="btn" href="#/">Ana sayfa</a></div>`);
+      refreshNav();
       list.before(res); window.scrollTo({ top: 0, behavior: "smooth" });
     };
     list.append(fin); app.append(list);
@@ -2395,18 +3522,30 @@ P(Kaldı | x) = 0,015605 / (0,007221 + 0,015605) = <b>0,6836 (%68,36)</b>; P(Ge�
   /* ---------- yönlendirme ---------- */
   function route() {
     const hash = location.hash || "#/";
-    const m = hash.match(/^#\/hafta\/(\d+)/);
+    const m = hash.match(/^#\/hafta\/(\d+)(?:\/(\d+))?/), mw = hash.match(/^#\/yanlislar(?:\/(\d+))?/);
+    const mk = hash.match(/^#\/kartlar(?:\/(\d+))?/), mc = hash.match(/^#\/karsilastir(?:\/([\w-]+))?/);
     if (m) pageWeek(+m[1]);
+    else if (mw) pageWrong(mw[1] ? +mw[1] : 0);
+    else if (mk) pageCards(mk[1] ? +mk[1] : 0);
+    else if (mc) pageCompare();
     else if (hash.startsWith("#/araclar")) pageTools();
-    else if (hash.startsWith("#/formuller")) pageFormulas();
+    else if (hash.startsWith("#/formuller")) { pageFormulas(); glossify(app); }
     else if (hash.startsWith("#/sinav")) pageExam();
     else pageHome();
-    setActive(m ? "#/hafta/" + m[1] : hash.split("?")[0]);
+    refreshNav();
+    setActive(m ? "#/hafta/" + m[1] : mw ? "#/yanlislar" : mk ? "#/kartlar" : mc ? "#/karsilastir" : hash.split("?")[0]);
     window.scrollTo(0, 0);
+    // bölüm / karşılaştırma bağlantısı: o başlığa kaydır
+    const target = m && m[2] ? document.getElementById("s-" + m[2]) : mc && mc[1] ? document.getElementById("c-" + mc[1]) : null;
+    if (target) { target.scrollIntoView(); target.classList.add("flash"); setTimeout(() => target.classList.remove("flash"), 1800); }
   }
 
   function buildNav() {
-    nav.innerHTML = `<a href="#/">Ana sayfa</a>` + WEEKS.map(w => `<a href="#/hafta/${w.id}" title="${w.title}">${w.short || "H" + w.id}</a>`).join("") + `<a href="#/araclar">Araçlar</a><a href="#/formuller">Formüller</a><a href="#/sinav">Sınav</a>`;
+    nav.innerHTML = `<a href="#/">Ana sayfa</a>` + WEEKS.map(w => `<a href="#/hafta/${w.id}" title="${w.title}">${w.short || "H" + w.id}</a>`).join("") + `<a href="#/kartlar">Kartlar</a><a href="#/karsilastir">Karıştırılanlar</a><a href="#/araclar">Araçlar</a><a href="#/formuller">Formüller</a><a href="#/sinav">Sınav</a><a href="#/yanlislar" id="navWrong">Yanlışlarım</a>`;
+  }
+  function refreshNav() {
+    const a = document.getElementById("navWrong"); if (!a) return;
+    const n = wrongCount(0); a.innerHTML = "Yanlışlarım" + (n ? `<span class="nb">${n}</span>` : "");
   }
 
   /* tema */
